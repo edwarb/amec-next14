@@ -19,7 +19,7 @@ function Testimony() {
 
       {/* content */}
       <Carousel opts={{ loop: true, align: "start" }}>
-        <CarouselContent className="h-full">
+        <CarouselContent className="h-[150px]">
           {TESTIMONI_ARRAY.map((val) => (
             <CarouselItem key={val.image} className="basis-1/2 h-full">
               <CardTestimony {...val} />

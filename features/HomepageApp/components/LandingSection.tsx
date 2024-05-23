@@ -146,7 +146,7 @@ const styles = {
     gridTemplateColumns: `1fr 1fr 1fr`,
     alignContent: "center",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "stretch",
     ["@media screen and (max-width: 770px)"]: {
       display: "flex",
       flexDirection: "column",

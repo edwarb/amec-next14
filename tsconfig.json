@@ -17,7 +17,7 @@
     "incremental": true,
     "noUncheckedIndexedAccess": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs", "features/PaketApp/PaketHematApp"],
   "exclude": ["node_modules"],
   "types": ["@emotion/react/types/css-prop"]
 }
