@@ -1,59 +1,73 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "components/ui/carousel";
-import { TESTIMONI_ARRAY } from "../constants/ConstTestimony";
-import { Card, CardHeader } from "components/ui/card";
+import { useState, useEffect } from 'react';
+import { TESTIMONI_ARRAY } from '../constants/ConstTestimony';
 
-function Testimony() {
-  return (
-    <section className="flex flex-col gap-12">
-      {/* title */}
-      <div className="flex flex-col gap-2 items-center text-center">
-        <h1>{`Testimonial`}</h1>
-        <h3>{`Kepuasan pasien adalah kepuasan kami. Berikut beberapa testimoni dari pasien-pasien kami`}</h3>
-      </div>
+export default function Testimony() {
+  const [current, setCurrent] = useState(0);
 
-      {/* content */}
-      <Carousel opts={{ loop: true, align: "start" }}>
-        <CarouselContent className="h-[150px]">
-          {TESTIMONI_ARRAY.map((val) => (
-            <CarouselItem key={val.image} className="basis-1/2 h-full">
-              <CardTestimony {...val} />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-    </section>
-  );
-}
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === TESTIMONI_ARRAY.length - 1 ? 0 : prev + 1));
+    }, 5000); // Change testimonial every 5 seconds
 
-export default Testimony;
+    return () => clearInterval(interval);
+  }, []);
 
-interface ICardTestimony {
-  name: string;
-  image: string;
-  job: string;
-  text: string;
-}
-function CardTestimony(props: ICardTestimony) {
-  const { image, name, text } = props;
+  const currentTestimoni = TESTIMONI_ARRAY[current];
+
+  if (!currentTestimoni) {
+    return null; // or a loading indicator if needed
+  }
 
   return (
-    <Card className="h-full">
-      <CardHeader className="flex-row gap-4">
-        <div className="w-[75px] h-[75px] text-center">
-          <img className="w-full h-full object-cover" src={image} />
-          <p className="text-ellipsis text-xs text-gray-700">{name}</p>
+    <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
+      <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
+        <img
+          className="absolute inset-0 h-full w-full object-cover brightness-150 saturate-0"
+          src="/img/testimoni/testimony-bg.webp"
+          alt=""
+        />
+        <div className="absolute inset-0 bg-gray-900/90 mix-blend-multiply" />
+        <div className="absolute -left-80 -top-56 transform-gpu blur-3xl" aria-hidden="true">
+          <div
+            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-[0.45]"
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+          />
         </div>
-
-        <div className="flex-1">{text}</div>
-      </CardHeader>
-    </Card>
+        <div
+          className="hidden md:absolute md:bottom-16 md:left-[50rem] md:block md:transform-gpu md:blur-3xl"
+          aria-hidden="true"
+        >
+          <div
+            className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25"
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+          />
+        </div>
+        <div className="relative mx-auto max-w-2xl lg:mx-0 h-60"> {/* Set a fixed height */}
+          {TESTIMONI_ARRAY.map((testimoni, index) => (
+            <div
+              key={testimoni.name}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === current ? 'opacity-100' : 'opacity-0'}`}
+              style={{ transition: 'opacity 1s ease-in-out' }}
+            >
+              <figure>
+                <blockquote className="mt-6 text-lg font-semibold text-white sm:text-xl sm:leading-8">
+                  <p><i>"{testimoni.text}"</i></p>
+                </blockquote>
+                <figcaption className="mt-6 text-base text-white">
+                  <div className="font-semibold">{testimoni.name}</div>
+                  <div className="mt-1">{testimoni.job}</div>
+                </figcaption>
+              </figure>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
