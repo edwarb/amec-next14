@@ -3,7 +3,7 @@ export const TESTIMONI_ARRAY = [
     name: "Sevi",
     image: "/img/testimonifoto/sevi.png",
     job: "Karyawan Swasata",
-    text: "nyobain program test check kesehatan untuk pra nikah.. biar sama-sama tau kesehatan pasangan. Medikal Amalia recommend untuk check up. Terimakasih untuk pelayanan yang memuaskan.",
+    text: "Nyobain program test check kesehatan untuk pra nikah.. biar sama-sama tau kesehatan pasangan. Medikal Amalia recommend untuk check up. Terimakasih untuk pelayanan yang memuaskan.",
   },
   {
     name: "Ali",
