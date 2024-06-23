@@ -1,115 +1,115 @@
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import React from 'react';
+import { useState } from "react";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import React from "react";
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Resources', href: '#' },
-  { name: 'Company', href: '#' },
-]
+  { name: "Product", href: "#" },
+  { name: "Features", href: "#" },
+  { name: "Resources", href: "#" },
+  { name: "Company", href: "#" },
+];
 
 const timeline = [
   {
-    name: 'Berdirinya Amalia',
+    name: "Berdirinya Amalia",
     description:
-      'Amalia medical center dinaungi oleh badan hukum Yayasan Solidaritas Kemanusiaan Amanah, yang berlokasi di pemukiman Cipinang Cempedak, Jakarta Timur. Yayasan ini didirikan oleh Irjen.Pol (P). Prof. Dr. Farouk Muhammad, Yayasan ini telah memberikan sumbangsih antara lain untuk anak-anak yatim, para janda, korban bencana alam, dan kaum dhuafa lainnya.',
-    date: '2000',
-    dateTime: '2000',
+      "Amalia medical center dinaungi oleh badan hukum Yayasan Solidaritas Kemanusiaan Amanah, yang berlokasi di pemukiman Cipinang Cempedak, Jakarta Timur. Yayasan ini didirikan oleh Irjen.Pol (P). Prof. Dr. Farouk Muhammad, Yayasan ini telah memberikan sumbangsih antara lain untuk anak-anak yatim, para janda, korban bencana alam, dan kaum dhuafa lainnya.",
+    date: "2000",
+    dateTime: "2000",
   },
   {
-    name: 'Secured $65m in funding',
+    name: "Secured $65m in funding",
     description:
-      'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
-    date: '2001',
-    dateTime: '2001',
+      "Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.",
+    date: "2001",
+    dateTime: "2001",
   },
   {
-    name: 'Released beta',
+    name: "Released beta",
     description:
-      'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
-    date: '2002',
-    dateTime: '2002',
+      "Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.",
+    date: "2002",
+    dateTime: "2002",
   },
   {
-    name: 'Global launch of product',
+    name: "Global launch of product",
     description:
-      'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
-    date: '2020',
-    dateTime: '2020',
+      "Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.",
+    date: "2020",
+    dateTime: "2020",
   },
-]
+];
 
 const jobOpenings = [
   {
     id: 1,
-    role: 'Caring',
-    href: '#',
+    role: "Caring",
+    href: "#",
     description:
-      'Kepedulian adalah sikap kami terhadap pelanggan. Dengan sikap peduli maka pelanggan akan lebih mudah dalam berinteraksi dengan karyawan.',
+      "Kepedulian adalah sikap kami terhadap pelanggan. Dengan sikap peduli maka pelanggan akan lebih mudah dalam berinteraksi dengan karyawan.",
   },
   {
     id: 2,
-    role: 'Observant',
-    href: '#',
+    role: "Observant",
+    href: "#",
     description:
-      'Selain observant yang artinya adalah memperhatikan dengan teliti. Observant juga kami artikan dengan taat kepada peraturan yang berlaku, baik kode etik tenaga medis maupun kode etik tenaga kerja. Kami mengamati kebutuhan pelanggan dan memperhatikan kepuasan Anda.',
+      "Selain observant yang artinya adalah memperhatikan dengan teliti. Observant juga kami artikan dengan taat kepada peraturan yang berlaku, baik kode etik tenaga medis maupun kode etik tenaga kerja. Kami mengamati kebutuhan pelanggan dan memperhatikan kepuasan Anda.",
   },
   {
     id: 3,
-    role: 'Mindful',
-    href: '#',
+    role: "Mindful",
+    href: "#",
     description:
-      'Kami melakukan pekerjaan dengan penuh hati- hati, pengamatan jeli untuk pengambilan keputusan dan hasil laboratorium adalah hal yang wajib.',
+      "Kami melakukan pekerjaan dengan penuh hati- hati, pengamatan jeli untuk pengambilan keputusan dan hasil laboratorium adalah hal yang wajib.",
   },
   {
     id: 4,
-    role: 'Friendly',
-    href: '#',
+    role: "Friendly",
+    href: "#",
     description:
-      'Keramah-tamahan kami akan dapat mempererat hubungan antara karyawan, medis maupun non medis dengan pelanggan.',
+      "Keramah-tamahan kami akan dapat mempererat hubungan antara karyawan, medis maupun non medis dengan pelanggan.",
   },
   {
     id: 5,
-    role: 'Obliging',
-    href: '#',
+    role: "Obliging",
+    href: "#",
     description:
-      'Kami sigap membantu siapa saja yang membutuhkan pertolongan. Dibawah naungan yayasan social, membantu orang lain telah tertanam pada jiwa kami.',
+      "Kami sigap membantu siapa saja yang membutuhkan pertolongan. Dibawah naungan yayasan social, membantu orang lain telah tertanam pada jiwa kami.",
   },
   {
     id: 6,
-    role: 'Responsible',
-    href: '#',
+    role: "Responsible",
+    href: "#",
     description:
-      'Melakukan tugas dalam pekerjaan adalah termasuk menjalankan ibadah bagi kami. Kami siap bertanggung jawab atas segala yang kami kerjakan. Mawas diri terhadap rasa tanggung jawab ini membuat kami akan lebih berhati-hati setiap hal apapun yang kami lakukan.',
+      "Melakukan tugas dalam pekerjaan adalah termasuk menjalankan ibadah bagi kami. Kami siap bertanggung jawab atas segala yang kami kerjakan. Mawas diri terhadap rasa tanggung jawab ini membuat kami akan lebih berhati-hati setiap hal apapun yang kami lakukan.",
   },
   {
     id: 7,
-    role: 'Tactful',
-    href: '#',
+    role: "Tactful",
+    href: "#",
     description:
-      'Kami belajar menjadi bijaksana setiap hari. Melalui perjalanan Amalia Medical Center yang panjang dan berliku-liku, kami belajar dan terus belajar menjadi pribadi yang lebih baik. Dimulai dari pribadi masing-masing, maka Amalia Medical Center terbentuk oleh pribadi yang unggul.',
+      "Kami belajar menjadi bijaksana setiap hari. Melalui perjalanan Amalia Medical Center yang panjang dan berliku-liku, kami belajar dan terus belajar menjadi pribadi yang lebih baik. Dimulai dari pribadi masing-masing, maka Amalia Medical Center terbentuk oleh pribadi yang unggul.",
   },
-]
+];
 
 const footerNavigation = {
   solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+    { name: "Marketing", href: "#" },
+    { name: "Analytics", href: "#" },
+    { name: "Commerce", href: "#" },
+    { name: "Insights", href: "#" },
   ],
   support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
+    { name: "Pricing", href: "#" },
+    { name: "Documentation", href: "#" },
+    { name: "Guides", href: "#" },
+    { name: "API Status", href: "#" },
   ],
   social: [
     {
-      name: 'Facebook',
-      href: '#',
+      name: "Facebook",
+      href: "#",
       icon: (props: React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -121,8 +121,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: '#',
+      name: "Instagram",
+      href: "#",
       icon: (props: React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -134,8 +134,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'X',
-      href: '#',
+      name: "X",
+      href: "#",
       icon: (props: React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
@@ -143,8 +143,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'GitHub',
-      href: '#',
+      name: "GitHub",
+      href: "#",
       icon: (props: React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -156,8 +156,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'YouTube',
-      href: '#',
+      name: "YouTube",
+      href: "#",
       icon: (props: React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -169,16 +169,16 @@ const footerNavigation = {
       ),
     },
   ],
-}
+};
 
 export default function About() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="bg-white">
       <main className="isolate">
         {/* Hero section */}
-        <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-green-100/20 pt-14">
+        <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-green-100/20">
           <div
             className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-green-600/10 ring-1 ring-green-50 sm:-mr-80 lg:-mr-96"
             aria-hidden="true"
@@ -186,14 +186,16 @@ export default function About() {
           <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
               <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-                Kami berkomitmen untuk membangun
-                masa depan melalui pelayanan kesehatan di Amalia Medical Center.
+                Kami berkomitmen untuk membangun masa depan melalui pelayanan
+                kesehatan di Amalia Medical Center.
               </h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
-                  Di Amalia Medical Center, kami selalu berusaha memberikan perawatan terbaik bagi setiap pasien.
-                  Kami berkomitmen untuk terus meningkatkan kualitas pelayanan kesehatan dengan memanfaatkan teknologi terbaru dan
-                  pendekatan yang berpusat pada pasien.
+                  Di Amalia Medical Center, kami selalu berusaha memberikan
+                  perawatan terbaik bagi setiap pasien. Kami berkomitmen untuk
+                  terus meningkatkan kualitas pelayanan kesehatan dengan
+                  memanfaatkan teknologi terbaru dan pendekatan yang berpusat
+                  pada pasien.
                 </p>
               </div>
               <img
@@ -215,7 +217,11 @@ export default function About() {
                   dateTime={item.dateTime}
                   className="flex items-center text-sm font-semibold leading-6 text-indigo-600"
                 >
-                  <svg viewBox="0 0 4 4" className="mr-4 h-1 w-1 flex-none" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 4 4"
+                    className="mr-4 h-1 w-1 flex-none"
+                    aria-hidden="true"
+                  >
                     <circle cx={2} cy={2} r={2} fill="currentColor" />
                   </svg>
                   {item.date}
@@ -224,8 +230,12 @@ export default function About() {
                     aria-hidden="true"
                   />
                 </time>
-                <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{item.name}</p>
-                <p className="mt-1 text-base leading-7 text-gray-600">{item.description}</p>
+                <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                  {item.name}
+                </p>
+                <p className="mt-1 text-base leading-7 text-gray-600">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
@@ -238,22 +248,31 @@ export default function About() {
               Misi - Visi
             </h2>
             <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
-              <p className="mx-auto max-w-xl text-lg leading-8 text-gray-300 text-left">
-                Menyediakan pelayanan kesehatan yang komprehensif untuk pekerja dengan praktek medis yang berlaku, bersyarat ilmiah dan berstandar internasional.
+              <p className="mx-auto max-w-xl text-left text-lg leading-8 text-gray-300">
+                Menyediakan pelayanan kesehatan yang komprehensif untuk pekerja
+                dengan praktek medis yang berlaku, bersyarat ilmiah dan
+                berstandar internasional.
               </p>
-              <p className="mx-auto max-w-xl text-lg leading-8 text-gray-300 text-left">
-                Terus mengembangkan diri melalui Program Jaminan Kualitas, menanamkan pengetahuan di sumber daya manusia dan meningkatkan peralatan, dan juga Informasi Teknologi (IT).
+              <p className="mx-auto max-w-xl text-left text-lg leading-8 text-gray-300">
+                Terus mengembangkan diri melalui Program Jaminan Kualitas,
+                menanamkan pengetahuan di sumber daya manusia dan meningkatkan
+                peralatan, dan juga Informasi Teknologi (IT).
               </p>
-              <p className="mx-auto max-w-xl text-lg leading-8 text-gray-300 text-left">
-                Menjadikan kami sebagai kontributor tunggal “Amanah” dari yayasan solidaritas manusia untuk sosial dan kesejahteraan kemanusiaan.
+              <p className="mx-auto max-w-xl text-left text-lg leading-8 text-gray-300">
+                Menjadikan kami sebagai kontributor tunggal “Amanah” dari
+                yayasan solidaritas manusia untuk sosial dan kesejahteraan
+                kemanusiaan.
               </p>
             </div>
-            <div className="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl" aria-hidden="true">
+            <div
+              className="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl"
+              aria-hidden="true"
+            >
               <div
                 className="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25"
                 style={{
                   clipPath:
-                    'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+                    "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
                 }}
               />
             </div>
@@ -265,16 +284,23 @@ export default function About() {
           <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
               <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Budaya Kami</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Budaya Kami
+                </h2>
                 <p className="mt-6 text-xl leading-8 text-gray-600">
-                  Budaya perusahaan Amalia Medical Center diambil dari kata COMFORT dan ditanamkan bagi seluruh karyawan-karyawati
-                  sehingga menjadi bagian dari kesadaran dan budaya kerja perusahaan.
+                  Budaya perusahaan Amalia Medical Center diambil dari kata
+                  COMFORT dan ditanamkan bagi seluruh karyawan-karyawati
+                  sehingga menjadi bagian dari kesadaran dan budaya kerja
+                  perusahaan.
                 </p>
                 <p className="mt-6 text-base leading-7 text-gray-600">
-                  Comfort artinya memiliki perasaan nikmat
-                  hingga muncul efek nyaman dalam diri kita. Hal yang lebih penting dari Comfort adalah kami menginginkan pelanggan yang datang ke Amalia Medical Center
-                  merasakan kenyamanan itu sendiri. Dengan demikian, kepuasan kami adalah refleksi dari kepuasan pelanggan.
-                  Harapan kami adalah agar pelanggan mengajak sanak saudara atau rekan sejawat untuk mempercayakan kepada kami
+                  Comfort artinya memiliki perasaan nikmat hingga muncul efek
+                  nyaman dalam diri kita. Hal yang lebih penting dari Comfort
+                  adalah kami menginginkan pelanggan yang datang ke Amalia
+                  Medical Center merasakan kenyamanan itu sendiri. Dengan
+                  demikian, kepuasan kami adalah refleksi dari kepuasan
+                  pelanggan. Harapan kami adalah agar pelanggan mengajak sanak
+                  saudara atau rekan sejawat untuk mempercayakan kepada kami
                   sebagai tempat pemeriksaan kesehatan.
                 </p>
               </div>
@@ -319,11 +345,13 @@ export default function About() {
           <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
             <div className="w-full lg:max-w-lg lg:flex-auto">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                <i>Comfort</i> telah kami rasakan dalam bidang yang kami tekuni saat ini.
+                <i>Comfort</i> telah kami rasakan dalam bidang yang kami tekuni
+                saat ini.
               </h2>
               <p className="mt-6 text-xl leading-8 text-gray-600">
-                Mulai dari pekerjaan yang kami lakukan, tugas yang harus kami selesaikan, serta melayani pelanggan dengan
-                sepenuh hati, juga kami lakukan dengan nyaman.
+                Mulai dari pekerjaan yang kami lakukan, tugas yang harus kami
+                selesaikan, serta melayani pelanggan dengan sepenuh hati, juga
+                kami lakukan dengan nyaman.
               </p>
               <img
                 src="img/facility/fasilitas12.png"
@@ -346,16 +374,25 @@ export default function About() {
                       <dd className="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
                         <a href={opening.href}>
                           {opening.role}
-                          <span className="absolute inset-0" aria-hidden="true" />
+                          <span
+                            className="absolute inset-0"
+                            aria-hidden="true"
+                          />
                         </a>
                       </dd>
                       <dt className="sr-only">Description</dt>
-                      <dd className="mt-2 w-full flex-none text-base leading-7 text-gray-600">{opening.description}</dd>
+                      <dd className="mt-2 w-full flex-none text-base leading-7 text-gray-600">
+                        {opening.description}
+                      </dd>
                       <dt className="sr-only">Salary</dt>
                       <dd className="mt-4 text-base font-semibold leading-7 text-gray-900"></dd>
                       <dt className="sr-only">Location</dt>
                       <dd className="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
-                        <svg viewBox="0 0 2 2" className="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
+                        <svg
+                          viewBox="0 0 2 2"
+                          className="h-0.5 w-0.5 flex-none fill-gray-300"
+                          aria-hidden="true"
+                        >
                           <circle cx={1} cy={1} r={1} />
                         </svg>
                       </dd>
@@ -368,5 +405,5 @@ export default function About() {
         </div>
       </main>
     </div>
-  )
+  );
 }
