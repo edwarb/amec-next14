@@ -9,12 +9,13 @@ import { Calendar, CalendarProps } from "components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "components/ui/popover";
 
 import { id } from "date-fns/locale/id";
-import { useState } from "react";
+import { CSSProperties, useState } from "react";
 
 interface Props extends Omit<CalendarProps, "value" | "onChange"> {
   label: string;
   value: Date | null;
   onChange: (value: Date) => void;
+  inputStyle?: CSSProperties;
 }
 export function Datepicker(props: Props) {
   const {
@@ -24,6 +25,7 @@ export function Datepicker(props: Props) {
     initialFocus: _initialFocus,
     mode: _mode,
     selected: _selected,
+    inputStyle,
     ...restCalendar
   } = props;
 
@@ -48,8 +50,9 @@ export function Datepicker(props: Props) {
           variant={"outline"}
           className={cn(
             "w-[280px] justify-start text-left font-normal",
-            !value && "text-muted-foreground"
+            !value && "text-muted-foreground",
           )}
+          style={inputStyle}
           onClick={() => {
             setOpen(true);
           }}

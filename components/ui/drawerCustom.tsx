@@ -1,3 +1,5 @@
+"use client";
+
 import { Drawer } from "vaul";
 
 export default function DrawerCustom() {
@@ -8,7 +10,7 @@ export default function DrawerCustom() {
       </Drawer.Trigger>
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 bg-black/40" />
-        <Drawer.Content className="bg-white flex flex-col rounded-t-[10px] h-full w-[400px] mt-24 fixed bottom-0 left-0">
+        <Drawer.Content className="bg-white flex flex-col rounded-t-[10px] h-full w-[400px] mt-24 fixed bottom-0 left-0 z-10">
           <div className="p-4 bg-white flex-1 h-full">
             <div className="max-w-md mx-auto">
               <Drawer.Title className="font-medium mb-4">
