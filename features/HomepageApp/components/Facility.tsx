@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { CONTENT_FACILITY } from '../constants/ConstIntroFacility';
-import classNames from '../../../shared/utils/classnames';
+import classNames from '../../../shared/utils/classNames';
 
 export default function Facility() {
   const [currentFacilityIndex, setCurrentFacilityIndex] = useState(0);
@@ -24,7 +24,7 @@ export default function Facility() {
     <div className="py-24 sm:pt-48">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Pelayanan Klinik</h2>
+          <h2 className="text-base font-semibold leading-7 text-green-600">Pelayanan Klinik</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Layanan Medis Terbaik untuk Semua Kebutuhan Kesehatan Anda
           </p>

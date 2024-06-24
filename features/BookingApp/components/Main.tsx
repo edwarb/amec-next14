@@ -552,7 +552,7 @@ export default function Main() {
             </div>
           </div>
 
-          <div className="mt-6 flex items-center justify-end gap-x-6">
+          <div className="my-4 flex items-center justify-end gap-x-6">
             <button type="button" className="text-sm font-semibold leading-6 text-gray-900 hover:text-green-600">
               Cancel
             </button>

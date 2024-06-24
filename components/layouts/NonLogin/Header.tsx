@@ -31,6 +31,12 @@ const mcuDropdown = [
   { name: 'MCU Tenaga Kerja', href: '/mcu/tenaga-kerja-care' },
 ];
 
+const galeriDropdown = [
+  { name: 'Fasilitas Klinik', href: '/galeri/fasilitas' },
+  { name: 'CSR', href: '/galeri/csr' },
+  { name: 'Sertifikat', href: '/galeri/sertifikat' },
+];
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -57,7 +63,7 @@ export default function Header() {
           {navigation.map((item) => (
             item.name === 'Vaksinasi & Imunisasi' ? (
               <Menu as="div" key={item.name} className="relative inline-block text-left">
-                <MenuButton className="inline-flex w-full justify-center text-sm font-semibold leading-6 text-gray-900 hover:text-green-600">
+                <MenuButton className="inline-flex w-full text-sm font-semibold leading-6 text-gray-900 hover:text-green-600">
                   {item.name}
                 </MenuButton>
                 <Transition
@@ -87,7 +93,7 @@ export default function Header() {
               </Menu>
             ) : item.name === 'MCU' ? (
               <Menu as="div" key={item.name} className="relative inline-block text-left">
-                <MenuButton className="inline-flex w-full justify-center text-sm font-semibold leading-6 text-gray-900 hover:text-green-600">
+                <MenuButton className="inline-flex w-full text-sm font-semibold leading-6 text-gray-900 hover:text-green-600">
                   {item.name}
                 </MenuButton>
                 <Transition
@@ -100,6 +106,36 @@ export default function Header() {
                 >
                   <MenuItems className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     {mcuDropdown.map((dropdownItem) => (
+                      <MenuItem key={dropdownItem.name}>
+                        {({ active }) => (
+                          <a
+                            href={dropdownItem.href}
+                            className={`${active ? 'bg-gray-100' : ''
+                              } block px-4 py-2 text-sm text-gray-700`}
+                          >
+                            {dropdownItem.name}
+                          </a>
+                        )}
+                      </MenuItem>
+                    ))}
+                  </MenuItems>
+                </Transition>
+              </Menu>
+            ) : item.name === 'Galeri' ? (
+              <Menu as="div" key={item.name} className="relative inline-block text-left">
+                <MenuButton className="inline-flex w-full text-sm font-semibold leading-6 text-gray-900 hover:text-green-600">
+                  {item.name}
+                </MenuButton>
+                <Transition
+                  enter="transition ease-out duration-100"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transition ease-in duration-75"
+                  leaveFrom="transform opacity-100 scale-100"
+                  leaveTo="transform opacity-0 scale-95"
+                >
+                  <MenuItems className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    {galeriDropdown.map((dropdownItem) => (
                       <MenuItem key={dropdownItem.name}>
                         {({ active }) => (
                           <a
@@ -150,8 +186,8 @@ export default function Header() {
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
                   item.name === 'Vaksinasi & Imunisasi' ? (
-                    <Menu as="div" key={item.name} className="relative inline-block text-left">
-                      <MenuButton className="inline-flex w-full justify-center text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                    <Menu as="div" key={item.name} className="relative block text-left">
+                      <MenuButton className="inline-flex w-full text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                         {item.name}
                         <ChevronDownIcon className="ml-2 h-5 w-5" aria-hidden="true" />
                       </MenuButton>
@@ -163,7 +199,7 @@ export default function Header() {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                       >
-                        <MenuItems className="absolute right-0 mt-2 w-full origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <MenuItems className="mt-2 w-full origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                           {vaksinasiDropdown.map((dropdownItem) => (
                             <MenuItem key={dropdownItem.name}>
                               {({ active }) => (
@@ -181,8 +217,8 @@ export default function Header() {
                       </Transition>
                     </Menu>
                   ) : item.name === 'MCU' ? (
-                    <Menu as="div" key={item.name} className="relative inline-block text-left">
-                      <MenuButton className="inline-flex w-full justify-center text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                    <Menu as="div" key={item.name} className="relative block text-left">
+                      <MenuButton className="inline-flex w-full text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                         {item.name}
                         <ChevronDownIcon className="ml-2 h-5 w-5" aria-hidden="true" />
                       </MenuButton>
@@ -194,8 +230,39 @@ export default function Header() {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                       >
-                        <MenuItems className="absolute right-0 mt-2 w-full origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <MenuItems className="mt-2 w-full origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                           {mcuDropdown.map((dropdownItem) => (
+                            <MenuItem key={dropdownItem.name}>
+                              {({ active }) => (
+                                <a
+                                  href={dropdownItem.href}
+                                  className={`${active ? 'bg-gray-100' : ''
+                                    } block px-4 py-2 text-base font-semibold text-gray-900`}
+                                >
+                                  {dropdownItem.name}
+                                </a>
+                              )}
+                            </MenuItem>
+                          ))}
+                        </MenuItems>
+                      </Transition>
+                    </Menu>
+                  ) : item.name === 'Galeri' ? (
+                    <Menu as="div" key={item.name} className="relative block text-left">
+                      <MenuButton className="inline-flex w-full text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        {item.name}
+                        <ChevronDownIcon className="ml-2 h-5 w-5" aria-hidden="true" />
+                      </MenuButton>
+                      <Transition
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                      >
+                        <MenuItems className="mt-2 w-full origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          {galeriDropdown.map((dropdownItem) => (
                             <MenuItem key={dropdownItem.name}>
                               {({ active }) => (
                                 <a
