@@ -19,7 +19,7 @@ import Image from "next/image";
 const navigation = [
   { name: "Booking", href: "/booking" },
   { name: "Tentang Kami", href: "/about" },
-  { name: "Artikel", href: "#" },
+  { name: "Artikel", href: "/article" },
   { name: "Vaksinasi & Imunisasi", href: "#" },
   { name: "MCU", href: "#" },
   { name: "Promosi", href: "#" },
