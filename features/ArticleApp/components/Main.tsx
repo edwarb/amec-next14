@@ -1,18 +1,20 @@
 import { useToast } from "components/ui/use-toast";
-import { getArticles } from "features/DashboardAdmin/Articles/utils";
+import { getErrorMessage } from "lib/utils";
 import { useEffect, useState } from "react";
 import { Article } from "types/Article";
+import { useArticleSelector } from "../hooks/useArticleSelector";
 import { getCountArticle } from "../services";
 import { ArticleList } from "./ArticleCard";
 import ArticleDetail from "./ArticleDetail";
 import PaginationSimple from "./PaginationSimple";
-import { getErrorMessage } from "lib/utils";
 
 function Main() {
-  const [state, setState] = useState<Article[]>([]);
   const [detail, setDetail] = useState<Article | null>(null);
-  const [page, setPage] = useState(1);
   const [totalPage, setTotalPage] = useState(0);
+
+  const { result, prevKey, handleNext, handlePrev } = useArticleSelector({
+    currentPage: 1,
+  });
   const { toast } = useToast();
 
   async function fetchSum() {
@@ -31,20 +33,6 @@ function Main() {
     fetchSum();
   }, []);
 
-  useEffect(() => {
-    getArticles({ startDoc: null })
-      .then((resp) => {
-        console.log({ resp });
-        setState(resp.result as Article[]);
-      })
-      .catch((err) => {
-        toast({
-          variant: "destructive",
-          description: err?.message || "Error Fetching Articles",
-        });
-      });
-  }, [page]);
-
   if (detail)
     return (
       <ArticleDetail
@@ -57,32 +45,28 @@ function Main() {
 
   return (
     <div className="grid-content">
-      {!detail && (
-        <>
-          <div className="grid grid-cols-3 gap-3">
-            {state.map((post) => {
-              return (
-                <ArticleList
-                  key={post.id}
-                  {...post}
-                  onClick={(article) => {
-                    setDetail(article);
-                  }}
-                />
-              );
-            })}
-          </div>
-          <PaginationSimple
-            currentPage={page}
-            itemCount={totalPage}
-            pageSize={10}
-            onSelectNewPage={(newPage) => {
-              setPage(newPage);
-            }}
-          />
-        </>
-      )}
-      {detail && <div>{JSON.stringify(detail)}</div>}
+      <div className="grid grid-cols-3 gap-3">
+        {result.map((post) => {
+          return (
+            <ArticleList
+              key={post.id}
+              {...post}
+              onClick={(article) => {
+                setDetail(article);
+              }}
+            />
+          );
+        })}
+      </div>
+      <PaginationSimple
+        currentPage={prevKey.length}
+        itemCount={totalPage}
+        pageSize={10}
+        disabledNext={prevKey.length === totalPage / 10}
+        disabledPrev={prevKey.length === 0}
+        onSelectPrev={handlePrev}
+        onSelectNext={handleNext}
+      />
     </div>
   );
 }

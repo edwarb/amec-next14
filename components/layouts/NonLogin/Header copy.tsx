@@ -78,7 +78,7 @@ function Header() {
                 <PopoverHoverTrigger label={headVal.label}>
                   <ul className="bg-white">
                     {headVal.child.map((childVal) => (
-                      <Link href={childVal.href}>
+                      <Link href={childVal.href} key={childVal.href}>
                         <li
                           key={childVal.label}
                           className="px-4 py-2 hover:bg-slate-200 cursor-pointer"
