@@ -1,0 +1,2130 @@
+Started by GitLab push by Mart Luber
+Obtained build.groovy from git https://git.ecommchannels.com/integrationhub/kafka-handler.git
+Running in Durability level: MAX_SURVIVABILITY
+Loading library global@master
+Attempting to resolve master from remote references...
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials git.ecommchannels.com
+ > git ls-remote -h https://git.ecommchannels.com/global/ci.git # timeout=10
+Found match: refs/heads/master revision 89ed12a1c5e0f4f23012c3b8fe343bc226870427
+using credential GITLAB_JENKINS
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://git.ecommchannels.com/global/ci.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://git.ecommchannels.com/global/ci.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials git.ecommchannels.com
+ > git fetch --no-tags --progress https://git.ecommchannels.com/global/ci.git +refs/heads/*:refs/remotes/origin/*
+skipping resolution of commit refs/tags/1.0.0, since it originates from another repository
+Checking out Revision 89ed12a1c5e0f4f23012c3b8fe343bc226870427 (master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 89ed12a1c5e0f4f23012c3b8fe343bc226870427
+Commit message: "poc update"
+ > git rev-list --no-walk 89ed12a1c5e0f4f23012c3b8fe343bc226870427 # timeout=10
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on JenkinsSlave03 in /apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build
+[Pipeline] {
+[Pipeline] dir
+Running in /apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build/21
+[Pipeline] {
+[Pipeline] checkout
+using credential GIT_CRED
+Cloning the remote Git repository
+Cloning repository https://git.ecommchannels.com/integrationhub/kafka-handler.git
+ > git init /apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build/21 # timeout=10
+Fetching upstream changes from https://git.ecommchannels.com/integrationhub/kafka-handler.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials GIT_CRED
+ > git fetch --tags --progress https://git.ecommchannels.com/integrationhub/kafka-handler.git +refs/heads/*:refs/remotes/origin/*
+skipping resolution of commit refs/tags/1.0.0, since it originates from another repository
+Checking out Revision ec756ce2bfcfbee83e2b8f69cc5bfe9c744e81f2 (refs/tags/1.0.0)
+ > git config remote.origin.url https://git.ecommchannels.com/integrationhub/kafka-handler.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://git.ecommchannels.com/integrationhub/kafka-handler.git # timeout=10
+Fetching upstream changes from https://git.ecommchannels.com/integrationhub/kafka-handler.git
+using GIT_ASKPASS to set credentials GIT_CRED
+ > git fetch --tags --progress https://git.ecommchannels.com/integrationhub/kafka-handler.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/tags/1.0.0^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/refs/tags/1.0.0^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ec756ce2bfcfbee83e2b8f69cc5bfe9c744e81f2
+Commit message: "change ldapjs to activedirectory2"
+[Pipeline] readJSON
+[Pipeline] stage
+[Pipeline] { (build artifact)
+[Pipeline] pwd
+[Pipeline] pwd
+[Pipeline] sh
++ docker run -i --rm -w /workdir -v /apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build/21:/workdir nexus.corp.bankbtpn.co.id:50003/openshift/build-artifact:latest npm i
+ > git rev-list --no-walk 4b6b0427e45f031e06bcad39513b21d50bebd873 # timeout=10
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'ldapts@7.0.12',
+npm WARN EBADENGINE   required: { node: '>=18' },
+npm WARN EBADENGINE   current: { node: 'v14.16.0', npm: '8.13.2' }
+npm WARN EBADENGINE }
+npm WARN deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm WARN deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm WARN deprecated ldapjs@3.0.7: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+npm WARN deprecated @ldapjs/attribute@1.0.0: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+npm WARN deprecated @ldapjs/protocol@1.2.1: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+npm WARN deprecated @ldapjs/messages@1.3.0: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+npm WARN deprecated superagent@8.1.2: Please upgrade to v9.0.0+ as we have fixed a public vulnerability with formidable dependency. Note that v9.0.0+ requires Node.js v14.18.0+. See https://github.com/ladjs/superagent/pull/1800 for insight. This project is supported and maintained by the team at Forward Email @ https://forwardemail.net
+npm WARN deprecated @ldapjs/dn@1.1.0: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+npm WARN deprecated @ldapjs/filter@2.1.1: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+npm WARN deprecated @ldapjs/change@1.0.0: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+npm WARN deprecated @ldapjs/asn1@2.0.0: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+npm WARN deprecated @ldapjs/asn1@1.2.0: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+npm WARN deprecated ldapjs@2.3.3: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+npm WARN deprecated @ldapjs/controls@2.1.0: This package has been decomissioned. See https://github.com/ldapjs/node-ldapjs/blob/8ffd0bc9c149088a10ec4c1ec6a18450f76ad05d/README.md
+
+added 472 packages, and audited 473 packages in 21s
+
+50 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice 
+npm notice New major version of npm available! 8.13.2 -> 10.8.1
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.8.1>
+npm notice Run `npm install -g npm@10.8.1` to update!
+npm notice 
+[Pipeline] stage
+[Pipeline] { (scanning component)
+[Pipeline] pwd
+[Pipeline] sh
++ docker run -a STDERR -i --rm -w /workdir -v /apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build/21:/workdir nexus.corp.bankbtpn.co.id:50003/openshift/build-artifact:latest npm ls
+[Pipeline] pwd
+[Pipeline] sh
++ docker run -a STDOUT -i --rm -w /workdir -v /apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build/21:/workdir nexus.corp.bankbtpn.co.id:50003/openshift/build-artifact:latest npm ls
+[Pipeline] echo
+start to cleansing
+[Pipeline] pwd
+[Pipeline] sh
++ cat /apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build/21/list_npm.txt
++ sed -E 's/ deduped$| extraneous$//g'
++ sed -E /UNMET/d
++ sed -E 's/^.* ([a-zA-Z,@].+)$/\1/g'
++ sed -E 's/\^|\~|<|>|\=| //g'
++ sort
++ sed -e 1d
++ sed -E 's/\|\|.+$//g'
++ tr -d ' '
++ uniq
++ sed -e 1d
++ sed -E 's/(^.*)@([0-9]|[0-9].+$)/\1:\2/g'
+[Pipeline] withCredentials
+[Pipeline] {
+[Pipeline] pwd
+[Pipeline] sh
++ docker run -i --rm -w /workdir -v /apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build/21:/workdir nexus.corp.bankbtpn.co.id:50001/openshift/python-nexus-ubi8:3.8 python /opt/app-root/src/nx-firewall-asyncio-npm.py **** **** list_npm_nexus.txt
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"axios","version":"1.7.2"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+axios : 1.7.2 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"bcryptjs","version":"2.4.3"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+bcryptjs : 2.4.3 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"jsonwebtoken","version":"9.0.2"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+jsonwebtoken : 9.0.2 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"body-parser","version":"1.20.2"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+body-parser : 1.20.2 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"fs","version":"0.0.1-security"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+fs : 0.0.1-security pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"activedirectory2","version":"2.2.0"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+activedirectory2 : 2.2.0 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"ldapjs","version":"3.0.7"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+ldapjs : 3.0.7 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"ldapts","version":"7.0.12"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+ldapts : 7.0.12 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"express","version":"4.19.2"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+express : 4.19.2 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"multer","version":"1.4.5-lts.1"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+multer : 1.4.5-lts.1 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"xlsx","version":"0.18.5"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+xlsx : 0.18.5 pass
+[Pipeline] echo
+bypassed by security
+[Pipeline] echo
+bypassed by security
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"supertest","version":"6.3.4"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+supertest : 6.3.4 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"cors","version":"2.8.5"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+cors : 2.8.5 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"axios-mock-adapter","version":"1.22.0"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+axios-mock-adapter : 1.22.0 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"jest-mock-promise","version":"2.0.2"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+jest-mock-promise : 2.0.2 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"socket.io-client","version":"4.7.5"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+socket.io-client : 4.7.5 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"jest","version":"29.7.0"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+jest : 29.7.0 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"socket.io","version":"4.7.5"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+socket.io : 4.7.5 pass
+[Pipeline] sh
++ curl -s -k -X POST -H 'Content-Type: application/json' -d '{"components": [{"componentIdentifier":{"format":"npm","coordinates":{"packageId":"dotenv","version":"16.4.5"}}}]}' https://nexus-fw-middleware-consec.apps.ms-3.corp.bankbtpn.co.id/components
+[Pipeline] echo
+dotenv : 16.4.5 pass
+[Pipeline] }
+[Pipeline] // withCredentials
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] configFileProvider
+provisioning config files...
+copy managed file [var_email] to file:/apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build/21@tmp/config6081419882963845406tmp
+[Pipeline] {
+[Pipeline] readProperties
+[Pipeline] withCredentials
+[Pipeline] {
+[Pipeline] sh
++ grep sonar.login sonar-project.properties
+[Pipeline] echo
+sonar.login = 1
+[Pipeline] echo
+sonar.login doesnt exist, writing sonar.login credentials to sonar-project.properties
+[Pipeline] sh
++ echo '#SONARQUBE CREDENTIALS'
+[Pipeline] sh
++ echo sonar.login=****
+[Pipeline] sh
++ echo ' '
+[Pipeline] }
+[Pipeline] // withCredentials
+[Pipeline] stage
+[Pipeline] { (Run Test Coverage)
+[Pipeline] sh
++ cat sonar-project.properties
++ grep -v '^#'
++ grep sonar.sources
++ cut -d= -f2
++ cut -d / -f1
+[Pipeline] echo
+.
+[Pipeline] sh
++ sed -i /sonar.exclusions/d sonar-project.properties
+[Pipeline] sh
++ sed -i /sonar.inclusions/d sonar-project.properties
+[Pipeline] sh
++ echo ' '
+[Pipeline] sh
++ sed -i /sonar.sources/d sonar-project.properties
+[Pipeline] sh
++ echo ' '
+[Pipeline] sh
++ echo sonar.sources=.
+[Pipeline] pwd
+[Pipeline] sh
++ docker run -i --rm -w /workdir -v /apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build/21:/workdir nexus.corp.bankbtpn.co.id:50003/openshift/build-artifact:latest npm run-script test:coverage
+
+> express-server@1.0.0 test:coverage
+> jest --runInBand --detectOpenHandles --coverage
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.log
+    Sending GraphQL query with organizationId: 1
+
+      at Object.log [as checkQuota] (handlers.js:67:13)
+
+  console.log
+    GraphQL response: {
+      "data": {
+        "kafka_quota": [
+          {
+            "quota_limit": 10,
+            "quota_used": 5
+          }
+        ]
+      }
+    }
+
+      at Object.log [as checkQuota] (handlers.js:76:13)
+
+  console.log
+    Quota data: [ { quota_limit: 10, quota_used: 5 } ]
+
+      at Object.log [as checkQuota] (handlers.js:95:13)
+
+  console.log
+    Sending GraphQL query with organizationId: 1
+
+      at Object.log [as checkQuota] (handlers.js:67:13)
+
+  console.log
+    GraphQL response: {
+      "data": {
+        "kafka_quota": [
+          {
+            "quota_limit": 5,
+            "quota_used": 5
+          }
+        ]
+      }
+    }
+
+      at Object.log [as checkQuota] (handlers.js:76:13)
+
+  console.log
+    Quota data: [ { quota_limit: 5, quota_used: 5 } ]
+
+      at Object.log [as checkQuota] (handlers.js:95:13)
+
+  console.log
+    Sending GraphQL query with organizationId: 1
+
+      at Object.log [as checkQuota] (handlers.js:67:13)
+
+  console.error
+    Error checking quota: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to communicate with Hasura.',
+          error: 'Network error'
+        },
+        status: 500
+      }
+    }
+
+      126 |     res.status(200).json({ success: true });
+      127 |   } catch (error) {
+    > 128 |     console.error('Error checking quota:', error);
+          |             ^
+      129 |     const errorMessage = error.response?.data?.error || error.message || 'An error occurred';
+      130 |     res.status(500).json({ success: false, message: 'Failed to check quota', error: errorMessage });
+      131 |   }
+
+      at Object.error [as checkQuota] (handlers.js:128:13)
+      at Object.<anonymous> (__test__/checkQuota.test.js:137:7)
+
+  console.log
+    Sending GraphQL query with organizationId: 1
+
+      at Object.log [as checkQuota] (handlers.js:67:13)
+
+  console.log
+    GraphQL response: {
+      "errors": [
+        {
+          "message": "GraphQL query error"
+        }
+      ]
+    }
+
+      at Object.log [as checkQuota] (handlers.js:76:13)
+
+  console.error
+    GraphQL query errors: [ { message: 'GraphQL query error' } ]
+
+      77 |
+      78 |     if (response.data.errors) {
+    > 79 |       console.error('GraphQL query errors:', response.data.errors);
+         |               ^
+      80 |       res.status(500).json({ success: false, message: 'GraphQL query failed', errors: response.data.errors });
+      81 |       return;
+      82 |     }
+
+      at Object.error [as checkQuota] (handlers.js:79:15)
+      at Object.<anonymous> (__test__/checkQuota.test.js:162:7)
+
+  console.log
+    Sending GraphQL query with organizationId: 1
+
+      at Object.log [as checkQuota] (handlers.js:67:13)
+
+  console.log
+    GraphQL response: {
+      "data": {
+        "kafka_quota": []
+      }
+    }
+
+      at Object.log [as checkQuota] (handlers.js:76:13)
+
+  console.log
+    No quota information found for organizationId: 1
+
+      at Object.log [as checkQuota] (handlers.js:87:15)
+
+  console.log
+    Sending GraphQL query with organizationId: 1
+
+      at Object.log [as checkQuota] (handlers.js:67:13)
+
+  console.log
+    GraphQL response: {
+      "data": {
+        "kafka_quota": [
+          {
+            "quota_limit": 10,
+            "quota_used": 5
+          }
+        ]
+      }
+    }
+
+      at Object.log [as checkQuota] (handlers.js:76:13)
+
+  console.log
+    Quota data: [ { quota_limit: 10, quota_used: 5 } ]
+
+      at Object.log [as checkQuota] (handlers.js:95:13)
+
+  console.error
+    GraphQL mutation errors: [ { message: 'GraphQL mutation error' } ]
+
+      119 |
+      120 |     if (updateResponse.data.errors) {
+    > 121 |       console.error('GraphQL mutation errors:', updateResponse.data.errors);
+          |               ^
+      122 |       res.status(500).json({ success: false, message: 'GraphQL mutation failed', errors: updateResponse.data.errors });
+      123 |       return;
+      124 |     }
+
+      at Object.error [as checkQuota] (handlers.js:121:15)
+      at Object.<anonymous> (__test__/checkQuota.test.js:248:7)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/checkQuota.test.js
+  API integration tests
+    Check Quota
+      ��� should return success when quota is available (12 ms)
+      ��� should return error when quota is exceeded (5 ms)
+      ��� should return error when GraphQL query fails (7 ms)
+      ��� should handle GraphQL query errors (11 ms)
+      ��� should return error when no quota information is found (5 ms)
+      ��� should handle GraphQL mutation errors (6 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.log
+    New client connected
+
+      at Namespace.log (webSocket.js:13:13)
+
+  console.log
+    Socket connected
+
+      at Socket.log (__test__/app.test.js:198:15)
+
+  console.log
+    Socket disconnected
+
+      at Socket.log (__test__/app.test.js:204:15)
+
+  console.log
+    Client disconnected
+
+      at Socket.log (webSocket.js:15:15)
+          at Map.forEach (<anonymous>)
+          at Map.forEach (<anonymous>)
+
+  console.log
+    Server closed
+
+      at log (app.js:35:17)
+
+PASS __test__/app.test.js
+  Express App
+    ��� should respond with 404 for unknown routes (103 ms)
+    ��� should handle create-kafka-topic route (67 ms)
+    ��� should handle list-kafka-topics-sit route (28 ms)
+    ��� should handle list-kafka-topics-uat route (42 ms)
+    ��� should handle store-notification route (38 ms)
+    ��� should handle get-notifications route (16 ms)
+    ��� should handle update-notification route (15 ms)
+    ��� should handle grant-access route (15 ms)
+    ��� should handle list-acls route (18 ms)
+    ��� should handle update-kafka-topic route (15 ms)
+    ��� should handle fetching-message-notifications route (14 ms)
+    ��� should handle promote-topic-uat route (16 ms)
+    ��� should handle add-member route (17 ms)
+    ��� should handle get-topic-details route (15 ms)
+    ��� should handle reject-notification route (16 ms)
+    ��� should handle check-quota route (15 ms)
+  WebSocket Connection
+    ��� should handle socket connection and disconnection (61 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.error
+    Error in createKafkaTopic: {
+      response: {
+        data: { error_code: 40002, message: 'Topic already exists.' },
+        status: 409
+      }
+    }
+
+      221 |     }
+      222 |   } catch (error) {
+    > 223 |     console.error("Error in createKafkaTopic:", error);
+          |             ^
+      224 |     if (error.response && error.response.status === 409) {
+      225 |       res.status(409).json({ success: false, message: "Topic already exists" });
+      226 |     } else {
+
+      at error (handlers.js:223:13)
+
+  console.error
+    Error in createKafkaTopic: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to create topic',
+          error: 'Network error'
+        },
+        status: 500
+      }
+    }
+
+      221 |     }
+      222 |   } catch (error) {
+    > 223 |     console.error("Error in createKafkaTopic:", error);
+          |             ^
+      224 |     if (error.response && error.response.status === 409) {
+      225 |       res.status(409).json({ success: false, message: "Topic already exists" });
+      226 |     } else {
+
+      at error (handlers.js:223:13)
+
+  console.error
+    Error in createKafkaTopic: Error: Failed to insert data into Hasura.
+        at createKafkaTopic (/workdir/handlers.js:217:15)
+        at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+      221 |     }
+      222 |   } catch (error) {
+    > 223 |     console.error("Error in createKafkaTopic:", error);
+          |             ^
+      224 |     if (error.response && error.response.status === 409) {
+      225 |       res.status(409).json({ success: false, message: "Topic already exists" });
+      226 |     } else {
+
+      at error (handlers.js:223:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/createTopic.test.js
+  API integration tests
+    Create Kafka Topic
+      ��� should create a new Kafka topic (29 ms)
+      ��� should handle topic already exists error (17 ms)
+      ��� should handle failure to create Kafka topic (16 ms)
+      ��� should handle failure to insert data into Hasura (68 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.error
+    Error in getTopicDetails: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to fetch Kafka topic details.',
+          error: 'Network error'
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      413 |     res.json({ success: true, topicDetails: combinedTopicDetails });
+      414 |   } catch (error) {
+    > 415 |     console.error("Error in getTopicDetails:", error);
+          |             ^
+      416 |     let message = 'An error occurred.';
+      417 |     if (error.response && error.response.data) {
+      418 |       if (error.response.data.message.includes('Kafka topic details')) {
+
+      at error (handlers.js:415:13)
+
+  console.error
+    Error in getTopicDetails: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to fetch Hasura data.',
+          error: 'Network error'
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      413 |     res.json({ success: true, topicDetails: combinedTopicDetails });
+      414 |   } catch (error) {
+    > 415 |     console.error("Error in getTopicDetails:", error);
+          |             ^
+      416 |     let message = 'An error occurred.';
+      417 |     if (error.response && error.response.data) {
+      418 |       if (error.response.data.message.includes('Kafka topic details')) {
+
+      at error (handlers.js:415:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/getTopicDetails.test.js
+  API integration tests
+    Get Topic Details
+      ��� should return topic details successfully for SIT environment (23 ms)
+      ��� should return topic details successfully for UAT environment (14 ms)
+      ��� should return error when failing to fetch Kafka topic details (15 ms)
+      ��� should return error when failing to fetch Hasura data (18 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.error
+    Error fetching notifications: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to fetch notifications',
+          errors: [Array]
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      801 |     res.json({ success: true, notifications });
+      802 |   } catch (error) {
+    > 803 |     console.error('Error fetching notifications:', error);
+          |             ^
+      804 |     res.status(500).json({ success: false, message: 'Failed to fetch notifications', error: error.message });
+      805 |   }
+      806 | };
+
+      at error (handlers.js:803:13)
+
+  console.error
+    GraphQL errors: [ { message: 'GraphQL error' } ]
+
+      794 |
+      795 |     if (response.data.errors) {
+    > 796 |       console.error('GraphQL errors:', response.data.errors);
+          |               ^
+      797 |       return res.status(500).json({ success: false, message: 'Failed to fetch notifications', errors: response.data.errors });
+      798 |     }
+      799 |
+
+      at error (handlers.js:796:15)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/fetchMessageNotification.test.js
+  API integration tests
+    Fetching Message Notification
+      ��� should fetch message notifications successfully (16 ms)
+      ��� should return error when approver is not provided (23 ms)
+      ��� should return error when failing to fetch notifications (16 ms)
+      ��� should return error when GraphQL errors are present in the response (15 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.log
+    Topic successfully created in Kafka UAT
+
+      at log (handlers.js:1099:15)
+
+  console.error
+    No topic details found for: nonexistentTopic
+
+      1062 |       return response.data.data.kafka_confluent[0];
+      1063 |     } else {
+    > 1064 |       console.error('No topic details found for:', topicName);
+           |               ^
+      1065 |       return null;
+      1066 |     }
+      1067 |   } catch (error) {
+
+      at error (handlers.js:1064:15)
+      at promoteTopicUat (handlers.js:1078:26)
+
+  console.error
+    Error promoting topic to UAT: {
+      response: {
+        status: 500,
+        data: { message: 'Failed to create topic in Kafka UAT' }
+      }
+    }
+
+      1156 |     }
+      1157 |   } catch (error) {
+    > 1158 |     console.error("Error promoting topic to UAT:", error);
+           |             ^
+      1159 |     res.status(500).json({
+      1160 |       success: false, message: "Failed to promote topic to UAT", error: error.message
+      1161 |     });
+
+      at error (handlers.js:1158:13)
+
+  console.error
+    Error fetching topic details for promotion: Error: Network error
+        at Function.<anonymous> (/workdir/__test__/promoteTopicUat.test.js:155:31)
+        at /workdir/node_modules/jest-mock/build/index.js:397:39
+        at Function.<anonymous> (/workdir/node_modules/jest-mock/build/index.js:404:13)
+        at Function.mockConstructor (/workdir/node_modules/jest-mock/build/index.js:148:19)
+        at Function.wrap (eval at _createMockFunction (/workdir/node_modules/jest-mock/build/index.js:566:31), <anonymous>:3:50)
+        at post (/workdir/handlers.js:1051:34)
+        at fetchTopicDetailsForPromote (/workdir/handlers.js:1078:32)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at next (/workdir/node_modules/express/lib/router/route.js:149:13)
+        at Route.dispatch (/workdir/node_modules/express/lib/router/route.js:119:3)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at /workdir/node_modules/express/lib/router/index.js:284:15
+        at Function.process_params (/workdir/node_modules/express/lib/router/index.js:346:12)
+        at next (/workdir/node_modules/express/lib/router/index.js:280:10)
+        at Function.handle (/workdir/node_modules/express/lib/router/index.js:175:3)
+        at router (/workdir/node_modules/express/lib/router/index.js:47:12)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at trim_prefix (/workdir/node_modules/express/lib/router/index.js:328:13)
+        at /workdir/node_modules/express/lib/router/index.js:286:9
+        at Function.process_params (/workdir/node_modules/express/lib/router/index.js:346:12)
+        at next (/workdir/node_modules/express/lib/router/index.js:280:10)
+        at /workdir/node_modules/body-parser/lib/read.js:137:5
+        at AsyncResource.runInAsyncScope (async_hooks.js:198:9)
+        at invokeCallback (/workdir/node_modules/raw-body/index.js:238:16)
+        at done (/workdir/node_modules/raw-body/index.js:227:7)
+        at IncomingMessage.onEnd (/workdir/node_modules/raw-body/index.js:287:7)
+        at IncomingMessage.emit (events.js:327:22)
+        at endReadableNT (internal/streams/readable.js:1327:12)
+        at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+      1066 |     }
+      1067 |   } catch (error) {
+    > 1068 |     console.error('Error fetching topic details for promotion:', error);
+           |             ^
+      1069 |     throw error;
+      1070 |   }
+      1071 | };
+
+      at error (handlers.js:1068:13)
+      at promoteTopicUat (handlers.js:1078:26)
+
+  console.error
+    Error promoting topic to UAT: Error: Network error
+        at Function.<anonymous> (/workdir/__test__/promoteTopicUat.test.js:155:31)
+        at /workdir/node_modules/jest-mock/build/index.js:397:39
+        at Function.<anonymous> (/workdir/node_modules/jest-mock/build/index.js:404:13)
+        at Function.mockConstructor (/workdir/node_modules/jest-mock/build/index.js:148:19)
+        at Function.wrap (eval at _createMockFunction (/workdir/node_modules/jest-mock/build/index.js:566:31), <anonymous>:3:50)
+        at post (/workdir/handlers.js:1051:34)
+        at fetchTopicDetailsForPromote (/workdir/handlers.js:1078:32)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at next (/workdir/node_modules/express/lib/router/route.js:149:13)
+        at Route.dispatch (/workdir/node_modules/express/lib/router/route.js:119:3)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at /workdir/node_modules/express/lib/router/index.js:284:15
+        at Function.process_params (/workdir/node_modules/express/lib/router/index.js:346:12)
+        at next (/workdir/node_modules/express/lib/router/index.js:280:10)
+        at Function.handle (/workdir/node_modules/express/lib/router/index.js:175:3)
+        at router (/workdir/node_modules/express/lib/router/index.js:47:12)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at trim_prefix (/workdir/node_modules/express/lib/router/index.js:328:13)
+        at /workdir/node_modules/express/lib/router/index.js:286:9
+        at Function.process_params (/workdir/node_modules/express/lib/router/index.js:346:12)
+        at next (/workdir/node_modules/express/lib/router/index.js:280:10)
+        at /workdir/node_modules/body-parser/lib/read.js:137:5
+        at AsyncResource.runInAsyncScope (async_hooks.js:198:9)
+        at invokeCallback (/workdir/node_modules/raw-body/index.js:238:16)
+        at done (/workdir/node_modules/raw-body/index.js:227:7)
+        at IncomingMessage.onEnd (/workdir/node_modules/raw-body/index.js:287:7)
+        at IncomingMessage.emit (events.js:327:22)
+        at endReadableNT (internal/streams/readable.js:1327:12)
+        at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+      1156 |     }
+      1157 |   } catch (error) {
+    > 1158 |     console.error("Error promoting topic to UAT:", error);
+           |             ^
+      1159 |     res.status(500).json({
+      1160 |       success: false, message: "Failed to promote topic to UAT", error: error.message
+      1161 |     });
+
+      at error (handlers.js:1158:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/promoteTopicUat.test.js
+  API integration tests
+    promoteTopicUat
+      ��� should promote topic to UAT successfully (42 ms)
+      ��� should return 404 when topic details are not found (19 ms)
+      ��� should return error when failing to create topic in Kafka UAT (24 ms)
+      ��� should return error when failing to insert topic details into Hasura (71 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.error
+    GraphQL Error: Organization not found
+
+      1190 |
+      1191 |     if (orgResponse.data.errors || orgResponse.data.data.kafka_organizations.length === 0) {
+    > 1192 |       console.error('GraphQL Error:', orgResponse.data.errors || 'Organization not found');
+           |               ^
+      1193 |       throw new Error('Failed to find organization');
+      1194 |     }
+      1195 |
+
+      at error (handlers.js:1192:15)
+
+  console.error
+    Error creating user: Error: Failed to find organization
+        at addMember (/workdir/handlers.js:1193:13)
+        at processTicksAndRejections (internal/process/task_queues.js:93:5)
+
+      1244 |     res.json({ success: true, message: 'User created successfully!' });
+      1245 |   } catch (error) {
+    > 1246 |     console.error('Error creating user:', error);
+           |             ^
+      1247 |     res.status(500).json({ success: false, message: error.message });
+      1248 |   }
+      1249 | };
+
+      at error (handlers.js:1246:13)
+
+  console.error
+    Error creating user: Error: Network error
+        at Function.<anonymous> (/workdir/__test__/addMember.test.js:139:31)
+        at /workdir/node_modules/jest-mock/build/index.js:397:39
+        at Function.<anonymous> (/workdir/node_modules/jest-mock/build/index.js:404:13)
+        at Function.mockConstructor (/workdir/node_modules/jest-mock/build/index.js:148:19)
+        at Function.wrap (eval at _createMockFunction (/workdir/node_modules/jest-mock/build/index.js:566:31), <anonymous>:3:50)
+        at post (/workdir/handlers.js:1182:37)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at next (/workdir/node_modules/express/lib/router/route.js:149:13)
+        at Route.dispatch (/workdir/node_modules/express/lib/router/route.js:119:3)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at /workdir/node_modules/express/lib/router/index.js:284:15
+        at Function.process_params (/workdir/node_modules/express/lib/router/index.js:346:12)
+        at next (/workdir/node_modules/express/lib/router/index.js:280:10)
+        at Function.handle (/workdir/node_modules/express/lib/router/index.js:175:3)
+        at router (/workdir/node_modules/express/lib/router/index.js:47:12)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at trim_prefix (/workdir/node_modules/express/lib/router/index.js:328:13)
+        at /workdir/node_modules/express/lib/router/index.js:286:9
+        at Function.process_params (/workdir/node_modules/express/lib/router/index.js:346:12)
+        at next (/workdir/node_modules/express/lib/router/index.js:280:10)
+        at /workdir/node_modules/body-parser/lib/read.js:137:5
+        at AsyncResource.runInAsyncScope (async_hooks.js:198:9)
+        at invokeCallback (/workdir/node_modules/raw-body/index.js:238:16)
+        at done (/workdir/node_modules/raw-body/index.js:227:7)
+        at IncomingMessage.onEnd (/workdir/node_modules/raw-body/index.js:287:7)
+        at IncomingMessage.emit (events.js:327:22)
+        at endReadableNT (internal/streams/readable.js:1327:12)
+        at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+      1244 |     res.json({ success: true, message: 'User created successfully!' });
+      1245 |   } catch (error) {
+    > 1246 |     console.error('Error creating user:', error);
+           |             ^
+      1247 |     res.status(500).json({ success: false, message: error.message });
+      1248 |   }
+      1249 | };
+
+      at error (handlers.js:1246:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/addMember.test.js
+  API integration tests
+    addMember
+      ��� should add a member successfully (36 ms)
+      ��� should return 400 if required fields are missing (19 ms)
+      ��� should return 500 if organization is not found (78 ms)
+      ��� should return error when failing to insert user into database (29 ms)
+
+PASS __test__/config.test.js
+  config
+    ��� should use environment variables if they are set (8 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.log
+    Backend received from frontend: testTopic 3600000 Updated description http://updated-url.com
+
+      at log (handlers.js:432:11)
+
+  console.log
+    Kafka REST Proxy response: 200
+
+      at log (handlers.js:449:15)
+
+  console.log
+    Hasura update successful
+
+      at log (handlers.js:488:17)
+
+  console.log
+    Backend received from frontend: testTopic 3600000 Updated description http://updated-url.com
+
+      at log (handlers.js:432:11)
+
+  console.error
+    Error during the update process: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to update Kafka topic.',
+          error: 'Network error'
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      499 |     }
+      500 |   } catch (error) {
+    > 501 |     console.error("Error during the update process:", error);
+          |             ^
+      502 |     res.status(500).json({
+      503 |       success: false,
+      504 |       message: error.message || 'Failed to update topic.',
+
+      at error (handlers.js:501:13)
+
+  console.log
+    Backend received from frontend: testTopic 3600000 Updated description http://updated-url.com
+
+      at log (handlers.js:432:11)
+
+  console.log
+    Kafka REST Proxy response: 200
+
+      at log (handlers.js:449:15)
+
+  console.error
+    Error during the update process: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to update Hasura data.',
+          error: 'Network error'
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      499 |     }
+      500 |   } catch (error) {
+    > 501 |     console.error("Error during the update process:", error);
+          |             ^
+      502 |     res.status(500).json({
+      503 |       success: false,
+      504 |       message: error.message || 'Failed to update topic.',
+
+      at error (handlers.js:501:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/updateKafkaTopic.test.js
+  API integration tests
+    Update Kafka Topic
+      ��� should update Kafka topic successfully (47 ms)
+      ��� should return error when failing to update Kafka topic (34 ms)
+      ��� should return error when failing to update Hasura data (44 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.log
+    Requester: requesterUser Approver: approverUser
+
+      at log (handlers.js:934:15)
+
+  console.log
+    Create response: { data: { insert_kafka_notification: { returning: [Array] } } }
+
+      at log (handlers.js:949:15)
+
+  console.error
+    Error rejecting notification: {
+      response: {
+        data: {
+          success: false,
+          message: 'GraphQL mutation failed',
+          errors: [Array]
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      958 |     }
+      959 |   } catch (error) {
+    > 960 |     console.error('Error rejecting notification:', error);
+          |             ^
+      961 |     res.status(500).json({ success: false, message: 'Error rejecting notification.' });
+      962 |   }
+      963 | };
+
+      at error (handlers.js:960:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/rejectNotification.test.js
+  API integration tests
+    Reject Notification
+      ��� should reject notification and create a new notification for requester successfully (32 ms)
+      ��� should return error when failing to reject notification (19 ms)
+      ��� should return error when GraphQL mutation fails (19 ms)
+
+PASS __test__/axiosService.test.js
+  AxiosService
+    post
+      ��� should make a POST request with the correct SIT URL (4 ms)
+      ��� should make a POST request with the correct UAT URL (2 ms)
+      ��� should make a POST request with default parameters (2 ms)
+    get
+      ��� should make a GET request with the correct SIT URL (2 ms)
+      ��� should make a GET request with the correct UAT URL (2 ms)
+      ��� should make a GET request with default parameters (2 ms)
+    put
+      ��� should make a PUT request with the correct URL (3 ms)
+      ��� should make a PUT request with default options (2 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.log
+    request: {
+      approver: 'approverUser',
+      requester: 'requesterUser',
+      topic_name: 'testTopic',
+      created_at: '2024-07-04T07:25:50.155Z',
+      request_type: 'CREATE_TOPIC',
+      principal: 'principalUser',
+      partitions_count: 3,
+      retention_ms: 3600000,
+      description: 'Test description',
+      asset_stage: 'SIT',
+      asset_owner: 'Test owner',
+      documentation_url: 'http://test.com'
+    }
+
+      at log (handlers.js:575:11)
+
+  console.log
+    GraphQL response: { data: { insert_kafka_notification: { returning: [Array] } } }
+
+      at log (handlers.js:655:15)
+
+  console.log
+    request: {
+      approver: 'approverUser',
+      requester: 'requesterUser',
+      topic_name: 'testTopic',
+      created_at: '2024-07-04T07:25:50.182Z',
+      request_type: 'CREATE_TOPIC',
+      principal: 'principalUser',
+      partitions_count: 3,
+      retention_ms: 3600000,
+      description: 'Test description',
+      asset_stage: 'SIT',
+      asset_owner: 'Test owner',
+      documentation_url: 'http://test.com'
+    }
+
+      at log (handlers.js:575:11)
+
+  console.error
+    Error storing notification: {
+      response: {
+        data: {
+          success: false,
+          message: 'GraphQL mutation failed',
+          errors: [Array]
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      667 |     res.status(200).json({ success: true, message: 'Notification stored successfully' });
+      668 |   } catch (error) {
+    > 669 |     console.error('Error storing notification:', error);
+          |             ^
+      670 |     res.status(500).json({
+      671 |       success: false,
+      672 |       message: 'Failed to store notification',
+
+      at error (handlers.js:669:13)
+
+  console.log
+    request: {
+      approver: 'approverUser',
+      requester: 'requesterUser',
+      topic_name: 'testTopic',
+      created_at: '2024-07-04T07:25:50.200Z',
+      request_type: 'CREATE_TOPIC',
+      principal: 'principalUser',
+      partitions_count: 3,
+      retention_ms: 3600000,
+      description: 'Test description',
+      asset_stage: 'SIT',
+      asset_owner: 'Test owner',
+      documentation_url: 'http://test.com'
+    }
+
+      at log (handlers.js:575:11)
+
+  console.error
+    Error storing notification: Error: Network error
+        at Function.<anonymous> (/workdir/__test__/storeNotification.test.js:106:31)
+        at /workdir/node_modules/jest-mock/build/index.js:397:39
+        at Function.<anonymous> (/workdir/node_modules/jest-mock/build/index.js:404:13)
+        at Function.mockConstructor (/workdir/node_modules/jest-mock/build/index.js:148:19)
+        at Function.wrap (eval at _createMockFunction (/workdir/node_modules/jest-mock/build/index.js:566:31), <anonymous>:3:50)
+        at post (/workdir/handlers.js:634:36)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at next (/workdir/node_modules/express/lib/router/route.js:149:13)
+        at Route.dispatch (/workdir/node_modules/express/lib/router/route.js:119:3)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at /workdir/node_modules/express/lib/router/index.js:284:15
+        at Function.process_params (/workdir/node_modules/express/lib/router/index.js:346:12)
+        at next (/workdir/node_modules/express/lib/router/index.js:280:10)
+        at Function.handle (/workdir/node_modules/express/lib/router/index.js:175:3)
+        at router (/workdir/node_modules/express/lib/router/index.js:47:12)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at trim_prefix (/workdir/node_modules/express/lib/router/index.js:328:13)
+        at /workdir/node_modules/express/lib/router/index.js:286:9
+        at Function.process_params (/workdir/node_modules/express/lib/router/index.js:346:12)
+        at next (/workdir/node_modules/express/lib/router/index.js:280:10)
+        at /workdir/node_modules/body-parser/lib/read.js:137:5
+        at AsyncResource.runInAsyncScope (async_hooks.js:198:9)
+        at invokeCallback (/workdir/node_modules/raw-body/index.js:238:16)
+        at done (/workdir/node_modules/raw-body/index.js:227:7)
+        at IncomingMessage.onEnd (/workdir/node_modules/raw-body/index.js:287:7)
+        at IncomingMessage.emit (events.js:327:22)
+        at endReadableNT (internal/streams/readable.js:1327:12)
+        at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+      667 |     res.status(200).json({ success: true, message: 'Notification stored successfully' });
+      668 |   } catch (error) {
+    > 669 |     console.error('Error storing notification:', error);
+          |             ^
+      670 |     res.status(500).json({
+      671 |       success: false,
+      672 |       message: 'Failed to store notification',
+
+      at error (handlers.js:669:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/storeNotification.test.js
+  API integration tests
+    Store Notification
+      ��� should store notification successfully (27 ms)
+      ��� should return error when GraphQL mutation fails (19 ms)
+      ��� should return error when general error occurs (70 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.error
+    Error fetching notifications: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to fetch notifications',
+          error: 'Network error'
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      745 |     }
+      746 |   } catch (error) {
+    > 747 |     console.error('Error fetching notifications:', error);
+          |             ^
+      748 |     res.status(500).json({ success: false, message: 'Failed to fetch notifications', error: error.message || error });
+      749 |   }
+      750 | };
+
+      at error (handlers.js:747:13)
+
+  console.error
+    Notification data not found in the response
+
+      741 |       res.json({ success: true, notifications });
+      742 |     } else {
+    > 743 |       console.error('Notification data not found in the response');
+          |               ^
+      744 |       res.status(500).json({ success: false, message: 'Notification data not found' });
+      745 |     }
+      746 |   } catch (error) {
+
+      at error (handlers.js:743:15)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/getNotifications.test.js
+  API integration tests
+    Get Notifications
+      ��� should return notifications successfully (15 ms)
+      ��� should return error when approver is not provided (20 ms)
+      ��� should return error when organization is not provided (14 ms)
+      ��� should return error when failing to fetch notifications (16 ms)
+      ��� should return error when notification data is not found (18 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.log
+    Sending request to Kafka REST Proxy
+
+      at log (handlers.js:988:15)
+
+  console.log
+    Request payload: {
+      resource_type: 'TOPIC',
+      resource_name: 'testTopic',
+      pattern_type: 'LITERAL',
+      principal: 'User:User:principalUser',
+      host: '*',
+      operation: 'WRITE',
+      permission: 'ALLOW'
+    }
+
+      at log (handlers.js:989:15)
+
+  console.log
+    Sending request to Kafka REST Proxy
+
+      at log (handlers.js:988:15)
+
+  console.log
+    Request payload: {
+      resource_type: 'TOPIC',
+      resource_name: 'testTopic',
+      pattern_type: 'LITERAL',
+      principal: 'User:User:principalUser',
+      host: '*',
+      operation: 'WRITE',
+      permission: 'ALLOW'
+    }
+
+      at log (handlers.js:989:15)
+
+  console.error
+    Error making POST request to Kafka REST Proxy: { response: { status: 400, data: { error: 'Bad Request' } } }
+
+       997 |     res.json({ success: true, message: 'Access granted to the topic' });
+       998 |   } catch (error) {
+    >  999 |     console.error('Error making POST request to Kafka REST Proxy:', error);
+           |             ^
+      1000 |
+      1001 |     // Request Error Handling
+      1002 |     if (error.response) {
+
+      at error (handlers.js:999:13)
+
+  console.log
+    { error: 'Bad Request' }
+
+      at log (handlers.js:1005:15)
+
+  console.log
+    400
+
+      at log (handlers.js:1006:15)
+
+  console.log
+    undefined
+
+      at log (handlers.js:1007:15)
+
+  console.log
+    Sending request to Kafka REST Proxy
+
+      at log (handlers.js:988:15)
+
+  console.log
+    Request payload: {
+      resource_type: 'TOPIC',
+      resource_name: 'testTopic',
+      pattern_type: 'LITERAL',
+      principal: 'User:User:principalUser',
+      host: '*',
+      operation: 'WRITE',
+      permission: 'ALLOW'
+    }
+
+      at log (handlers.js:989:15)
+
+  console.error
+    Error making POST request to Kafka REST Proxy: { request: {} }
+
+       997 |     res.json({ success: true, message: 'Access granted to the topic' });
+       998 |   } catch (error) {
+    >  999 |     console.error('Error making POST request to Kafka REST Proxy:', error);
+           |             ^
+      1000 |
+      1001 |     // Request Error Handling
+      1002 |     if (error.response) {
+
+      at error (handlers.js:999:13)
+
+  console.log
+    {}
+
+      at log (handlers.js:1015:15)
+
+  console.log
+    Sending request to Kafka REST Proxy
+
+      at log (handlers.js:988:15)
+
+  console.log
+    Request payload: {
+      resource_type: 'TOPIC',
+      resource_name: 'testTopic',
+      pattern_type: 'LITERAL',
+      principal: 'User:User:principalUser',
+      host: '*',
+      operation: 'WRITE',
+      permission: 'ALLOW'
+    }
+
+      at log (handlers.js:989:15)
+
+  console.error
+    Error making POST request to Kafka REST Proxy: Error: Network Error
+        at Object.<anonymous> (/workdir/__test__/grantAccessTopic.test.js:98:24)
+        at /workdir/node_modules/jest-mock/build/index.js:397:39
+        at Object.<anonymous> (/workdir/node_modules/jest-mock/build/index.js:404:13)
+        at Object.mockConstructor (/workdir/node_modules/jest-mock/build/index.js:148:19)
+        at Object.post (eval at _createMockFunction (/workdir/node_modules/jest-mock/build/index.js:566:31), <anonymous>:3:50)
+        at post (/workdir/handlers.js:992:43)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at next (/workdir/node_modules/express/lib/router/route.js:149:13)
+        at Route.dispatch (/workdir/node_modules/express/lib/router/route.js:119:3)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at /workdir/node_modules/express/lib/router/index.js:284:15
+        at Function.process_params (/workdir/node_modules/express/lib/router/index.js:346:12)
+        at next (/workdir/node_modules/express/lib/router/index.js:280:10)
+        at Function.handle (/workdir/node_modules/express/lib/router/index.js:175:3)
+        at router (/workdir/node_modules/express/lib/router/index.js:47:12)
+        at Layer.handle [as handle_request] (/workdir/node_modules/express/lib/router/layer.js:95:5)
+        at trim_prefix (/workdir/node_modules/express/lib/router/index.js:328:13)
+        at /workdir/node_modules/express/lib/router/index.js:286:9
+        at Function.process_params (/workdir/node_modules/express/lib/router/index.js:346:12)
+        at next (/workdir/node_modules/express/lib/router/index.js:280:10)
+        at /workdir/node_modules/body-parser/lib/read.js:137:5
+        at AsyncResource.runInAsyncScope (async_hooks.js:198:9)
+        at invokeCallback (/workdir/node_modules/raw-body/index.js:238:16)
+        at done (/workdir/node_modules/raw-body/index.js:227:7)
+        at IncomingMessage.onEnd (/workdir/node_modules/raw-body/index.js:287:7)
+        at IncomingMessage.emit (events.js:327:22)
+        at endReadableNT (internal/streams/readable.js:1327:12)
+        at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+       997 |     res.json({ success: true, message: 'Access granted to the topic' });
+       998 |   } catch (error) {
+    >  999 |     console.error('Error making POST request to Kafka REST Proxy:', error);
+           |             ^
+      1000 |
+      1001 |     // Request Error Handling
+      1002 |     if (error.response) {
+
+      at error (handlers.js:999:13)
+
+  console.log
+    Error Network Error
+
+      at log (handlers.js:1023:15)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/grantAccessTopic.test.js
+  API integration tests
+    Grant Access to Topic
+      ��� should grant access to the topic successfully (22 ms)
+      ��� should return validation error for missing required fields (25 ms)
+      ��� should handle Kafka REST Proxy error response (20 ms)
+      ��� should handle no response from Kafka REST Proxy (33 ms)
+      ��� should handle setup error for request to Kafka REST Proxy (130 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.error
+    Error updating notification: {
+      response: {
+        data: {
+          success: false,
+          message: 'GraphQL mutation failed',
+          errors: [Array]
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      842 |     }
+      843 |   } catch (error) {
+    > 844 |     console.error('Error updating notification:', error);
+          |             ^
+      845 |     res.status(500).json({ success: false, message: 'Error updating notification.' });
+      846 |   }
+      847 | };
+
+      at error (handlers.js:844:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/updateNotification.test.js
+  API integration tests
+    Update Notification
+      ��� should update notification successfully (30 ms)
+      ��� should return error when GraphQL mutation fails (17 ms)
+      ��� should return error when a network error occurs (19 ms)
+
+  console.log
+    Authentication successful
+
+      at log (auth.js:14:13)
+
+  console.log
+    Hasura response: { data: { kafka_user: [ [Object] ] } }
+
+      at log (auth.js:50:13)
+
+  console.log
+    Authentication successful
+
+      at log (auth.js:14:13)
+
+  console.log
+    Hasura response: { data: { kafka_user: [] } }
+
+      at log (auth.js:50:13)
+
+  console.error
+    Authentication error: Error: Invalid credentials
+        at Object.<anonymous> (/workdir/__test__/auth.test.js:75:40)
+        at Promise.then.completed (/workdir/node_modules/jest-circus/build/utils.js:298:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/workdir/node_modules/jest-circus/build/utils.js:231:10)
+        at _callCircusTest (/workdir/node_modules/jest-circus/build/run.js:316:40)
+        at processTicksAndRejections (internal/process/task_queues.js:93:5)
+        at _runTest (/workdir/node_modules/jest-circus/build/run.js:252:3)
+        at _runTestsForDescribeBlock (/workdir/node_modules/jest-circus/build/run.js:126:9)
+        at _runTestsForDescribeBlock (/workdir/node_modules/jest-circus/build/run.js:121:9)
+        at run (/workdir/node_modules/jest-circus/build/run.js:71:3)
+        at runAndTransformResultsToJestFormat (/workdir/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+        at jestAdapter (/workdir/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+        at runTestInternal (/workdir/node_modules/jest-runner/build/runTest.js:367:16)
+        at runTest (/workdir/node_modules/jest-runner/build/runTest.js:444:34)
+
+      83 |
+      84 |   } catch (error) {
+    > 85 |     console.error('Authentication error:', error);
+         |             ^
+      86 |     if (error.message === 'Invalid credentials') {
+      87 |       res.status(401).send('Invalid username or password');
+      88 |     } else {
+
+      at error (auth.js:85:13)
+
+  console.log
+    Authentication successful
+
+      at log (auth.js:14:13)
+
+  console.error
+    Authentication error: Error: Internal server error
+        at Object.<anonymous> (/workdir/__test__/auth.test.js:87:34)
+        at Promise.then.completed (/workdir/node_modules/jest-circus/build/utils.js:298:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/workdir/node_modules/jest-circus/build/utils.js:231:10)
+        at _callCircusTest (/workdir/node_modules/jest-circus/build/run.js:316:40)
+        at processTicksAndRejections (internal/process/task_queues.js:93:5)
+        at _runTest (/workdir/node_modules/jest-circus/build/run.js:252:3)
+        at _runTestsForDescribeBlock (/workdir/node_modules/jest-circus/build/run.js:126:9)
+        at _runTestsForDescribeBlock (/workdir/node_modules/jest-circus/build/run.js:121:9)
+        at run (/workdir/node_modules/jest-circus/build/run.js:71:3)
+        at runAndTransformResultsToJestFormat (/workdir/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+        at jestAdapter (/workdir/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+        at runTestInternal (/workdir/node_modules/jest-runner/build/runTest.js:367:16)
+        at runTest (/workdir/node_modules/jest-runner/build/runTest.js:444:34)
+
+      83 |
+      84 |   } catch (error) {
+    > 85 |     console.error('Authentication error:', error);
+         |             ^
+      86 |     if (error.message === 'Invalid credentials') {
+      87 |       res.status(401).send('Invalid username or password');
+      88 |     } else {
+
+      at error (auth.js:85:13)
+
+PASS __test__/auth.test.js
+  Authentication API
+    ��� should authenticate and return a token (29 ms)
+    ��� should return 404 if user not found in database (26 ms)
+    ��� should return 401 if LDAP authentication fails (34 ms)
+    ��� should return 500 on internal server error (18 ms)
+
+PASS __test__/verifyToken.test.js
+  verifyTokenAndRole
+    ��� should return 401 if no token is provided (3 ms)
+    ��� should return 400 if token is invalid (2 ms)
+    ��� should call next if token is valid and no role is required (3 ms)
+    ��� should return 403 if user role does not match the required role (2 ms)
+    ��� should call next if token is valid and role matches the required role (2 ms)
+
+  console.log
+    Authentication successful
+
+      at log (ldapAuth.js:23:17)
+
+  console.error
+    LDAP authentication error: Error: Invalid credentials
+        at Object.<anonymous> (/workdir/__test__/ldapAuth.test.js:33:18)
+        at /workdir/node_modules/jest-mock/build/index.js:397:39
+        at Object.<anonymous> (/workdir/node_modules/jest-mock/build/index.js:404:13)
+        at Object.mockConstructor [as authenticate] (/workdir/node_modules/jest-mock/build/index.js:113:19)
+        at authenticate (/workdir/ldapAuth.js:16:8)
+        at new Promise (<anonymous>)
+        at authenticateLDAP (/workdir/ldapAuth.js:15:10)
+        at Object.authenticateLDAP (/workdir/__test__/ldapAuth.test.js:39:18)
+        at Promise.then.completed (/workdir/node_modules/jest-circus/build/utils.js:298:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/workdir/node_modules/jest-circus/build/utils.js:231:10)
+        at _callCircusTest (/workdir/node_modules/jest-circus/build/run.js:316:40)
+        at _runTest (/workdir/node_modules/jest-circus/build/run.js:252:3)
+        at _runTestsForDescribeBlock (/workdir/node_modules/jest-circus/build/run.js:126:9)
+        at _runTestsForDescribeBlock (/workdir/node_modules/jest-circus/build/run.js:121:9)
+        at run (/workdir/node_modules/jest-circus/build/run.js:71:3)
+        at runAndTransformResultsToJestFormat (/workdir/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+        at jestAdapter (/workdir/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+        at runTestInternal (/workdir/node_modules/jest-runner/build/runTest.js:367:16)
+        at runTest (/workdir/node_modules/jest-runner/build/runTest.js:444:34)
+
+      16 |     ad.authenticate(`${username}@dev.corp.btpn.co.id`, password, (err, auth) => {
+      17 |       if (err) {
+    > 18 |         console.error('LDAP authentication error:', err);
+         |                 ^
+      19 |         return reject(new Error('Invalid credentials'));
+      20 |       }
+      21 |
+
+      at error (ldapAuth.js:18:17)
+      at Object.callback (__test__/ldapAuth.test.js:33:9)
+      at authenticate (ldapAuth.js:16:8)
+      at authenticateLDAP (ldapAuth.js:15:10)
+      at Object.authenticateLDAP (__test__/ldapAuth.test.js:39:18)
+
+  console.error
+    LDAP authentication error: Error: LDAP server error
+        at Object.<anonymous> (/workdir/__test__/ldapAuth.test.js:50:18)
+        at /workdir/node_modules/jest-mock/build/index.js:397:39
+        at Object.<anonymous> (/workdir/node_modules/jest-mock/build/index.js:404:13)
+        at Object.mockConstructor [as authenticate] (/workdir/node_modules/jest-mock/build/index.js:113:19)
+        at authenticate (/workdir/ldapAuth.js:16:8)
+        at new Promise (<anonymous>)
+        at authenticateLDAP (/workdir/ldapAuth.js:15:10)
+        at Object.authenticateLDAP (/workdir/__test__/ldapAuth.test.js:56:18)
+        at Promise.then.completed (/workdir/node_modules/jest-circus/build/utils.js:298:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/workdir/node_modules/jest-circus/build/utils.js:231:10)
+        at _callCircusTest (/workdir/node_modules/jest-circus/build/run.js:316:40)
+        at _runTest (/workdir/node_modules/jest-circus/build/run.js:252:3)
+        at _runTestsForDescribeBlock (/workdir/node_modules/jest-circus/build/run.js:126:9)
+        at _runTestsForDescribeBlock (/workdir/node_modules/jest-circus/build/run.js:121:9)
+        at run (/workdir/node_modules/jest-circus/build/run.js:71:3)
+        at runAndTransformResultsToJestFormat (/workdir/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+        at jestAdapter (/workdir/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+        at runTestInternal (/workdir/node_modules/jest-runner/build/runTest.js:367:16)
+        at runTest (/workdir/node_modules/jest-runner/build/runTest.js:444:34)
+
+      16 |     ad.authenticate(`${username}@dev.corp.btpn.co.id`, password, (err, auth) => {
+      17 |       if (err) {
+    > 18 |         console.error('LDAP authentication error:', err);
+         |                 ^
+      19 |         return reject(new Error('Invalid credentials'));
+      20 |       }
+      21 |
+
+      at error (ldapAuth.js:18:17)
+      at Object.callback (__test__/ldapAuth.test.js:50:9)
+      at authenticate (ldapAuth.js:16:8)
+      at authenticateLDAP (ldapAuth.js:15:10)
+      at Object.authenticateLDAP (__test__/ldapAuth.test.js:56:18)
+
+  console.log
+    Authentication failed
+
+      at log (ldapAuth.js:26:17)
+
+PASS __test__/ldapAuth.test.js
+  LDAP Authentication
+    ��� should authenticate successfully (7 ms)
+    ��� should fail authentication with invalid credentials (18 ms)
+    ��� should handle LDAP server errors (6 ms)
+    ��� should log and reject when authentication fails without error (4 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.error
+    Error fetching topics: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to fetch topics.',
+          error: 'Network error'
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      273 |     }
+      274 |   } catch (error) {
+    > 275 |     console.error("Error fetching topics:", error);
+          |             ^
+      276 |     res.status(500).json({
+      277 |       success: false,
+      278 |       message: "Failed to fetch topics",
+
+      at error (handlers.js:275:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/listKafkaTopicsUat.test.js
+  API integration tests
+    List Kafka Topics UAT
+      ��� should return a list of Kafka topics excluding internal topics (19 ms)
+      ��� should return error when failing to fetch topics (34 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.error
+    Error fetching topics: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to fetch topics.',
+          error: 'Network error'
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      243 |     }
+      244 |   } catch (error) {
+    > 245 |     console.error("Error fetching topics:", error);
+          |             ^
+      246 |     res.status(500).json({
+      247 |       success: false,
+      248 |       message: "Failed to fetch topics",
+
+      at error (handlers.js:245:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/listKafkaTopicsSit.test.js
+  API integration tests
+    List Kafka Topics SIT
+      ��� should return a list of Kafka topics excluding internal topics (18 ms)
+      ��� should return error when failing to fetch topics (25 ms)
+
+  console.log
+    Server started on http://localhost:3002
+
+      at Server.log (app.js:25:15)
+
+  console.log
+    Fetching ACLs for topic: testTopic
+
+      at log (handlers.js:682:11)
+
+  console.log
+    ACLs fetched successfully: [
+      { principal: 'User:alice', host: '*', operation: 'READ' },
+      { principal: 'User:bob', host: '*', operation: 'WRITE' }
+    ]
+
+      at log (handlers.js:695:13)
+
+  console.log
+    Fetching ACLs for topic: testTopic
+
+      at log (handlers.js:682:11)
+
+  console.error
+    Error fetching ACLs: {
+      response: {
+        data: {
+          success: false,
+          message: 'Failed to fetch ACLs',
+          error: 'Network error'
+        },
+        status: 500
+      },
+      message: 'Network error'
+    }
+
+      697 |   } catch (error) {
+      698 |     // Log any errors and send an error response
+    > 699 |     console.error("Error fetching ACLs:", error);
+          |             ^
+      700 |     res.status(500).send('Failed to fetch ACLs');
+      701 |   }
+      702 | };
+
+      at error (handlers.js:699:13)
+
+  console.log
+    Server closed
+
+      at Server.log (app.js:35:17)
+
+PASS __test__/listAcls.test.js
+  API integration tests
+    List ACLs
+      ��� should return ACLs successfully (31 ms)
+      ��� should return error when failing to fetch ACLs (23 ms)
+
+  console.error
+    No topic details found for: testTopic
+
+      1062 |       return response.data.data.kafka_confluent[0];
+      1063 |     } else {
+    > 1064 |       console.error('No topic details found for:', topicName);
+           |               ^
+      1065 |       return null;
+      1066 |     }
+      1067 |   } catch (error) {
+
+      at Object.error [as fetchTopicDetailsForPromote] (handlers.js:1064:15)
+      at Object.<anonymous> (__test__/fetchTopicDetailsPromote.test.js:49:20)
+
+  console.error
+    Error fetching topic details for promotion: Error: Network error
+        at Object.<anonymous> (/workdir/__test__/fetchTopicDetailsPromote.test.js:55:23)
+        at Promise.then.completed (/workdir/node_modules/jest-circus/build/utils.js:298:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/workdir/node_modules/jest-circus/build/utils.js:231:10)
+        at _callCircusTest (/workdir/node_modules/jest-circus/build/run.js:316:40)
+        at _runTest (/workdir/node_modules/jest-circus/build/run.js:252:3)
+        at _runTestsForDescribeBlock (/workdir/node_modules/jest-circus/build/run.js:126:9)
+        at _runTestsForDescribeBlock (/workdir/node_modules/jest-circus/build/run.js:121:9)
+        at run (/workdir/node_modules/jest-circus/build/run.js:71:3)
+        at runAndTransformResultsToJestFormat (/workdir/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+        at jestAdapter (/workdir/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+        at runTestInternal (/workdir/node_modules/jest-runner/build/runTest.js:367:16)
+        at runTest (/workdir/node_modules/jest-runner/build/runTest.js:444:34)
+
+      1066 |     }
+      1067 |   } catch (error) {
+    > 1068 |     console.error('Error fetching topic details for promotion:', error);
+           |             ^
+      1069 |     throw error;
+      1070 |   }
+      1071 | };
+
+      at Object.error [as fetchTopicDetailsForPromote] (handlers.js:1068:13)
+      at Object.<anonymous> (__test__/fetchTopicDetailsPromote.test.js:58:5)
+
+PASS __test__/fetchTopicDetailsPromote.test.js
+  fetchTopicDetailsForPromote
+    ��� should fetch topic details successfully (3 ms)
+    ��� should return null when no topic details are found (5 ms)
+    ��� should throw an error when the request fails (9 ms)
+
+-----------------|---------|----------|---------|---------|--------------------------------------------------------------------------------------------------------------------------
+File             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                                                                        
+-----------------|---------|----------|---------|---------|--------------------------------------------------------------------------------------------------------------------------
+All files        |   88.69 |    74.34 |    90.9 |   88.88 |                                                                                                                          
+ AxiosService.js |     100 |      100 |     100 |     100 |                                                                                                                          
+ app.js          |     100 |       50 |     100 |     100 | 33                                                                                                                       
+ auth.js         |     100 |      100 |     100 |     100 |                                                                                                                          
+ config.js       |     100 |    66.66 |     100 |     100 | 10-12                                                                                                                    
+ handlers.js     |   84.73 |    70.88 |    87.5 |   84.98 | 136-162,220,242,272,350,360,421,477-483,495-498,510-540,566-572,581-583,590,657-663,858-861,954,1149-1150,1155,1240-1241 
+ ldapAuth.js     |     100 |      100 |     100 |     100 |                                                                                                                          
+ routes.js       |   95.83 |      100 |       0 |   95.83 | 11                                                                                                                       
+ verifyToken.js  |     100 |      100 |     100 |     100 |                                                                                                                          
+ webSocket.js    |     100 |      100 |     100 |     100 |                                                                                                                          
+-----------------|---------|----------|---------|---------|--------------------------------------------------------------------------------------------------------------------------
+Test Suites: 22 passed, 22 total
+Tests:       96 passed, 96 total
+Snapshots:   0 total
+Time:        14.361 s
+Ran all test suites.
+npm notice 
+npm notice New major version of npm available! 8.13.2 -> 10.8.1
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v10.8.1>
+npm notice Run `npm install -g npm@10.8.1` to update!
+npm notice 
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Run Sonar Scanner And Result Notification)
+[Pipeline] sh
+++ pwd
++ docker run -e SONAR_SCANNER_OPTS=-Xmx4092m -i --rm -w /workdir -v /apps/jslave/c5d8cf54/workspace/integrationhub/kafka-handler-build/21:/workdir nexus.corp.bankbtpn.co.id:50001/openshift/sonar-runner:4.8
+INFO: Scanner configuration file: /opt/sonar-scanner/conf/sonar-scanner.properties
+INFO: Project root configuration file: /workdir/sonar-project.properties
+INFO: SonarScanner 4.8.0.2856
+INFO: Java 11.0.18 Alpine (64-bit)
+INFO: Linux 3.10.0-514.6.2.el7.x86_64 amd64
+INFO: SONAR_SCANNER_OPTS=-Xmx4092m
+INFO: User cache: /opt/sonar-scanner/.sonar/cache
+INFO: Analyzing on SonarQube server 9.9.0.65466
+INFO: Default locale: "en_US", source code encoding: "UTF-8"
+INFO: Load global settings
+INFO: Load global settings (done) | time=249ms
+INFO: Server id: 86E1FA4D-AWGAY16aaCO_fNfYRAjJ
+INFO: User cache: /opt/sonar-scanner/.sonar/cache
+INFO: Load/download plugins
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=104ms
+INFO: Load/download plugins (done) | time=5225ms
+INFO: Loaded core extensions: developer-scanner
+INFO: Process project properties
+INFO: Process project properties (done) | time=18ms
+INFO: Execute project builders
+INFO: Execute project builders (done) | time=3ms
+INFO: Project key: integrationhub:kafka-handler
+INFO: Base dir: /workdir
+INFO: Working dir: /workdir/.scannerwork
+INFO: Load project settings for component key: 'integrationhub:kafka-handler'
+INFO: Load project branches
+INFO: Load project branches (done) | time=10ms
+INFO: Load branch configuration
+INFO: Load branch configuration (done) | time=5ms
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=112ms
+INFO: Load active rules
+INFO: Load active rules (done) | time=3398ms
+INFO: Load analysis cache
+INFO: Load analysis cache (404) | time=9ms
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=9ms
+INFO: Indexing files...
+INFO: Project configuration:
+INFO:   Excluded sources: src/assets/**
+INFO: 57 files indexed
+INFO: 0 files ignored because of inclusion/exclusion patterns
+INFO: 6919 files ignored because of scm ignore settings
+INFO: Quality profile for js: Sonar way
+INFO: Quality profile for json: Sonar way
+INFO: Quality profile for yaml: Sonar way
+INFO: ------------- Run sensors on module kafka-handler
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=34ms
+INFO: Sensor IaC CloudFormation Sensor [iac]
+INFO: 0 source files to be analyzed
+INFO: 0/0 source files have been analyzed
+INFO: Sensor IaC CloudFormation Sensor [iac] (done) | time=105ms
+INFO: Sensor IaC Kubernetes Sensor [iac]
+INFO: 0 source files to be analyzed
+INFO: 0/0 source files have been analyzed
+INFO: Sensor IaC Kubernetes Sensor [iac] (done) | time=53ms
+INFO: Sensor C# Project Type Information [csharp]
+INFO: Sensor C# Project Type Information [csharp] (done) | time=1ms
+INFO: Sensor C# Analysis Log [csharp]
+INFO: Sensor C# Analysis Log [csharp] (done) | time=19ms
+INFO: Sensor C# Properties [csharp]
+INFO: Sensor C# Properties [csharp] (done) | time=0ms
+INFO: Sensor HTML [web]
+INFO: Sensor HTML [web] (done) | time=11ms
+INFO: Sensor TextAndSecretsSensor [text]
+INFO: 57 source files to be analyzed
+WARN: Invalid character encountered in file /workdir/log_cakra.txt at line 235 for encoding UTF-8. Please fix file content or configure the encoding to be used using property 'sonar.sourceEncoding'.
+INFO: 57/57 source files have been analyzed
+INFO: Sensor TextAndSecretsSensor [text] (done) | time=393ms
+INFO: Sensor VB.NET Project Type Information [vbnet]
+INFO: Sensor VB.NET Project Type Information [vbnet] (done) | time=1ms
+INFO: Sensor VB.NET Analysis Log [vbnet]
+INFO: Sensor VB.NET Analysis Log [vbnet] (done) | time=21ms
+INFO: Sensor VB.NET Properties [vbnet]
+INFO: Sensor VB.NET Properties [vbnet] (done) | time=0ms
+INFO: Sensor JaCoCo XML Report Importer [jacoco]
+INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=2ms
+INFO: Sensor JavaScript analysis [javascript]
+INFO: 42 source files to be analyzed
+INFO: 14/42 files analyzed, current file: /workdir/__test__/getTopicDetails.test.js
+INFO: 39/42 files analyzed, current file: /workdir/__test__/listAcls.test.js
+INFO: 42/42 source files have been analyzed
+INFO: Hit the cache for 0 out of 42
+INFO: Miss the cache for 42 out of 42: ANALYSIS_MODE_INELIGIBLE [42/42]
+INFO: Sensor JavaScript analysis [javascript] (done) | time=28550ms
+INFO: Sensor TypeScript analysis [javascript]
+INFO: No input files found for analysis
+INFO: Hit the cache for 0 out of 0
+INFO: Miss the cache for 0 out of 0
+INFO: Sensor TypeScript analysis [javascript] (done) | time=1ms
+INFO: Sensor JavaScript inside YAML analysis [javascript]
+INFO: No input files found for analysis
+INFO: Hit the cache for 0 out of 0
+INFO: Miss the cache for 0 out of 0
+INFO: Sensor JavaScript inside YAML analysis [javascript] (done) | time=4ms
+INFO: Sensor CSS Rules [javascript]
+INFO: No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+INFO: Sensor CSS Rules [javascript] (done) | time=1ms
+INFO: Sensor JavaScript/TypeScript Coverage [javascript]
+INFO: No LCOV files were found using artifacts/coverage/lcov.info#SONARQUBE CREDENTIALS
+WARN: No coverage information will be saved because all LCOV files cannot be found.
+INFO: Sensor JavaScript/TypeScript Coverage [javascript] (done) | time=377ms
+INFO: Sensor ThymeLeaf template sensor [securityjavafrontend]
+INFO: Sensor ThymeLeaf template sensor [securityjavafrontend] (done) | time=1ms
+INFO: Sensor IaC Docker Sensor [iac]
+INFO: 1 source file to be analyzed
+INFO: 1/1 source file has been analyzed
+INFO: Sensor IaC Docker Sensor [iac] (done) | time=110ms
+INFO: Sensor Serverless configuration file sensor [security]
+INFO: 0 Serverless function entries were found in the project
+INFO: 0 Serverless function handlers were kept as entrypoints
+INFO: Sensor Serverless configuration file sensor [security] (done) | time=4ms
+INFO: Sensor AWS SAM template file sensor [security]
+INFO: Sensor AWS SAM template file sensor [security] (done) | time=3ms
+INFO: Sensor AWS SAM Inline template file sensor [security]
+INFO: Sensor AWS SAM Inline template file sensor [security] (done) | time=2ms
+INFO: Sensor javabugs [dbd]
+INFO: Reading IR files from: /workdir/.scannerwork/ir/java
+INFO: No IR files have been included for analysis.
+INFO: Sensor javabugs [dbd] (done) | time=1ms
+INFO: Sensor pythonbugs [dbd]
+INFO: Reading IR files from: /workdir/.scannerwork/ir/python
+INFO: No IR files have been included for analysis.
+INFO: Sensor pythonbugs [dbd] (done) | time=3ms
+INFO: Sensor JavaSecuritySensor [security]
+INFO: Reading type hierarchy from: /workdir/.scannerwork/ucfg2/java
+INFO: Read 0 type definitions
+INFO: No UCFGs have been included for analysis.
+INFO: Sensor JavaSecuritySensor [security] (done) | time=4ms
+INFO: Sensor CSharpSecuritySensor [security]
+INFO: Reading type hierarchy from: /workdir/ucfg_cs2
+INFO: Read 0 type definitions
+INFO: No UCFGs have been included for analysis.
+INFO: Sensor CSharpSecuritySensor [security] (done) | time=0ms
+INFO: Sensor PhpSecuritySensor [security]
+INFO: Reading type hierarchy from: /workdir/.scannerwork/ucfg2/php
+INFO: Read 0 type definitions
+INFO: No UCFGs have been included for analysis.
+INFO: Sensor PhpSecuritySensor [security] (done) | time=0ms
+INFO: Sensor PythonSecuritySensor [security]
+INFO: Reading type hierarchy from: /workdir/.scannerwork/ucfg2/python
+INFO: Read 0 type definitions
+INFO: No UCFGs have been included for analysis.
+INFO: Sensor PythonSecuritySensor [security] (done) | time=0ms
+INFO: Sensor JsSecuritySensor [security]
+INFO: Reading type hierarchy from: /workdir/.scannerwork/ucfg2/js
+INFO: Read 0 type definitions
+INFO: Reading UCFGs from: /workdir/.scannerwork/ucfg2/js
+INFO: 07:26:48.224972 Building Runtime Type propagation graph
+INFO: 07:26:48.265703 Running Tarjan on 2913 nodes
+INFO: 07:26:48.276756 Tarjan found 2913 components
+INFO: 07:26:48.289936 Variable type analysis: done
+INFO: 07:26:48.292034 Building Runtime Type propagation graph
+INFO: 07:26:48.314269 Running Tarjan on 2913 nodes
+INFO: 07:26:48.317421 Tarjan found 2913 components
+INFO: 07:26:48.325212 Variable type analysis: done
+INFO: Analyzing 476 ucfgs to detect vulnerabilities.
+INFO: Taint analysis starting. Entrypoints: 41
+INFO: Running symbolic analysis for 'JS'
+INFO: Taint analysis: done.
+INFO: Sensor JsSecuritySensor [security] (done) | time=3811ms
+INFO: ------------- Run sensors on project
+INFO: Sensor Analysis Warnings import [csharp]
+INFO: Sensor Analysis Warnings import [csharp] (done) | time=1ms
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=28ms
+INFO: SCM Publisher SCM provider for this project is: git
+INFO: SCM Publisher 43 source files to be analyzed
+INFO: SCM Publisher 43/43 source files have been analyzed (done) | time=524ms
+INFO: CPD Executor 2 files had no CPD blocks
+INFO: CPD Executor Calculating CPD for 40 files
+INFO: CPD Executor CPD calculation finished (done) | time=192ms
+INFO: Analysis report generated in 180ms, dir size=968.1 kB
+INFO: Analysis report compressed in 168ms, zip size=568.2 kB
+INFO: Analysis report uploaded in 1184ms
+INFO: ANALYSIS SUCCESSFUL, you can find the results at: https://sonar.corp.bankbtpn.co.id/dashboard?id=integrationhub%3Akafka-handler
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at https://sonar.corp.bankbtpn.co.id/api/ce/task?id=AZB8o5YIZGOsOQ3cp-Q_
+INFO: Time spent writing ucfgs 341ms
+INFO: Analysis total time: 54.241 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 1:04.102s
+INFO: Final Memory: 83M/284M
+INFO: ------------------------------------------------------------------------
+[Pipeline] withCredentials
+[Pipeline] {
+[Pipeline] sh
++ cat sonar-project.properties
++ grep -v '^#'
++ grep sonar.projectKey
++ cut -d= -f2
+[Pipeline] sh
++ cat .scannerwork/report-task.txt
++ sed s/ceTaskUrl=//
++ grep ceTaskUrl
+[Pipeline] sh
++ curl -sk -u ****: 'https://sonar.corp.bankbtpn.co.id/api/ce/task?id=AZB8o5YIZGOsOQ3cp-Q_'
++ jq .task.status
++ sed 's/"//g'
+[Pipeline] echo
+waiting for sonar results
+[Pipeline] sleep
+Sleeping for 5 sec
+[Pipeline] sh
++ curl -sk -u ****: 'https://sonar.corp.bankbtpn.co.id/api/qualitygates/project_status?projectKey=integrationhub:kafka-handler'
+[Pipeline] echo
+sending email...........................................
+[Pipeline] mail
+[Pipeline] error
+[Pipeline] }
+[Pipeline] // withCredentials
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+Deleting 1 temporary files
+[Pipeline] // configFileProvider
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+[BFA] Scanning build for known causes...
+[BFA] No failure causes found
+[BFA] Done. 0s
+ERROR: SonarQube Quality Gate Failed
+Finished: FAILURE

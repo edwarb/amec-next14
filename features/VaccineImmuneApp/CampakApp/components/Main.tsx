@@ -2,7 +2,7 @@ import { InformationCircleIcon } from '@heroicons/react/20/solid';
 
 export default function Campak() {
   return (
-    <div className="relative bg-white px-6 py-32 lg:px-8">
+    <div className="relative bg-white px-6 lg:px-8">
       <div
         className="absolute inset-x-0 -top-40 -z-9 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
