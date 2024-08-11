@@ -8,7 +8,10 @@ if (!baseDir) {
 }
 
 export function getCollectionFS(directory: string) {
-  return collection(firebaseFS, `${baseDir}/${directory}`);
+  return collection(
+    firebaseFS,
+    `${process.env.NEXT_PUBLIC_FIREBASE_DIR}/${directory}`,
+  );
 }
 
 export function getDocFS(directory: string) {

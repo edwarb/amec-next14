@@ -11,7 +11,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 import { Article } from "types/Article";
 import DrawerArticle from "./components/DrawerArticle";
-import { getArticles } from "./utils";
+import { getArticlesLoadMore } from "./utils";
 import CardCustom from "./components/CardCustom";
 
 function DashboardAdminHomepageApp() {
@@ -70,7 +70,7 @@ function DashboardAdminHomepageApp() {
   }, []);
 
   function fetchDataArticle() {
-    getArticles({ lastDoc: refLast.current }).then((resp) => {
+    getArticlesLoadMore({ lastDoc: refLast.current }).then((resp) => {
       setState((prev: any) => {
         return [...prev, ...resp.result];
       });

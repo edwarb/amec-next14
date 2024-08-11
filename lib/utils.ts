@@ -14,7 +14,20 @@ export function tw(str: TemplateStringsArray, ...params: TWParams[]) {
     if (idx < params.length) {
       memo += params[idx];
     }
-    
+
     return memo;
   }, "");
+}
+
+function toErrorWithMessage(maybeError: unknown) {
+  if (maybeError instanceof Error) return maybeError;
+
+  try {
+    return new Error(JSON.stringify(maybeError));
+  } catch {
+    return new Error(String(maybeError));
+  }
+}
+export function getErrorMessage(error: unknown) {
+  return toErrorWithMessage(error).message;
 }
