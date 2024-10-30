@@ -13,7 +13,7 @@ function IntroSection() {
           }}
         />
       </div>
-      <div className="py-24 sm:py-32">
+      <div className="pb-24 sm:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
@@ -29,12 +29,12 @@ function IntroSection() {
                 <iframe
                   width="100%"
                   height="500"
-                  src="https://www.youtube.com/embed/rrkotCv_UEM"
+                  src="https://www.youtube.com/embed/kwhaoiRRq1U?si=tJHWXFsKUyQFBUnF"
                   title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="rounded-md"
-                ></iframe>
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen>
+                </iframe>
               </div>
             </div>
           </div>

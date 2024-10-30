@@ -1,4 +1,33 @@
+declare global {
+  interface Window {
+    FB: any;
+  }
+}
+
+import { useEffect } from 'react';
+
 export default function SocialMedia() {
+  useEffect(() => {
+    // Load the Facebook SDK script dynamically
+    const script = document.createElement('script');
+    script.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v21.0&appId=2566313423434058';
+    script.async = true;
+    script.defer = true;
+    script.crossOrigin = 'anonymous';
+    script.onload = () => {
+      // Initialize the Facebook SDK once loaded
+      if (window.FB) {
+        window.FB.XFBML.parse();
+      }
+    };
+    document.body.appendChild(script);
+
+    // Cleanup the script when component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="relative -z-10 mt-32 px-6 lg:px-8">
       <div className="isolate overflow-hidden bg-gray-900">
@@ -34,17 +63,20 @@ export default function SocialMedia() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="flex justify-center">
                 <div className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
-                  <div className="">
-                    <iframe
-                      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Famaliamedicalcenter&tabs=timeline&width=500&height=680&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                      width="500"
-                      height="680"
-                      style={{ border: 'none', overflow: 'hidden' }}
-                      scrolling="no"
-                      frameBorder="0"
-                      allowFullScreen={true}
-                      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    ></iframe>
+                  {/* Facebook Page Plugin */}
+                  <div id="fb-root"></div>
+                  <div className="fb-page"
+                       data-href="https://www.facebook.com/amaliamedicalcenter"
+                       data-tabs="timeline"
+                       data-width="500"
+                       data-height="680"
+                       data-small-header="false"
+                       data-adapt-container-width="true"
+                       data-hide-cover="false"
+                       data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/amaliamedicalcenter" className="fb-xfbml-parse-ignore">
+                      <a href="https://www.facebook.com/amaliamedicalcenter">Amalia Medical Center</a>
+                    </blockquote>
                   </div>
                 </div>
               </div>

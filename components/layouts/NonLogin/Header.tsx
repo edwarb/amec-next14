@@ -35,6 +35,7 @@ const vaksinasiDropdown = [
   { name: "Vaksinasi MMR", href: "/vaksinasi-imunisasi/mmr" },
   { name: "Vaksinasi Tifoid", href: "/vaksinasi-imunisasi/tifoid" },
   { name: "Vaksinasi MR", href: "/vaksinasi-imunisasi/vaksin-mr" },
+  { name: "Injeksi Vitamin C", href: "/vaksinasi-imunisasi/vitaminc" },
 ];
 
 const mcuDropdown = [
