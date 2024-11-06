@@ -18,7 +18,7 @@ export default function Campak() {
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
         <figure className="mt-16">
           <img
-            className="aspect-video rounded-xl bg-gray-50 object-cover"
+            className="aspect-video w-full h-[300px] rounded-xl bg-gray-50 object-cover object-top"
             src="/img/disease/campak01.png"
             alt=""
           />

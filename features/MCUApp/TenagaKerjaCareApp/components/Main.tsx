@@ -18,7 +18,7 @@ export default function TenagaKerjaCare() {
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
         <figure className="mt-16">
           <img
-            className="aspect-video rounded-xl bg-gray-50 object-cover"
+            className="aspect-video w-full h-[300px] rounded-xl bg-gray-50 object-cover object-top"
             src="/img/facility/mcukerja01.png"
             alt=""
           />
@@ -27,8 +27,12 @@ export default function TenagaKerjaCare() {
             Ilustrasi Medical Check Up Tenaga Kerja
           </figcaption>
         </figure>
-        <p className="mt-14 text-base font-semibold leading-7 text-green-600">#MedicalCheckUp #TenagaKerjaCare</p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">MCU Tenaga Kerja</h1>
+        <p className="mt-6 text-base font-semibold leading-7 text-green-600">
+          #MedicalCheckUp #TenagaKerjaCare
+        </p>
+        <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          MCU Tenaga Kerja
+        </h1>
         <div className="mt-10 max-w-2xl">
           <p>
             Peranan tenaga kerja sebagai sumber daya manusia adalah sangat penting. Tenaga kerja yang sehat dan berkualitas

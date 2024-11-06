@@ -44,7 +44,9 @@ const mcuDropdown = [
   { name: "MCU Haji", href: "/mcu/haji-care" },
   { name: "MCU On Site", href: "/mcu/on-site-care" },
   { name: "MCU Tenaga Kerja", href: "/mcu/tenaga-kerja-care" },
-  { name: "MCU Pelajar ke Taiwan", href: "/mcu/pelajar-taiwan" },
+  { name: "MCU Pelajar ke Taiwan", href: "/mcu/pelajar-taiwan-care" },
+  { name: "MCU Calon Pekerja Migran", href: "/mcu/pekerja-migran-care" },
+  { name: "MCU Karyawan", href: "/mcu/karyawan-care" },
 ];
 
 const galeriDropdown = [

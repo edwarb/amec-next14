@@ -14,7 +14,7 @@ const timeline = [
   {
     name: "Berdirinya Amalia",
     description:
-      "Amalia medical center dinaungi oleh badan hukum Yayasan Solidaritas Kemanusiaan Amanah, yang berlokasi di pemukiman Cipinang Cempedak, Jakarta Timur. Yayasan ini didirikan oleh Irjen.Pol (P). Prof. Dr. Farouk Muhammad, Yayasan ini telah memberikan sumbangsih antara lain untuk anak-anak yatim, para janda, korban bencana alam, dan kaum dhuafa lainnya.",
+      "Amalia Medical Center dinaungi oleh badan hukum Yayasan Solidaritas Kemanusiaan Amanah, yang berlokasi di pemukiman Cipinang Cempedak, Jakarta Timur. Yayasan ini didirikan oleh Irjen.Pol (P). Prof. Dr. Farouk Muhammad, Yayasan ini telah memberikan sumbangsih antara lain untuk anak-anak yatim, para janda, korban bencana alam, dan kaum dhuafa lainnya.",
     date: "2000",
     dateTime: "2000",
   },

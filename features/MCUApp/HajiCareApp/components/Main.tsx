@@ -18,7 +18,7 @@ export default function HajiCare() {
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
         <figure className="mt-16">
           <img
-            className="aspect-video rounded-xl bg-gray-50 object-cover"
+            className="aspect-video w-full h-[300px] rounded-xl bg-gray-50 object-cover object-bot"
             src="/img/facility/mcuhaji01.png"
             alt=""
           />
@@ -27,8 +27,12 @@ export default function HajiCare() {
             Ilustrasi Medical Check Up Haji Care
           </figcaption>
         </figure>
-        <p className="mt-14 text-base font-semibold leading-7 text-green-600">#MedicalCheckUp #HajiCare</p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">MCU Haji Care</h1>
+        <p className="mt-6 text-base font-semibold leading-7 text-green-600">
+          #MedicalCheckUp #HajiCare
+        </p>
+        <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          MCU Haji Care
+        </h1>
         <div className="mt-10 max-w-2xl">
           <p>
             Pentingnya memeriksa kesehatan bagi para calon haji adalah sesuatu yang vital mengingat kondisi Arab Saudi
@@ -36,10 +40,10 @@ export default function HajiCare() {
             Membuat sejumlah perbedaan itu dapat mempengaruhi kesehatan para jamaah haji. Oleh karenanya untuk mencegah
             terjadinya kondisi kesehatan yang memburuk, para jamaah haji disarankan melakukan medical check up sejak di
             tanah air.<br />
-            Di tanah air, pemeriksaan kesehatan para calon haji melalui beberapa tahapan yaitu, untuk pemeriksaan pertama para 
-            calon haji melakukannya di puskesmas. Hal ini dimaksudkan untuk mengetahui bagaimana kondisi kesehatan para jamaah, 
-            apakah cukup sehat dan mampu untuk m enunaikan rukun Islam yang terakhir ini. Selanjutnya pemeriksaan diteruskan di 
-            Dinas Kesehatan Dati II Kabupaten/ Kotamadya. Pada pemeriksaan II ini, dilaksanakan pemeriksaan kesehatan dan 
+            Di tanah air, pemeriksaan kesehatan para calon haji melalui beberapa tahapan yaitu, untuk pemeriksaan pertama para
+            calon haji melakukannya di puskesmas. Hal ini dimaksudkan untuk mengetahui bagaimana kondisi kesehatan para jamaah,
+            apakah cukup sehat dan mampu untuk m enunaikan rukun Islam yang terakhir ini. Selanjutnya pemeriksaan diteruskan di
+            Dinas Kesehatan Dati II Kabupaten/ Kotamadya. Pada pemeriksaan II ini, dilaksanakan pemeriksaan kesehatan dan
             penyuntikan vaksin ‘meningitis’ dan tes kehamilan bagi calon haji wanita Pasangan Usia Subur (PUS).
           </p>
         </div>

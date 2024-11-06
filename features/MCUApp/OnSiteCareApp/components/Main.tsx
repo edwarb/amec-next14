@@ -18,7 +18,7 @@ export default function OnSiteCare() {
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
         <figure className="mt-16">
           <img
-            className="aspect-video rounded-xl bg-gray-50 object-cover"
+            className="aspect-video w-full h-[300px] rounded-xl bg-gray-50 object-cover object-top"
             src="/img/facility/mcuonsite01.png"
             alt=""
           />
@@ -27,14 +27,18 @@ export default function OnSiteCare() {
             Ilustrasi Medical Check On Site Care
           </figcaption>
         </figure>
-        <p className="mt-14 text-base font-semibold leading-7 text-green-600">#MedicalCheckUp #OnSiteCare</p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">MCU On Site Care</h1>
+        <p className="mt-6 text-base font-semibold leading-7 text-green-600">
+          #MedicalCheckUp #OnSiteCare
+        </p>
+        <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          MCU On Site Care
+        </h1>
         <div className="mt-10 max-w-2xl">
           <p>
-            Mengadakan pemeriksaan dilokasi perusahaan menjadikan fasilitas kesehatan lebih mudah. Demi meningkatkan 
-            mengakomodasi kebutuhan perusahaan dengan jumlah karyawan yang besar Amalia Medical Centre menyediakan 
-            layanan Medical Check Up ditempat dengan membawa segala perlengkapan MCU, termasuk mobil rontgen dan 
-            chamber kedap suara untuk pemeriksaan audiometri. MCU On site bisa juga dilaksanakan dirumah, atau kantor 
+            Mengadakan pemeriksaan dilokasi perusahaan menjadikan fasilitas kesehatan lebih mudah. Demi meningkatkan
+            mengakomodasi kebutuhan perusahaan dengan jumlah karyawan yang besar Amalia Medical Centre menyediakan
+            layanan Medical Check Up ditempat dengan membawa segala perlengkapan MCU, termasuk mobil rontgen dan
+            chamber kedap suara untuk pemeriksaan audiometri. MCU On site bisa juga dilaksanakan dirumah, atau kantor
             secara personal apabila diperlukan.
           </p>
         </div>

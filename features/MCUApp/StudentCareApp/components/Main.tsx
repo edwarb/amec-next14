@@ -1,7 +1,7 @@
 import { InformationCircleIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
-export default function FamilyCare() {
+export default function StudentCare() {
   return (
     <div className="relative bg-white px-6 lg:px-8">
       <div
@@ -21,7 +21,7 @@ export default function FamilyCare() {
           <Image
             width={0}
             height={0}
-            className="aspect-video w-full rounded-xl bg-gray-50 object-cover"
+            className="aspect-video w-full h-[300px] rounded-xl bg-gray-50 object-cover object-bot"
             src="/img/facility/student.jpg"
             alt=""
           />
@@ -30,13 +30,13 @@ export default function FamilyCare() {
               className="mt-0.5 h-5 w-5 flex-none text-gray-300"
               aria-hidden="true"
             />
-            Ilustrasi pelajar
+            Ilustrasi Pelajar
           </figcaption>
         </figure>
-        <p className="mt-14 text-base font-semibold leading-7 text-green-600">
+        <p className="mt-6 text-base font-semibold leading-7 text-green-600">
           #MedicalCheckUp #Student #Taiwan
         </p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Pemeriksaan MCU ke Taiwan Untuk Pelajar
         </h1>
         <div className="mt-10 max-w-2xl">

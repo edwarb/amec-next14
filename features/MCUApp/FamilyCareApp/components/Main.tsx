@@ -21,7 +21,7 @@ export default function FamilyCare() {
           <Image
             width={0}
             height={0}
-            className="aspect-video w-full rounded-xl bg-gray-50 object-cover"
+            className="aspect-video w-full h-[300px] rounded-xl bg-gray-50 object-cover object-bot"
             src="/img/facility/mcufamily01.png"
             alt=""
           />
@@ -33,10 +33,10 @@ export default function FamilyCare() {
             Ilustrasi Medical Check Up pada anak
           </figcaption>
         </figure>
-        <p className="mt-14 text-base font-semibold leading-7 text-green-600">
+        <p className="mt-6 text-base font-semibold leading-7 text-green-600">
           #MedicalCheckUp #FamilyCare
         </p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           MCU Family Care
         </h1>
         <div className="mt-10 max-w-2xl">
