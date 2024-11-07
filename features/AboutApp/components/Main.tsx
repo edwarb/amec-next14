@@ -14,30 +14,50 @@ const timeline = [
   {
     name: "Berdirinya Amalia",
     description:
-      "Amalia Medical Center dinaungi oleh badan hukum Yayasan Solidaritas Kemanusiaan Amanah, yang berlokasi di pemukiman Cipinang Cempedak, Jakarta Timur. Yayasan ini didirikan oleh Irjen.Pol (P). Prof. Dr. Farouk Muhammad, Yayasan ini telah memberikan sumbangsih antara lain untuk anak-anak yatim, para janda, korban bencana alam, dan kaum dhuafa lainnya.",
+      `Amalia Medical Center dinaungi oleh badan hukum Yayasan Solidaritas Kemanusiaan Amanah, yang berlokasi di pemukiman 
+      Cipinang Cempedak, Jakarta Timur. Yayasan ini didirikan oleh Irjen.Pol (P). Prof. Dr. Farouk Muhammad, Yayasan ini 
+      telah memberikan sumbangsih antara lain untuk anak-anak yatim, para janda, korban bencana alam, dan kaum dhuafa 
+      lainnya.`,
     date: "2000",
     dateTime: "2000",
   },
   {
-    name: "Secured $65m in funding",
+    name: "World of Medical Overseas Workers",
     description:
-      "Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.",
-    date: "2001",
-    dateTime: "2001",
-  },
-  {
-    name: "Released beta",
-    description:
-      "Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.",
+      `Then, we recruited staff The Medical Professionals in their field, we began dabbling in the 
+      "World of Medical Overseas Workers" to attend and actively in various seminars and discussions relating to services to 
+      overseas workers or labor, which organized by various parties (Ministry of Labor, Ministry of Health, Association of 
+      agencies, Association of medical centers/HIPTEK, etc).`,
     date: "2002",
     dateTime: "2002",
   },
   {
-    name: "Global launch of product",
+    name: "Representative for Sea Workers/Marine Workers",
     description:
-      "Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.",
-    date: "2020",
-    dateTime: "2020",
+      `With experience and a lot learning to the experts from the Ministry of Health and the Ministry of Labor, as 
+      well as experience as the Secretary General of HIPTEK (Association of hospitals and medical centers for Indonesian 
+      manpower), In 2004, the results of the audit by the Joint Team of Ministry of Health and Ministry of Labor 
+      announcedthat Amalia Medical Center obtained the highest score of the National level. In the years 2004-2005, 
+      we were the only medical in Jakarta, which gained the trust of the high-rank hospital named Pertamina Hospital, 
+      as a representative for sea worker/marine workers medical check-ups for Taiwan. In The same year, we changed the 
+      form of law to be the Private Enterprises (PT) without leaving the foundation.`,
+    date: "2004",
+    dateTime: "2004",
+  },
+  {
+    name: "Sophisticated Medical Center for an Overseas Worker in Indonesia",
+    description:
+      `With the trust of reliable institutions national and international, and supported by advancede quipment and 
+      qualified human resources, as well as the category PME best results, then Amalia Medical Center In 2014, 
+      we designed and build the new building with careful consideration inanticipating the firm and detailed policy of 
+      overseas countries in the future. To synchronize with our programin improving our quality and providing better 
+      services to our customers. The building consists of 5 floors with a total of 1.250 M-square, include the basement 
+      for the parking area. We installed a new Digital x-ray machine of 500 Ma with a high-resolution detector, 
+      LAN (local area network), elevator lift, generator with capacity 70 KVA, CCTV, the running text for any kinds of 
+      information, etc. Momentarily, this building is considered to be the biggest and the most sophisticated medical 
+      center for an overseas worker in Indonesia.`,
+    date: "2014",
+    dateTime: "2014",
   },
 ];
 
