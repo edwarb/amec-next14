@@ -24,38 +24,38 @@ const timeline = [
   {
     name: "World of Medical Overseas Workers",
     description:
-      `Then, we recruited staff The Medical Professionals in their field, we began dabbling in the 
-      "World of Medical Overseas Workers" to attend and actively in various seminars and discussions relating to services to 
-      overseas workers or labor, which organized by various parties (Ministry of Labor, Ministry of Health, Association of 
-      agencies, Association of medical centers/HIPTEK, etc).`,
+      `Kemudian, kami merekrut staf Profesional Medis di bidangnya, kami mulai terjun ke dalam "World of Medical Overseas Workers" untuk menghadiri dan berpartisipasi aktif dalam berbagai seminar dan diskusi yang berkaitan dengan 
+      layanan kepada pekerja luar negeri atau tenaga kerja, yang diselenggarakan oleh berbagai pihak (Kementerian Tenaga 
+      Kerja, Kementerian Kesehatan, Asosiasi lembaga, Asosiasi pusat medis/HIPTEK, dll).`,
     date: "2002",
     dateTime: "2002",
   },
   {
-    name: "Representative for Sea Workers/Marine Workers",
+    name: "Perwakilan Rumah Sakit Pertamina untuk Pekerja Laut/Pekerja Maritim",
     description:
-      `With experience and a lot learning to the experts from the Ministry of Health and the Ministry of Labor, as 
-      well as experience as the Secretary General of HIPTEK (Association of hospitals and medical centers for Indonesian 
-      manpower), In 2004, the results of the audit by the Joint Team of Ministry of Health and Ministry of Labor 
-      announcedthat Amalia Medical Center obtained the highest score of the National level. In the years 2004-2005, 
-      we were the only medical in Jakarta, which gained the trust of the high-rank hospital named Pertamina Hospital, 
-      as a representative for sea worker/marine workers medical check-ups for Taiwan. In The same year, we changed the 
-      form of law to be the Private Enterprises (PT) without leaving the foundation.`,
+      `Dengan pengalaman dan banyak pembelajaran dari para ahli di Kementerian Kesehatan dan Kementerian Tenaga Kerja, 
+      serta pengalaman sebagai Sekretaris Jenderal HIPTEK (Asosiasi rumah sakit dan pusat medis untuk tenaga kerja 
+      Indonesia), pada tahun 2004, hasil audit oleh Tim Gabungan Kementerian Kesehatan dan Kementerian Tenaga Kerja 
+      mengumumkan bahwa Amalia Medical Center memperoleh skor tertinggi di tingkat nasional. Pada tahun 2004-2005, 
+      kami menjadi satu-satunya klinik medis di Jakarta yang mendapat kepercayaan dari rumah sakit ternama, yaitu 
+      Rumah Sakit Pertamina, sebagai perwakilan untuk pemeriksaan kesehatan pekerja laut/maritim untuk Taiwan. 
+      Pada tahun yang sama, kami mengubah bentuk hukum menjadi Perusahaan Swasta (PT) tanpa meninggalkan yayasan.`,
     date: "2004",
     dateTime: "2004",
   },
   {
-    name: "Sophisticated Medical Center for an Overseas Worker in Indonesia",
+    name: "Pusat Medis Modern untuk Tenaga Kerja Luar Negeri di Indonesia",
     description:
-      `With the trust of reliable institutions national and international, and supported by advancede quipment and 
-      qualified human resources, as well as the category PME best results, then Amalia Medical Center In 2014, 
-      we designed and build the new building with careful consideration inanticipating the firm and detailed policy of 
-      overseas countries in the future. To synchronize with our programin improving our quality and providing better 
-      services to our customers. The building consists of 5 floors with a total of 1.250 M-square, include the basement 
-      for the parking area. We installed a new Digital x-ray machine of 500 Ma with a high-resolution detector, 
-      LAN (local area network), elevator lift, generator with capacity 70 KVA, CCTV, the running text for any kinds of 
-      information, etc. Momentarily, this building is considered to be the biggest and the most sophisticated medical 
-      center for an overseas worker in Indonesia.`,
+      `Dengan kepercayaan dari lembaga-lembaga terpercaya nasional dan internasional, serta didukung oleh peralatan 
+      canggih dan sumber daya manusia yang berkualitas, serta hasil kategori PME terbaik, pada tahun 2014, 
+      Amalia Medical Center merancang dan membangun gedung baru dengan pertimbangan yang matang untuk mengantisipasi 
+      kebijakan yang tegas dan detail dari negara-negara luar negeri di masa depan. Langkah ini dilakukan untuk 
+      menyelaraskan dengan program kami dalam meningkatkan kualitas dan memberikan layanan yang lebih baik kepada 
+      pelanggan. Gedung ini terdiri dari 5 lantai dengan total luas 1.250 meter persegi, termasuk basement untuk area 
+      parkir. Kami juga memasang mesin Digital X-ray baru sebesar 500 mA dengan detektor beresolusi tinggi, 
+      jaringan LAN (local area network), lift, generator berkapasitas 70 KVA, CCTV, running text untuk berbagai 
+      informasi, dan lain-lain. Saat ini, gedung ini dianggap sebagai pusat medis terbesar dan tercanggih untuk 
+      tenaga kerja luar negeri di Indonesia.`,
     date: "2014",
     dateTime: "2014",
   },
