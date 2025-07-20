@@ -1,4 +1,4 @@
-import FacilityApp from "features/GalleryApp/FacilityApp";
+import FacilityApp from "features/SDMApp/FacilityApp";
 
 function GalleryFacilityPage() {
   return (

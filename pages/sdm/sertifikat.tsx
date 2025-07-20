@@ -1,4 +1,4 @@
-import SertifikatApp from "features/GalleryApp/SertifikatApp";
+import SertifikatApp from "features/SDMApp/SertifikatApp";
 
 function GallerySertifikatPage() {
   return (

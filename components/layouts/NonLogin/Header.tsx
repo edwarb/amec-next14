@@ -23,7 +23,7 @@ const navigation = [
   { name: "Vaksinasi & Imunisasi", href: "#" },
   { name: "MCU", href: "#" },
   { name: "Promosi", href: "#" },
-  { name: "Galeri", href: "#" },
+  { name: "SDM", href: "#" },
 ];
 
 const vaksinasiDropdown = [
@@ -49,10 +49,11 @@ const mcuDropdown = [
   { name: "MCU Karyawan", href: "/mcu/karyawan-care" },
 ];
 
-const galeriDropdown = [
-  { name: "CSR", href: "/galeri/csr" },
-  { name: "Fasilitas", href: "/galeri/fasilitas" },
-  { name: "Sertifikat", href: "/galeri/sertifikat" },
+const sdmDropdown = [
+  { name: "Analisis Lab", href: "/sdm/analisis-lab" },
+  { name: "CSR", href: "/sdm/csr" },
+  { name: "Fasilitas", href: "/sdm/fasilitas" },
+  { name: "Sertifikat", href: "/sdm/sertifikat" },
 ];
 
 export default function Header() {
@@ -108,16 +109,12 @@ export default function Header() {
                   <MenuItems className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     {vaksinasiDropdown.map((dropdownItem) => (
                       <MenuItem key={dropdownItem.name}>
-                        {({ active }) => (
-                          <a
-                            href={dropdownItem.href}
-                            className={`${
-                              active ? "bg-gray-100" : ""
-                            } block px-4 py-2 text-sm text-gray-700`}
-                          >
-                            {dropdownItem.name}
-                          </a>
-                        )}
+                        <a
+                          href={dropdownItem.href}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          {dropdownItem.name}
+                        </a>
                       </MenuItem>
                     ))}
                   </MenuItems>
@@ -143,22 +140,18 @@ export default function Header() {
                   <MenuItems className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     {mcuDropdown.map((dropdownItem) => (
                       <MenuItem key={dropdownItem.name}>
-                        {({ active }) => (
-                          <a
-                            href={dropdownItem.href}
-                            className={`${
-                              active ? "bg-gray-100" : ""
-                            } block px-4 py-2 text-sm text-gray-700`}
-                          >
-                            {dropdownItem.name}
-                          </a>
-                        )}
+                        <a
+                          href={dropdownItem.href}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          {dropdownItem.name}
+                        </a>
                       </MenuItem>
                     ))}
                   </MenuItems>
                 </Transition>
               </Menu>
-            ) : item.name === 'Galeri' ? (
+            ) : item.name === 'SDM' ? (
               <Menu as="div" key={item.name} className="relative inline-block text-left">
                 <MenuButton className="inline-flex w-full text-sm font-semibold leading-6 text-gray-900 hover:text-green-600">
                   {item.name}
@@ -172,18 +165,14 @@ export default function Header() {
                   leaveTo="transform opacity-0 scale-95"
                 >
                   <MenuItems className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    {galeriDropdown.map((dropdownItem) => (
+                    {sdmDropdown.map((dropdownItem) => (
                       <MenuItem key={dropdownItem.name}>
-                        {({ active }) => (
-                          <a
-                            href={dropdownItem.href}
-                            className={`${
-                              active ? "bg-gray-100" : ""
-                            } block px-4 py-2 text-sm text-gray-700`}
-                          >
-                            {dropdownItem.name}
-                          </a>
-                        )}
+                        <a
+                          href={dropdownItem.href}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          {dropdownItem.name}
+                        </a>
                       </MenuItem>
                     ))}
                   </MenuItems>
@@ -222,7 +211,13 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Amalia Medical Center</span>
-              <img className="h-8 w-auto" src="/img/amec-new.png" alt="" />
+              <Image 
+                className="h-8 w-auto" 
+                src="/img/amec-new.png" 
+                alt="Amalia Medical Center"
+                width={120}
+                height={60}
+              />
             </Link>
             <button
               type="button"
@@ -261,16 +256,12 @@ export default function Header() {
                         <MenuItems className="mt-2 w-full origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                           {vaksinasiDropdown.map((dropdownItem) => (
                             <MenuItem key={dropdownItem.name}>
-                              {({ active }) => (
-                                <a
-                                  href={dropdownItem.href}
-                                  className={`${
-                                    active ? "bg-gray-100" : ""
-                                  } block px-4 py-2 text-base font-semibold text-gray-900`}
-                                >
-                                  {dropdownItem.name}
-                                </a>
-                              )}
+                              <a
+                                href={dropdownItem.href}
+                                className="block px-4 py-2 text-base font-semibold text-gray-900 hover:bg-gray-100"
+                              >
+                                {dropdownItem.name}
+                              </a>
                             </MenuItem>
                           ))}
                         </MenuItems>
@@ -300,16 +291,12 @@ export default function Header() {
                         <MenuItems className="absolute right-0 mt-2 w-full origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                           {mcuDropdown.map((dropdownItem) => (
                             <MenuItem key={dropdownItem.name}>
-                              {({ active }) => (
-                                <a
-                                  href={dropdownItem.href}
-                                  className={`${
-                                    active ? "bg-gray-100" : ""
-                                  } block px-4 py-2 text-base font-semibold text-gray-900`}
-                                >
-                                  {dropdownItem.name}
-                                </a>
-                              )}
+                              <a
+                                href={dropdownItem.href}
+                                className="block px-4 py-2 text-base font-semibold text-gray-900 hover:bg-gray-100"
+                              >
+                                {dropdownItem.name}
+                              </a>
                             </MenuItem>
                           ))}
                         </MenuItems>

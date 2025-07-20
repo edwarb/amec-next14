@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const sertifikat = [
   {
     id: 1,
@@ -143,9 +145,11 @@ export default function Sertifikat() {
           {sertifikat.map((product) => (
             <a key={product.id} href={product.href} className="group">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-14 xl:aspect-w-10">
-                <img
+                <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
+                  width={400}
+                  height={300}
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 />
               </div>

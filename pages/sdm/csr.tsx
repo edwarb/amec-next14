@@ -1,4 +1,4 @@
-import CSRApp from "features/GalleryApp/CSRApp";
+import CSRApp from "features/SDMApp/CSRApp";
 
 function GalleryCSRPage() {
   return (
