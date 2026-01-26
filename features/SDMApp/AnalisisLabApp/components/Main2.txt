@@ -1,0 +1,61 @@
+import Image from 'next/image';
+
+const people = [
+  {
+    name: 'Fadilla Darma Putri A.Md.A.K',
+    role: 'Analisis Laboratorium',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+  },
+  {
+    name: 'Indah Lestary A.Md.A.K',
+    role: 'Analisis Laboratorium',
+    imageUrl:
+      'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+  },
+  {
+    name: 'Santi Dwi Yuniarti A.Md.A.K',
+    role: 'Analisis Laboratorium',
+    imageUrl:
+      'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+  },
+];
+
+export default function AnalisisLab() {
+  return (
+    <div className="bg-white py-12">
+      <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
+        <div className="mx-auto max-w-2xl">
+          <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+            Analisis Laboratorium
+          </h2>
+          <p className="mt-6 text-lg/8 text-gray-600">
+            Berikut adalah tim profesional dan berpengalaman kami yang bertugas
+            di bagian analisis laboratorium.
+          </p>
+        </div>
+        <ul
+          role="list"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        >
+          {people.map((people) => (
+            <li key={people.name}>
+              <Image
+                alt=""
+                src={people.imageUrl}
+                width={224}
+                height={224}
+                className="mx-auto size-56 rounded-full outline outline-1 -outline-offset-1 outline-black/5"
+              />
+              <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">
+                {people.name}
+              </h3>
+              <p className="text-sm/6 text-gray-600">{people.role}</p>
+              <ul role="list" className="mt-6 flex justify-center gap-x-6"></ul>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}

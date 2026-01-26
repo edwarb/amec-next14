@@ -49,12 +49,7 @@ export default function StudentCare() {
           <p className="mt-2">
             Untuk pemeriksaan dasarnya berupa cek darah, urin, thorax, dan fisik. Namun untuk MCU Taiwan memiliki
             tambahan  tes tinja serta ditambahkan vaksin MMR atau MR. Untuk vaksin MMR atau MR bisa disesuaikan oleh
-            kebutuhan calon pelajar maupun calon pekerjanya.<br /><br />
-            MCU Taiwan untuk pelajar meliputi pemeriksaan darah (HBSAG, HIV, VDRL+TPHA),
-            pemeriksaan urin (warna, ph, HCG, gula dalam urin), pemeriksaan tinja (warna, darah, bentuk)
-            yang bisa di ambil samplenya langsung ketika hari kedatangan MCU.
-            Untuk pemeriksaan fisiknya berupa cek dokter, cek mata, cek tensi + tinggi berat badan,
-            pemberian vaksin MR/MMR, dan yang terakhir cek rontgen.
+            kebutuhan calon pelajar maupun calon pekerjanya.<br />
           </p>
           <ul
             role="list"
@@ -67,16 +62,7 @@ export default function StudentCare() {
               <ul role="list"
                 className="max-w-xl list-disc space-y-2 pl-6 text-gray-600">
                 <li>
-                  HBsAg adalah salah satu tes laboratorium yang umum digunakan untuk mendeteksi infeksi hepatitis B.
-                  Tes ini dapat dilakukan sebagai bagian dari pemeriksaan kesehatan rutin, skrining donor darah, atau
-                  dalam kasus-kasus di mana ada kecurigaan adanya infeksi hepatitis B.
-                </li>
-                <li>
-                  HIV (Human Immunodeficiency Virus) adalah virus yang menyerang sistem kekebalan tubuh yang dapat melemahkan
-                  kemampuan tubuh melawan infeksi dan penyakit.
-                </li>
-                <li>
-                  PHA dan VDRL adalah pemeriksaan laboratorium untuk mengetahui apakah seseorang terinfeksi bakteri Treponema pallidum
+                  TPHA dan VDRL adalah pemeriksaan laboratorium untuk mengetahui apakah seseorang terinfeksi bakteri Treponema pallidum
                   yang menyebabkan penyakit Sifilis atau "rajasinga".
                 </li>
               </ul>
