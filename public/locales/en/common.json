@@ -147,7 +147,9 @@
   "home_social": {
     "eyebrow": "Social Media",
     "title": "Stay Connected with Amalia Medical Center, Wherever You Are",
-    "subtitle": "Stay updated with the latest news, offers, and healthcare services from Amalia Medical Center. Follow us on our social media platforms and become part of our community."
+    "subtitle": "Stay updated with the latest news, offers, and healthcare services from Amalia Medical Center. Follow us on our social media platforms and become part of our community.",
+    "mobile_fallback": "The Facebook feed cannot be displayed on mobile devices. Visit our Facebook page to see the latest updates.",
+    "visit_facebook": "Visit Our Facebook Page"
   },
   "nav": {
     "booking": "Booking",

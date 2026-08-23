@@ -147,7 +147,9 @@
   "home_social": {
     "eyebrow": "Media Sosial",
     "title": "Terhubung dengan Amalia Medical Center, di manapun Anda berada",
-    "subtitle": "Tetap terupdate dengan berita terbaru, penawaran, dan layanan kesehatan dari Amalia Medical Center. Ikuti kami di platform media sosial kami dan jadilah bagian dari komunitas kami."
+    "subtitle": "Tetap terupdate dengan berita terbaru, penawaran, dan layanan kesehatan dari Amalia Medical Center. Ikuti kami di platform media sosial kami dan jadilah bagian dari komunitas kami.",
+    "mobile_fallback": "Feed Facebook tidak dapat ditampilkan di perangkat mobile. Kunjungi halaman Facebook kami untuk melihat update terbaru.",
+    "visit_facebook": "Kunjungi Facebook Kami"
   },
   "nav": {
     "booking": "Booking",

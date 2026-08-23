@@ -1,40 +1,50 @@
 import { useEffect } from "react";
+import Link from "next/link";
 import { useTranslation } from "next-i18next/pages";
+
+const FACEBOOK_PAGE_URL = "https://www.facebook.com/amaliamedicalcenter";
+const FB_SDK_ID = "facebook-jssdk";
 
 declare global {
   interface Window {
-    FB: {
+    FB?: {
       XFBML: {
-        parse: () => void;
+        parse: (node?: HTMLElement) => void;
       };
     };
+    fbAsyncInit?: () => void;
   }
+}
+
+function loadFacebookSdk() {
+  if (document.getElementById(FB_SDK_ID)) {
+    window.FB?.XFBML.parse();
+    return;
+  }
+
+  window.fbAsyncInit = () => {
+    window.FB?.XFBML.parse();
+  };
+
+  const script = document.createElement("script");
+  script.id = FB_SDK_ID;
+  script.src =
+    "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0&appId=2566313423434058";
+  script.async = true;
+  script.defer = true;
+  script.crossOrigin = "anonymous";
+  document.body.appendChild(script);
 }
 
 export default function SocialMedia() {
   const { t } = useTranslation("common");
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v21.0&appId=2566313423434058";
-    script.async = true;
-    script.defer = true;
-    script.crossOrigin = "anonymous";
-    script.onload = () => {
-      if (window.FB) {
-        window.FB.XFBML.parse();
-      }
-    };
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
+    loadFacebookSdk();
   }, []);
 
   return (
-    <div className="relative -z-10 mt-32 px-6 lg:px-8">
+    <div className="relative mt-32 px-6 lg:px-8">
       <div className="isolate overflow-hidden bg-gray-900">
         <div className="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-32 lg:px-8">
           <div className="mx-auto max-w-4xl">
@@ -74,11 +84,11 @@ export default function SocialMedia() {
           <div className="-mt-80">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="flex justify-center">
-                <div className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
+                <div className="w-full max-w-lg rounded-3xl bg-white p-6 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
                   <div id="fb-root" />
                   <div
-                    className="fb-page"
-                    data-href="https://www.facebook.com/amaliamedicalcenter"
+                    className="fb-page mx-auto"
+                    data-href={FACEBOOK_PAGE_URL}
                     data-tabs="timeline"
                     data-width="500"
                     data-height="680"
@@ -88,13 +98,27 @@ export default function SocialMedia() {
                     data-show-facepile="true"
                   >
                     <blockquote
-                      cite="https://www.facebook.com/amaliamedicalcenter"
+                      cite={FACEBOOK_PAGE_URL}
                       className="fb-xfbml-parse-ignore"
                     >
-                      <a href="https://www.facebook.com/amaliamedicalcenter">
+                      <Link
+                        href={FACEBOOK_PAGE_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Amalia Medical Center
-                      </a>
+                      </Link>
                     </blockquote>
+                  </div>
+                  <div className="mt-4 text-center">
+                    <Link
+                      href={FACEBOOK_PAGE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-medium text-green-600 hover:text-green-700"
+                    >
+                      {t("home_social.visit_facebook")} →
+                    </Link>
                   </div>
                 </div>
               </div>
