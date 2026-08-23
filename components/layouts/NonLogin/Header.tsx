@@ -83,6 +83,23 @@ type MobileNavGroupProps = {
   onNavigate: () => void;
 };
 
+function getMobileNavItemLabel(
+  labelPrefix: MobileNavGroupProps["labelPrefix"],
+  key: string,
+  t: ReturnType<typeof useTranslation<"common">>["t"],
+) {
+  switch (labelPrefix) {
+    case "nav_vaccination":
+      return t(
+        `nav_vaccination.${key as (typeof VAKSINASI_ITEMS)[number]["key"]}`,
+      );
+    case "nav_mcu":
+      return t(`nav_mcu.${key as (typeof MCU_ITEMS)[number]["key"]}`);
+    case "nav_sdm":
+      return t(`nav_sdm.${key as (typeof SDM_ITEMS)[number]["key"]}`);
+  }
+}
+
 function MobileNavGroup({
   title,
   items,
@@ -115,7 +132,7 @@ function MobileNavGroup({
               className="block rounded-lg px-3 py-2.5 text-sm leading-snug text-gray-600 hover:bg-green-50 hover:text-green-700"
               onClick={onNavigate}
             >
-              {t(`${labelPrefix}.${item.key}`)}
+              {getMobileNavItemLabel(labelPrefix, item.key, t)}
             </NavLink>
           ))}
         </div>
