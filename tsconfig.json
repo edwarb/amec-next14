@@ -8,6 +8,7 @@
       "features/*": ["./features/*"],
       "lib/*": ["./lib/*"],
       "shared/*": ["./shared/*"],
+      "styles/*": ["./styles/*"],
       "types/*": ["./types/*"]
     },
     "allowJs": true,

@@ -7,41 +7,50 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'yarn'
-      
+          node-version: "22"
+          cache: "yarn"
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      
+
       - name: Build
         run: yarn build
-      
+        env:
+          NODE_OPTIONS: "--max-old-space-size=4096"
+
       - name: Deploy to Server
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: stressfuldev
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: ".next/,package.json,next.config.mjs,public/"
+          source: ".next,package.json,yarn.lock,next.config.mjs,next-i18next.config.js,public"
           target: "/home/stressfuldev/amec-next14"
           overwrite: true
-      
-      - name: Restart PM2
+
+      - name: Install dependencies and restart
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: stressfuldev
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            set -e
             export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+            nvm use 20
             cd /home/stressfuldev/amec-next14
-            pm2 restart amec-next14
+            yarn install --frozen-lockfile --production
+            if pm2 describe amec-next14 > /dev/null 2>&1; then
+              pm2 restart amec-next14
+            else
+              pm2 start yarn --name amec-next14 -- start
+            fi
