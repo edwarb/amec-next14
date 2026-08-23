@@ -1,4 +1,5 @@
 import VaksinMR from "features/VaccineImmuneApp/VaksinMrApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function VaksinMRPage() {
   return (
@@ -9,3 +10,6 @@ function VaksinMRPage() {
 }
 
 export default VaksinMRPage;
+
+
+export const getStaticProps = createGetStaticProps(["vaccineMr"]);

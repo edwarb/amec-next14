@@ -1,7 +1,10 @@
 import { InformationCircleIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import { useTranslation } from "next-i18next/pages";
 
-export default function PekerjaMigranCare() {
+export default function KaryawanCare() {
+  const { t } = useTranslation("mcuKaryawan");
+
   return (
     <div className="relative bg-white px-6 lg:px-8">
       <div
@@ -21,7 +24,7 @@ export default function PekerjaMigranCare() {
           <Image
             width={0}
             height={0}
-            className="aspect-video w-full h-[300px] rounded-xl bg-gray-50 object-cover object-bot"
+            className="aspect-video h-[300px] w-full rounded-xl bg-gray-50 object-cover object-bot"
             src="/img/facility/karyawan.jpg"
             alt=""
           />
@@ -30,204 +33,134 @@ export default function PekerjaMigranCare() {
               className="mt-0.5 h-5 w-5 flex-none text-gray-300"
               aria-hidden="true"
             />
-            Ilustrasi Karyawan
+            {t("fig")}
           </figcaption>
         </figure>
         <p className="mt-6 text-base font-semibold leading-7 text-green-600">
-          #MedicalCheckUp #Pekerja #Karyawan
+          {t("tags")}
         </p>
         <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Pemeriksaan MCU untuk Karyawan
+          {t("title")}
         </h1>
         <div className="mt-10 max-w-2xl">
-          <p>
-            Medical check up karyawan adalah tindakan medis yang dilakukan untuk memeriksa kondisi tubuh karyawan atau
-            calon karyawan pada suatu lingkungan kerja. Tujuan medical check up karyawan adalah untuk menjaga kesehatan
-            tubuh pekerja agar terhindar dari berbagai macam penyakit yang dapat mengganggu produktivitas.<br />
-            Tak hanya bermanfaat bagi pekerja, medical check up karyawan juga turut mengurangi ketidakhadiran karena sakit
-            serta meningkatkan produktivitas dan citra perusahaan di masyarakat secara umum.
-          </p>
-          <h3 className="mt-6 text-xl leading-8">Jenis Medical Check Up Karyawan</h3>
-          <p className="mt-2">
-            Medical check up karyawan dikelompokkan ke dalam dua kategori, yaitu berdasarkan waktu pelaksanaan dan jenis
-            pekerjaan. Berikut masing-masing penjelasannya.
-          </p>
+          {t("intro")
+            .split("\n\n")
+            .map((part) => (
+              <p key={part.slice(0, 24)} className="mt-2 first:mt-0">
+                {part}
+              </p>
+            ))}
+
+          <h3 className="mt-6 text-xl leading-8">{t("types_title")}</h3>
+          <p className="mt-2">{t("types_intro")}</p>
+
           <ul
             role="list"
-            style={{ listStyleType: 'upper-alpha' }}
-            className="mt-8 max-w-xl list-disc space-y-2 pl-6 text-gray-600"
+            style={{ listStyleType: "upper-alpha" }}
+            className="mt-8 max-w-xl space-y-4 pl-6 text-gray-600"
           >
             <li>
-              <strong>Medical Check Up Karyawan Berdasarkan Waktu Pelaksanaan</strong>
-              <p>
-                Berdasarkan waktu pelaksanaannya, medical check up untuk karyawan dibedakan menjadi tiga jenis, yaitu sebelum
-                bekerja, rutinitas, dan khusus.
-              </p>
-              <ul role="list"
-                className="max-w-xl list-decimal space-y-2 pl-6 text-gray-600">
+              <strong>{t("timing_title")}</strong>
+              <p className="mt-2">{t("timing_intro")}</p>
+              <ul
+                role="list"
+                className="mt-2 max-w-xl list-decimal space-y-2 pl-6 text-gray-600"
+              >
                 <li>
-                  Medical Check Up Calon Pekerja
-                  <p>
-                    Sesuai dengan namanya, medical check up ini dilakukan untuk menilai kesiapan fisik serta mencegah penularan
-                    penyakit infeksi sebelum calon pekerja diterima menjadi karyawan. Pemeriksaan yang umum dilakukan dalam medical
-                    check up sebelum bekerja adalah skrining fisik lengkap, tes laboratorium, dan foto rontgen paru-paru.
-                  </p>
+                  <strong>{t("pre_title")}</strong>
+                  <p>{t("pre_body")}</p>
                 </li>
                 <li>
-                  Medical Check Up Berkala
-                  <p>
-                    Medical check up berkala merupakan pemeriksaan kesehatan yang dilakukan secara rutin sesuai dengan risiko di
-                    lingkungan kerja karyawan tersebut. Medical check up berkala biasanya dilakukan minimal setahun sekali.
-                  </p>
+                  <strong>{t("periodic_title")}</strong>
+                  <p>{t("periodic_body")}</p>
                 </li>
                 <li>
-                  Medical Check Up Khusus
-                  <p>
-                    Medical check up khusus merupakan jenis medical check up untuk mendeteksi risiko dan pengaruh pekerjaan terhadap
-                    golongan pekerja tertentu, seperti:
-                  </p>
-                  <ul role="list"
-                    className="max-w-xl list-disc space-y-2 pl-6 text-gray-600">
-                    <li>
-                      Karyawan yang mengalami kecelakaan selama bekerja.
-                    </li>
-                    <li>
-                      Karyawan berusia di atas 40 tahun.
-                    </li>
-                    <li>
-                      Karyawan yang memiliki disabilitas.
-                    </li>
-                    <li>
-                      Karyawan yang mengidap gangguan kesehatan tertentu.
-                    </li>
+                  <strong>{t("special_title")}</strong>
+                  <p>{t("special_body")}</p>
+                  <ul
+                    role="list"
+                    className="mt-2 max-w-xl list-disc space-y-2 pl-6 text-gray-600"
+                  >
+                    <li>{t("special_1")}</li>
+                    <li>{t("special_2")}</li>
+                    <li>{t("special_3")}</li>
+                    <li>{t("special_4")}</li>
                   </ul>
                 </li>
               </ul>
             </li>
             <li>
-              <strong>Medical Check Up Karyawan Berdasarkan Jenis Pekerjaan</strong>
-              <br />
-              Karena setiap pekerjaan memiliki risiko tersendiri, medical check up juga perlu disesuaikan dengan bidang pekerjaan
-              karyawan tersebut, seperti:
-              <ul role="list"
-                className="max-w-xl list-disc space-y-2 pl-6 text-gray-600">
-                <li>
-                  Karyawan yang bekerja di tempat bising, seperti pabrik atau maintenance mesin, memerlukan skrining fungsi
-                  pendengaran melalui pemeriksaan audiometri.
-                </li>
-                <li>
-                  Karyawan di lingkungan kerja yang bisa memengaruhi pernapasan, seperti pabrik semen atau penyemprotan cat mobil, memerlukan skrining fungsi paru melalui pemeriksaan spirometri.
-                </li>
+              <strong>{t("jobtype_title")}</strong>
+              <p className="mt-2">{t("jobtype_intro")}</p>
+              <ul
+                role="list"
+                className="mt-2 max-w-xl list-disc space-y-2 pl-6 text-gray-600"
+              >
+                <li>{t("jobtype_1")}</li>
+                <li>{t("jobtype_2")}</li>
               </ul>
             </li>
           </ul>
-          <h3 className="mt-6 text-xl leading-8">Persiapan Medical Check Up Karyawan</h3>
-          <p className="mt-2">
-            Sebelum menjalani medical check up, karyawan dianjurkan untuk mempersiapkan diri dengan berpuasa dan menjaga
-            kesehatan tubuh. Adapun penjelasan lengkap mengenai persiapan medical check up kerja adalah sebagai berikut:
-          </p>
-          <ul role="list"
-            className="max-w-xl list-disc space-y-2 pl-6 text-gray-600">
+
+          <h3 className="mt-6 text-xl leading-8">{t("prep_title")}</h3>
+          <p className="mt-2">{t("prep_intro")}</p>
+          <ul
+            role="list"
+            className="mt-2 max-w-xl list-disc space-y-2 pl-6 text-gray-600"
+          >
+            <li>{t("prep_1")}</li>
+            <li>{t("prep_2")}</li>
+            <li>{t("prep_3")}</li>
+          </ul>
+          <p className="mt-2">{t("prep_note")}</p>
+
+          <h3 className="mt-6 text-xl leading-8">{t("proc_title")}</h3>
+          <p className="mt-2">{t("proc_intro")}</p>
+          <ul
+            role="list"
+            className="mt-2 max-w-xl list-decimal space-y-3 pl-6 text-gray-600"
+          >
             <li>
-              Puasa selama 8–12 jam sebelum melakukan pemeriksaan. Lama waktu puasa ini disesuaikan dengan jenis pemeriksaan
-              yang akan dilakukan.
+              <strong>{t("lab_title")}</strong>
+              <p>{t("lab_body")}</p>
             </li>
             <li>
-              Mengenakan pakaian berlengan pendek agar memudahkan dokter untuk mengambil sampel darah pada bagian lengan atas.
+              <strong>{t("xray_title")}</strong>
+              <p>{t("xray_body")}</p>
             </li>
             <li>
-              Mencukupi waktu tidur minimal 7–9 jam pada malam hari sebelum pemeriksaan. Pasalnya, kurang tidur dapat
-              memengaruhi hasil pemeriksaan tekanan darah, denyut jantung, serta suhu tubuh.
+              <strong>{t("ecg_title")}</strong>
+              <p>{t("ecg_body")}</p>
+            </li>
+            <li>
+              <strong>{t("audio_title")}</strong>
+              <p>{t("audio_body")}</p>
+            </li>
+            <li>
+              <strong>{t("spiro_title")}</strong>
+              <p>{t("spiro_body")}</p>
+            </li>
+            <li>
+              <strong>{t("color_title")}</strong>
+              <p>{t("color_body")}</p>
+            </li>
+            <li>
+              <strong>{t("physical_title")}</strong>
+              <p>{t("physical_body")}</p>
             </li>
           </ul>
-          <p>
-            Jika memiliki riwayat atau sedang menderita penyakit tertentu, karyawan atau calon karyawan dianjurkan untuk
-            membawa hasil pemeriksaan sebelumnya.
-          </p>
-          <h3 className="mt-6 text-xl leading-8">Prosedur Medical Check Up Karyawan</h3>
-          <p className="mt-2">
-            Pada dasarnya, prosedur medical check up karyawan akan melalui serangkaian pemeriksaan medis, di antaranya:
-          </p>
-          <ul role="list"
-            className="max-w-xl list-decimal space-y-2 pl-6 text-gray-600">
-            <li>
-              Pemeriksaan Laboratorium
-              <p>
-                Pemeriksaan ini dilakukan dengan mengambil sampel darah, urine, dan tinja untuk dianalisis pada laboratorium.
-                Tes darah, bertujuan untuk menghitung jumlah sel darah, zat kimia penanda fungsi organ, gula darah kolesterol,
-                fungsi organ hati, dan ginjal. Tes urine (urinalisis), dilakukan untuk mendeteksi infeksi saluran kemih, diabetes,
-                penyakit ginjal, dan gangguan hati. Dan yang terakhir adalah Tes tinja, yaitu prosedur pemeriksaan dengan
-                menganalisis kadar zat dan bakteri dalam tinja untuk mendeteksi gangguan pencernaan, seperti radang usus atau
-                gastroenteritis. Hanya saja tes tinja berlaku di paket pemeriksaan tertentu yang membutuhkan saja.
-              </p>
-            </li>
-            <li>
-              Pemeriksaan Rontgen
-              <p>
-                Rontgen adalah prosedur pemeriksaan yang dilakukan dengan mengambil gambar organ dalam tubuh, seperti jantung
-                dan paru-paru, mendeteksi kelainan atau infeksi pada organ tubuh tersebut.
-              </p>
-            </li>
-            <li>
-              Pemeriksaan Elektrokardiogram (EKG)
-              <p>
-                Elektrokardiogram (EKG) adalah prosedur pemeriksaan dengan menempelkan elektroda di bagian dada, lengan, dan
-                tungkai pasien untuk melihat aktivitas listrik serta gangguan yang terjadi pada organ jantung.
-              </p>
-            </li>
-            <li>
-              Pemeriksaan Audiometri
-              <p>
-                Pemeriksaan audiometri atau prosedur pemeriksaan untuk mengevaluasi fungsi pendengaran karyawan dengan mendengarkan
-                suara nada, atau frekuensi tertentu.
-              </p>
-            </li>
-            <li>
-              Pemeriksaan Spirometri
-              <p>
-                Spirometri adalah tes untuk mengevaluasi fungsi paru menggunakan sebuah alat bernama spirometer. Nantinya, alat
-                tersebut akan mencatat jumlah udara yang dihirup serta diembuskan oleh pasien.
-              </p>
-            </li>
-            <li>
-              Tes Buta Warna
-              <p>
-                Tes buta warna yang umum dilakukan adalah metode Ishihara. Melalui pemeriksaan ini, pasien diminta untuk
-                menyebutkan angka berwarna yang disisipkan pada titik-titik warna.
-              </p>
-            </li>
-            <li>
-              Tes Dokter
-              <p>
-                Tes dokter untuk cek tensi, tinggi badan, berat badan, cek mata serta pemeriksaan fisik.
-              </p>
-            </li>
-            <li>
-              Penilaian Hasil Medical Check Up Karyawan
-              <p>
-                Penilaian hasil medical check up dibuat berdasarkan tempat kerja serta proses kerja yang dijalani oleh setiap
-                karyawan. Umumnya, hasil medical check up ini dikelompokkan ke dalam beberapa indikator penilaian, yaitu:
-              </p>
-              <ul role="list"
-                className="max-w-xl list-disc space-y-2 pl-6 text-gray-600">
-                <li>
-                  Fit to work (sehat atau layak bekerja).
-                </li>
-                <li>
-                  Fit with note (sehat atau laik bekerja dengan catatan).
-                </li>
-                <li>
-                  Unfit (tidak sehat atau tidak laik bekerja).
-                </li>
-              </ul>
-            </li>
+
+          <h3 className="mt-6 text-xl leading-8">{t("result_title")}</h3>
+          <p className="mt-2">{t("result_intro")}</p>
+          <ul
+            role="list"
+            className="mt-2 max-w-xl list-disc space-y-2 pl-6 text-gray-600"
+          >
+            <li>{t("result_1")}</li>
+            <li>{t("result_2")}</li>
+            <li>{t("result_3")}</li>
           </ul>
-          <br/>
-          <p>
-            Medical check up karyawan penting untuk dilakukan karena dapat memengaruhi motivasi serta produktivitas karyawan
-            selama bekerja. Karena itu, Anda bisa memesan paket medical check up karyawan di Amalia Medical Center untuk
-            memeriksa kesehatan karyawan Anda secara keseluruhan.
-          </p>
+          <p className="mt-4">{t("closing")}</p>
         </div>
       </div>
     </div>

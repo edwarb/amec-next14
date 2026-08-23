@@ -1,0 +1,200 @@
+{
+  "intro_heading": "Stay Healthy, Stay Confident",
+  "intro_subtitle": "Amalia Medical Center is committed to providing the best healthcare services with compassion and professionalism. Your health and your family's wellbeing are our top priority.",
+  "home_partner_tagline": "Amalia Medical Center has provided international medical check-up and vaccination services since 2000",
+  "home_features": {
+    "eyebrow": "Comprehensive care",
+    "title": "Everything your family needs for better health",
+    "subtitle": "We offer a wide range of comprehensive medical services, from general consultations to specialist care, vaccinations, and thorough health screenings. Supported by professional medical staff and modern facilities, we are committed to protecting the health of you and your family.",
+    "items": [
+      {
+        "name": "Friendly Service",
+        "description": "We provide full attention to patient safety and comfort"
+      },
+      {
+        "name": "International Standard",
+        "description": "Amalia Medical Center has long been trusted by embassies from various countries and multinational companies"
+      },
+      {
+        "name": "Affordable Pricing",
+        "description": "No need to worry about draining your savings — keep your family healthy"
+      },
+      {
+        "name": "Certified",
+        "description": "ISO quality management for healthcare services, environmental and waste management, and medical equipment management systems"
+      },
+      {
+        "name": "Professional Staff",
+        "description": "Our expert team is highly responsible and ready to assist you at any time"
+      },
+      {
+        "name": "ICV Vaccination Services",
+        "description": "Official International Certificate of Vaccination (ICV) from Port Health Office available for international travel vaccination and immunization needs"
+      }
+    ]
+  },
+  "home_testimonials": [
+    {
+      "name": "Sevi",
+      "job": "Private Employee",
+      "text": "I tried the pre-marital health screening program so my partner and I could understand each other's health. Amalia Medical Center is highly recommended for check-ups. Thank you for the excellent service."
+    },
+    {
+      "name": "Ali",
+      "job": "Government Activist",
+      "text": "I came for a check-up because of a health concern. I realized how important regular health screenings are. Now I subscribe to check-ups at Amalia Medical Center — high quality, great service, and affordable prices."
+    },
+    {
+      "name": "Anisa",
+      "job": "University Student",
+      "text": "I found Amalia Medical Center through a referral from the Taiwan embassy before my scholarship departure. The service is excellent and the results are accurate. No wonder it's always busy. Wishing you continued success!"
+    },
+    {
+      "name": "Fau",
+      "job": "Homemaker",
+      "text": "Out of curiosity about health programs at other clinics, my whole family had a check-up at Amalia Medical Center. The price is affordable, but the results are comparable to well-known clinics. We now allocate part of our household budget for regular check-ups to stay ahead of health issues. Thank you, Amalia Medical Center."
+    },
+    {
+      "name": "Habib",
+      "job": "Language Practitioner",
+      "text": "At first I was skeptical because it wasn't a famous clinic. Thanks to my specialist's recommendation, I was pleased to find the results were as accurate as my previous hospital check-up. They should promote more so more people know Amalia Medical Center is good and affordable."
+    },
+    {
+      "name": "Jaya",
+      "job": "Audiovisual Entrepreneur",
+      "text": "At first I was skeptical because it wasn't a famous clinic. Thanks to my specialist's recommendation, I was pleased to find the results were as accurate as my previous hospital check-up. They should promote more so more people know Amalia Medical Center is good and affordable."
+    },
+    {
+      "name": "Muhammad",
+      "job": "Self-Employed",
+      "text": "All employees at our office are satisfied with Amalia Medical Center's service. I only recently learned we should do regular check-ups. Now we can detect illnesses early. Because of employee demand, our office always allocates a budget for check-ups here."
+    },
+    {
+      "name": "Nia",
+      "job": "Boutique Owner",
+      "text": "My child's school decision to have health checks at Amalia Medical Center was absolutely right. Affordable price, great results, and referral benefits too! Now we're changing our mindset — check health before getting sick. Good job, Amalia Medical Center."
+    }
+  ],
+  "home_facility": {
+    "eyebrow": "Clinic Services",
+    "title": "Quality Medical Services for All Your Health Needs",
+    "subtitle": "Our professional team is ready to assist you with a comprehensive range of medical services. Ensure you and your family receive the optimal care you need at Amalia Medical Center.",
+    "view_service": "View Service",
+    "items": [
+      {
+        "title": "Covid Care",
+        "content": "Amalia Medical Center provides Rapid Test and PCR Test facilities. Large-scale COVID-19 testing expansion ...",
+        "href": "/covidcare"
+      },
+      {
+        "title": "Hematology",
+        "content": "A more comprehensive assessment of blood cell components to detect blood abnormalities such as anemia ...",
+        "href": "/hematologi"
+      },
+      {
+        "title": "Immunology",
+        "content": "Immunology is a blood test aimed at early detection of viral infections ...",
+        "href": "/imunologi"
+      },
+      {
+        "title": "Clinical Chemistry",
+        "content": "Clinical chemistry is a laboratory examination based on chemical reactions that can be performed on blood ...",
+        "href": "/kimiaklinik"
+      },
+      {
+        "title": "Stool Analysis",
+        "content": "Stool, also known as feces, is the residue of digested food ...",
+        "href": "/analisafeses"
+      },
+      {
+        "title": "Serology",
+        "content": "Serology test results vary widely depending on the immune response at the time of examination ...",
+        "href": "/serologi"
+      },
+      {
+        "title": "Urinalysis",
+        "content": "Urine examination, commonly known as urinalysis, is a screening test used to ...",
+        "href": "/urinalisa"
+      },
+      {
+        "title": "Audiometry",
+        "content": "Audiometry is an examination to determine a person's hearing threshold level ...",
+        "href": "/audiometri"
+      },
+      {
+        "title": "Electrocardiography",
+        "content": "Electrocardiography is the recording of graphic variations in electrical potential caused by electrical activity ...",
+        "href": "/elektrokardiografi"
+      },
+      {
+        "title": "Spirometry",
+        "content": "Spirometry is an examination performed to objectively measure lung capacity and function ...",
+        "href": "/spirometri"
+      },
+      {
+        "title": "X-Ray",
+        "content": "Chest X-ray (CXR) is a radiographic projection of the thorax used to ...",
+        "href": "/rontgen"
+      }
+    ]
+  },
+  "home_booking": {
+    "title_line1": "Make Registration Easy.",
+    "title_line2": "Register Online Now.",
+    "subtitle": "Enjoy the convenience of registering for our services online. No queues, fast, and practical. Our team is ready to help you with an easy and efficient registration process.",
+    "cta": "Register"
+  },
+  "home_social": {
+    "eyebrow": "Social Media",
+    "title": "Stay Connected with Amalia Medical Center, Wherever You Are",
+    "subtitle": "Stay updated with the latest news, offers, and healthcare services from Amalia Medical Center. Follow us on our social media platforms and become part of our community."
+  },
+  "nav": {
+    "booking": "Booking",
+    "about": "About Us",
+    "article": "Articles",
+    "vaccination": "Vaccination & Immunization",
+    "mcu": "MCU",
+    "promo": "Promotions",
+    "sdm": "HRD",
+    "login": "Log in",
+    "open_menu": "Open main menu",
+    "close_menu": "Close menu"
+  },
+  "nav_vaccination": {
+    "covid": "Covid Vaccination",
+    "campak": "Measles Immunization",
+    "demam_kuning": "Yellow Fever Vaccination",
+    "influenza": "Influenza Vaccination",
+    "meningitis": "Meningitis Vaccination",
+    "mmr": "MMR Vaccination",
+    "tifoid": "Typhoid Vaccination",
+    "mr": "MR Vaccination",
+    "vitamin_c": "Vitamin C Injection"
+  },
+  "nav_mcu": {
+    "covid": "MCU Covid Care",
+    "family": "MCU Family Care",
+    "haji": "MCU Hajj",
+    "on_site": "MCU On Site",
+    "tenaga_kerja": "MCU Workforce",
+    "pelajar_taiwan": "MCU for Students to Taiwan",
+    "pekerja_migran": "MCU for Prospective Migrant Workers",
+    "karyawan": "MCU Employees"
+  },
+  "nav_sdm": {
+    "analisis_lab": "Lab Analysis",
+    "csr": "CSR",
+    "fasilitas": "Facilities",
+    "sertifikat": "Certificates"
+  },
+  "footer": {
+    "address": "Address",
+    "contact": "Contact",
+    "phone": "Phone",
+    "fax": "Fax",
+    "wa": "WA",
+    "crafted_with": "Crafted with",
+    "by": "by"
+  }
+}

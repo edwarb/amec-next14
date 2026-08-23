@@ -1,0 +1,199 @@
+{
+  "fig": "Ilustrasi tifoid pada orang dewasa",
+  "tags": "#Tifoid",
+  "title": "Tifoid",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Tifus (tipes) atau demam tifoid adalah penyakit yang disebabkan oleh infeksi bakteri Salmonella typhii. Tifus dapat menular dengan cepat, umumnya melalui konsumsi makanan atau minuman yang sudah terkontaminasi tinja yang mengandung bakteri Salmonella typhii. Pada kasus yang jarang terjadi, penularan tifus dapat terjadi karena terpapar urine yang sudah terinfeksi bakteri Salmonella typhii."
+    },
+    {
+      "type": "h3",
+      "text": "Kasus Tifus di Indonesia"
+    },
+    {
+      "type": "p",
+      "text": "Hampir 100.000 penduduk Indonesia terjangkit penyakit tifus tiap tahunnya. Oleh sebab itu, penyakit tifus dinyatakan sebagai penyakit endemik dan masalah kesehatan serius di dalam negeri. Sanitasi yang buruk dan keterbatasan akses air bersih, diyakini merupakan penyebab utama berkembangnya penyakit tifus. Selain itu, anak-anak lebih sering terserang tifus karena belum sempurnanya sistem kekebalan tubuh. Jika tidak segera ditangani dengan baik, diperkirakan tiap satu dari lima orang akan meninggal karena tifus. Selain itu, tifus juga berisiko menimbulkan komplikasi. Penanganan penyakit tifus adalah melalui pemberian obat antibiotik. Pengobatan bisa dilakukan di rumah atau perlu dilakukan di rumah sakit, akan bergantung pada tingkat keparahan penyakit."
+    },
+    {
+      "type": "h3",
+      "text": "Vaksinasi Tifoid"
+    },
+    {
+      "type": "p",
+      "text": "Di Indonesia, vaksin tifoid yang diberikan untuk mencegah tifus termasuk imunisasi yang dianjurkan oleh pemerintah, namun belum termasuk ke dalam kategori wajib. Vaksin tifoid diberikan kepada anak-anak berusia lebih dari 2 tahun, dan diulang tiap tiga tahun. Seperti vaksin-vaksin lainnya, vaksin tifoid tidak menjamin perlindungan 100 persen terhadap infeksi tifus. Anak yang sudah diimunisasi tifoid pun tetap dapat terinfeksi, namun tingkat infeksinya tidak seberat pada pasien yang belum mendapat vaksin tifoid. Vaksinasi juga sangat dianjurkan bagi orang yang ingin bekerja atau bepergian ke daerah yang banyak kasus penyebaran tifus. Tindakan pencegahan lain yang perlu dilakukan adalah memerhatikan makanan dan minuman yang akan dikonsumsi, misalnya dengan menghindari makan di tempat terbuka yang mudah terpapar bakteri."
+    },
+    {
+      "type": "h3",
+      "text": "Gejala Tifus"
+    },
+    {
+      "type": "p",
+      "text": "Rubella atau sering disebut dengan campak Jerman adalah infeksi virus rubella yang menyebabkan kemunculan bintik-bintik ruam merah di kulit. Virus penyebab Campak Jerman juga menyebabkan kelenjar getah bening leher dan belakang telinga membengkak.\n\nTanda-tanda dan gejala rubella seringkali sangat ringan sehingga sulit untuk diperhatikan, terutama pada anak-anak. Gejala campak Jerman pada anak biasanya mulai muncul sekitar 2-3 minggu setelah tubuh mulai terpapar virus. Berikut gejalanya:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Demam yang meningkat secara bertahap tiap hari hingga mencapai 39°C-40°C. Demam juga akan lebih tinggi pada malam hari",
+        "Nyeri otot",
+        "Sakit kepala",
+        "Merasa tidak enak badan",
+        "Pembesaran ginjal dan hati",
+        "Kelelahan dan lemas",
+        "Berkeringat",
+        "Batuk kering",
+        "Penurunan berat badan",
+        "Sakit perut",
+        "Kehilangan nafsu makan",
+        "Anak-anak sering mengalami diare, sementara orang dewasa cenderung mengalami konstipasi",
+        "Muncul ruam pada kulit berupa bintik-bintik kecil berwarna merah muda",
+        "Linglung, merasa tidak tahu sedang berada di mana dan apa yang sedang terjadi di sekitar dirinya"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Gejala tifus berkembang dari minggu ke minggu dengan ciri-ciri sebagai berikut:"
+    },
+    {
+      "type": "richOl",
+      "items": [
+        {
+          "title": "Minggu ke-1.",
+          "body": "Gejala-gejala awal yang patut diperhatikan, khususnya terkait perkembangan suhu badan penderita adalah:",
+          "items": [
+            "Demam yang awalnya tidak tinggi, kemudian meningkat secara bertahap hingga mencapai 39-40°C. Pada minggu pertama, suhu tubuh dapat naik atau turun",
+            "Sakit kepala",
+            "Lemas dan tidak enak badan",
+            "Batuk kering"
+          ]
+        },
+        {
+          "title": "Minggu ke-2.",
+          "body": "Jika tidak segera ditangani, pasien akan memasuki stadium kedua dengan gejala:",
+          "items": [
+            "Demam tinggi yang masih berlanjut dan cenderung memburuk di malam hari, disertai denyut nadi yang lambat",
+            "Muncul bintik-bintik yang berwarna seperti bunga mawar di daerah perut dan dada",
+            "Mengigau",
+            "Sakit perut",
+            "Diare atau sembelit parah",
+            "Tinja umumnya berwarna kehijauan",
+            "Perut kembung akibat pembengkakan hati dan empedu"
+          ]
+        },
+        {
+          "title": "Minggu ke-3.",
+          "body": "Suhu tubuh menurun pada akhir minggu ketiga. Jika tidak ditangani, komplikasi bisa muncul pada tahap ini, berupa:",
+          "items": [
+            "Perdarahan pada usus",
+            "Pecahnya usus"
+          ]
+        },
+        {
+          "title": "Minggu ke-4.",
+          "body": "Demam tifoid secara berangsur-angsur akan turun. Namun tetap perlu segera ditangani agar tidak muncul gejala-gejala lain atau menyebabkan komplikasi yang membahayakan nyawa. Pada sebagian kasus, gejala dapat kembali muncul dua minggu setelah demam reda\n\nSegera konsultasikan kepada dokter jika mengalami demam tinggi dan beberapa gejala di atas. Ingatlah bahwa walaupun telah menerima vaksin atau imunisasi, seseorang masih berisiko menderita tifus. Pemeriksaan juga sebaiknya dilakukan jika terserang demam setelah berkunjung ke tempat dengan kasus penyebaran tifus yang tinggi."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/img/disease/tifoid02.png",
+      "caption": "Ilustrasi tifoid pada anak"
+    },
+    {
+      "type": "h3",
+      "text": "Penyebab Tifus"
+    },
+    {
+      "type": "p",
+      "text": "Tifus disebabkan oleh bakteri Salmonella typhii yang masuk ke dalam usus manusia melalui makanan atau minuman yang terkontaminasi bakteri tersebut, hingga berkembang biak di saluran pencernaan. Gejala-gejala seperti demam, sakit perut, sembelit, atau diare akan timbul ketika bakteri ini berkembang biak di saluran pencernaan.\n\nBeberapa faktor risiko penyakit tifus, di antaranya:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Sanitasi buruk. Di negara seperti Indonesia, penyebaran bakteri Salmonella typhii biasanya terjadi melalui konsumsi air yang terkontaminasi tinja yang yang mengandung bakteri Salmonella typhii, juga dari makanan yang dicuci dengan menggunakan air yang terkontaminasi. Kondisi ini terutama disebabkan oleh buruknya sanitasi dan akses air bersih.",
+        "Bakteri juga dapat menyebar jika orang yang telah terinfeksi tidak mencuci tangan sebelum menyentuh atau mengolah makanan. Penyebaran bakteri terjadi ketika ada orang lain yang menyantap makanan yang tersentuh tangan penderita.",
+        "Mengonsumsi sayur-sayuran yang menggunakan pupuk dari kotoran manusia yang terinfeksi.",
+        "Mengonsumsi produk susu yang telah terkontaminasi.",
+        "Menggunakan toilet yang terkontaminasi bakteri. Anda akan terinfeksi jika menyentuh mulut sebelum mencuci tangan setelah buang air.",
+        "Melakukan seks oral dengan pembawa bakteri Salmonella typhii."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Jika tidak segera diobati, Salmonella typhii akan menyebar ke seluruh tubuh dengan memasuki pembuluh darah. Gejala tifus akan diperburuk jika bakteri telah menyebar ke luar sistem pencernaan. Selain itu, bakteri yang menyebar dapat merusak organ dan jaringan, serta menyebabkan komplikasi serius. Kondisi yang paling umum terjadi adalah perdarahan internal atau usus bocor."
+    },
+    {
+      "type": "h3",
+      "text": "Pengobatan Tifus"
+    },
+    {
+      "type": "p",
+      "text": "Terapi antibiotik adalah cara efektif dalam menangani tifus dan perlu diberikan sedini mungkin. Beberapa obat antibiotik yang digunakan untuk mengobati tifus adalah azithromycin, ciprofloxacin, atau ceftriaxone.\n\nPerawatan tifus dilakukan di rumah sakit, tapi jika tifus lebih cepat dideteksi dan gejalanya masih tergolong ringan, maka penanganannya bisa dilakukan secara mandiri di rumah.\n\nPengobatan Tifus di Rumah Sakit Antibiotik di rumah sakit akan diberikan dalam bentuk suntikan. Jika diperlukan, asupan cairan dan nutrisi juga akan dimasukkan ke dalam pembuluh darah melalui infus. Pasien perlu menggunakan antibiotik hingga hasil tes terhadap bakteri penyebab tifus benar-benar bersih. Infus akan diberikan apabila pasien tifus disertai dengan gejala-gejala, seperti muntah terus-menerus serta diareparah. Infus berisi cairan akan diberikan untuk mencegah kekurangan cairan tubuh (dehidrasi). Anak yang mengalami demam tifoid bisa direkomendasikan untuk melalui perawatan di rumah sakit sebagai tindakan pencegahan. Pada kasus yang jarang terjadi, operasi dapat dilakukan jika terjadi komplikasi yang membahayakan nyawa, seperti perdarahan saluran pencernaan. Penderita tifus akan berangsur-angsur membaik setelah dirawat kurang-lebih selama 3-5 hari. Tubuh akan pulih dengan perlahan-lahan hingga kondisi pasien pulih sepenuhnya setelah beberapa minggu pascainfeksi.\n\nPengobatan Tifus di Rumah Umumnya orang yang didiagnosis tifus pada stadium awal membutuhkan pengobatan selama 1-2 minggu dengan tablet antibiotik. Meski tubuh mulai membaik setelah 2-3 hari mengonsumsi antibiotik, sebaiknya jangan menghentikan konsumsi sebelum antibiotik habis. Hal ini berguna untuk memastikan agar bakteri Salmonella typhii benar-benar lenyap di dalam tubuh. Meski begitu, pemberian antibiotik untuk mengobati tifus mulai menimbulkan masalah bagi negara-negara di Asia Tenggara. Beberapa kelompok Salmonella typhii menjadi kebal terhadap antibiotik. Beberapa tahun terakhir, bakteri ini juga menjadi kebal terhadap antibiotik chloramphenicol, ampicillin, dan trimethoprim-sulfamethoxazole. Jika kondisi makin memburuk saat menjalani perawatan tifus di rumah, segera temui dokter untuk mendapatkan penanganan yang tepat. Pada sebagian kecil penderita tifus, penyakit ini dapat kambuh kembali.\n\nPastikan untuk mengikuti langkah-langkah ini supaya tubuh segera pulih dan mencegah risiko tifus kambuh:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Istirahat yang cukup",
+        "Makan teratur. Makan dalam porsi sedikit, tapi dalam frekuensi yang cukup sering dibandingkan dengan makan porsi besar, tapi hanya tiga kali sehari",
+        "Perbanyak minum air putih",
+        "Rajin mencuci tangan dengan sabun untuk mengurangi risiko penyebaran infeksi"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Bakteri yang Menetap di Dalam Tubuh"
+    },
+    {
+      "type": "p",
+      "text": "Beberapa orang yang telah pulih dan sudah tidak menunjukkan gejala-gejala tifus, tetap dapat menderita bakteri Salmonella typhii di dalam saluran usus selama bertahun-tahun. Sekitar lima persen penderita tifus yang tidak menjalani pengobatan yang cukup tetapi kemudian bisa pulih, akan terus membawa bakteri ini di dalam tubuhnya. Tanpa disadari, para pembawa (carrier) bakteri tifoid bisa menularkannya pada orang lain melalui tinja. Untuk beberapa profesi, carrier ini mendapat perhatian khusus. Orang-orang dengan profesi tertentu, disarankan untuk memastikan bahwa tubuhnya tidak memiliki bakteri Salmonella typhii sebelum melakukan pekerjaannya.\n\nProfesi yang berisiko ini, antara lain:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Profesi yang berhubungan dengan pengolahan dan penyiapan makanan",
+        "Perawat yang sering berhadapan atau mengurus orang yang rentan sakit",
+        "Pengasuh balita atau perawat lansia."
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Pengobatan Tambahan saat Tifus Kambuh"
+    },
+    {
+      "type": "p",
+      "text": "Sebagian orang dapat mengalami gejala-gejala tifus yang kambuh seminggu setelah berakhirnya pengobatan antibiotik. Untuk kondisi ini, biasanya dokter akan kembali meresepkan antibiotik, meski gejala-gejala yang dirasakan tidak separah sebelumnya.\n\nJika setelah menjalani pengobatan ternyata hasil tes pada feses atau tinja ditemukan masih adanya bakteri Salmonella typhii, pasien akan kembali disarankan untuk mengonsumsi antibiotik selama 28 hari untuk mematikan bakteri, sekaligus mengurangi risiko pasien menjadi carrier. Selama diagnosis masih menyatakan adanya infeksi, sebaiknya hindari aktivitas mengolah, memasak, dan menyajikan makanan baik untuk diri sendiri, maupun orang lain. Selain itu, pastikan juga untuk rutin mencuci tangan setelah dari kamar mandi."
+    },
+    {
+      "type": "h3",
+      "text": "Pencegahan Tifus"
+    },
+    {
+      "type": "p",
+      "text": "Vaksinasi tifus di Indonesia termasuk dalam jadwal imunisasi anak. Vaksinasi ini sangat dianjurkan bagi anak berusia dua tahun dan diberikan kembali tiap tiga tahun sekali. Pemberian vaksin idealnya diberikan satu bulan sebelum berkunjung ke tempat yang merupakan daerah endemik tifus.\n\nBeberapa reaksi dan efek samping yang mungkin muncul setelah pemberian vaksin tifus, yaitu nyeri, kemerahan, bengkak di sekeliling area suntikan, mual, pusing, sakit perut, atau diare.\n\nMeski demikian, pemberian vaksin tifoid tidak menjamin 100 persen kebal terhadap bakteri penyebab tifus. Risiko terserang tifoid tetap ada, meski gejala-gejala yang terjadi tidak separah gejala pada orang yang belum memperoleh vaksin sama sekali."
+    },
+    {
+      "type": "h3",
+      "text": "Langkah Pencegahan selain Vaksin"
+    },
+    {
+      "type": "p",
+      "text": "Di negara-negara berkembang, bakteri tifus dapat tumbuh subur seiring meningkatnya tingkat resistensi bakteri terhadap antibiotik untuk mengobati tifus. Ini mengakibatkan beberapa antibiotik sudah tidak mampu melawan penyakit ini. Oleh sebab itu, perlu penyusunan dan penyuluhan mengenai daftar obat-obatan yang sudah tidak efektif dalam menangani tifus agar pasien mendapatkan pengobatan yang tepat.\n\nUntuk mencegah tifus, pemberian vaksin tifus perlu disertai dengan perbaikan sanitasi, ketersediaan air bersih, serta penerapan pola hidup sehat sejak dini.\n\nPerhatikan hal-hal berikut ini agar terhindar dari risiko penularan tifus:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Cuci tangan sebelum dan sesudah mengolah makanan dan minuman, serta setelah buang air kecil atau besar, maupun usai membersihkan kotoran, misalnya saat mencuci popok bayi.",
+        "Jika ingin bepergian ke tempat yang memiliki kasus penyebaran tifus, sebaiknya pastikan air yang akan diminum sudah direbus sampai matang.",
+        "Jika harus membeli minuman, sebaiknya beli air minum dalam kemasan.",
+        "Kurangi membeli jajanan secara sembarangan di pinggir jalan, karena mudah sekali terpapar bakteri.",
+        "Hindari mengonsumsi es batu yang bukan dibuat sendiri.",
+        "Hindari mengonsumsi buah dan sayuran mentah, kecuali terlebih dahulu dicuci dengan air bersih dan kulitnya dikupas.",
+        "Batasi konsumsi jenis-jenis makanan boga-bahari (seafood), terutama yang masih mentah, karena tingkat kesegarannya sulit diketahui secara pasti.",
+        "Sebaiknya gunakan air matang untuk menggosok gigi atau berkumur, terutama jika sedang berada di tempat yang belum dijamin kebersihannya.",
+        "Bersihkan kamar mandi secara teratur. Hindari bertukar barang pribadi, seperti handuk, seprai, dan peralatan mandi. Cuci benda-benda tersebut secara terpisah di dalam air hangat.",
+        "Hindari konsumsi susu yang tidak dipasteurisasi (bukan susu kemasan).",
+        "Konsumsi antibiotik yang diresepkan oleh dokter dan ikutilah petunjuk pemakaian yang telah diberikan. Pengobatan antibiotik harus dilakukan hingga periode pengobatan berakhir untuk mencegah resistensi obat."
+      ]
+    }
+  ]
+}

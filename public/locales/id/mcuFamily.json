@@ -1,0 +1,21 @@
+{
+  "fig_child": "Ilustrasi Medical Check Up pada anak",
+  "fig_parent": "Ilustrasi Medical Check Up Parental",
+  "tags": "#MedicalCheckUp #FamilyCare",
+  "title": "MCU Family Care",
+  "intro": "Kita tidak dapat mengukur apakah kondisi tubuh kita sehat atau tidak sehat. Kita hanya bisa merasakan keluhan namun tidak dapat mengetahui dengan detail. Oleh karena itu, diperlukan adanya pemeriksaan check up secara rutin. Medical check up bukan hanya diperuntukkan untuk orang dewasa. Namun anak-anak juga penting melakukan medical check up, disarankan sejak dini selalu dikontrol tumbuh kembangnya.",
+  "packages_intro": "Kami menyediakan pemeriksaan kesehatan berdasarkan urutan sebagai berikut :",
+  "early_title": "Early Medical Check UP (Usia 3-5 tahun)",
+  "early_panel_label": "Panel periksa",
+  "early_panel": "Darah lengkap/rutin (dengan LED), Anti HbsAg, urin rutin, pemeriksaan fisik",
+  "children_title": "Children Medical Check Up (6-12 tahun)",
+  "children_panel": "Darah lengkap/rutin (dengan LED), Anti HbsAg, Urin rutin, Pemeriksaan fisik",
+  "teen_title": "Teenager Medical Check Up (13-17 tahun)",
+  "teen_panel": "Darah lengkap/rutin (dengan LED), Anti HbsAg, Urin rutin, radiologi, Cholestrol lengkap, Trigliserid, SGPT, Foto Thorax, Pemeriksaan fisik",
+  "parents_title": "Parental",
+  "mom_title": "Medical Check Up for Mommy",
+  "mom_panel": "Darah lengkap, gula puasa 2x, LDL, SGPT, asam urat, analisa urin, EKG, radiologi, Pemeriksaan fisik",
+  "dad_title": "Medical Check Up for Daddy",
+  "dad_panel": "Darah lengkap, gula puasa 2x, LDL, SGPT, asam urat, analisa urin, EKG, radiologi, Pemeriksaan fisik",
+  "closing": "Pemeriksaan tersebut bisa ditambahkan sesuai kebutuhan dan keinginan atau saran dokter sebelumnya. Harga pemeriksaan paket keluarga (Ayah, Ibu, dan Anak) akan mendapatkan pengurangan harga."
+}

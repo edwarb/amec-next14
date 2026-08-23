@@ -1,4 +1,5 @@
 import OnSiteCareApp from "features/MCUApp/OnSiteCareApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function OnSiteCarePage() {
   return (
@@ -9,3 +10,6 @@ function OnSiteCarePage() {
 }
 
 export default OnSiteCarePage;
+
+
+export const getStaticProps = createGetStaticProps(["mcuOnsite"]);

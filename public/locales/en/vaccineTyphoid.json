@@ -1,0 +1,228 @@
+{
+  "fig": "Illustration of typhoid in adults",
+  "tags": "#Typhoid",
+  "title": "Typhoid Fever",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Typhoid fever is a bacterial infection caused by Salmonella Typhi. It is commonly transmitted through the consumption of food or water contaminated with feces containing the bacteria. In rare cases, typhoid fever may also be transmitted through exposure to urine from an infected person."
+    },
+    {
+      "type": "h3",
+      "text": "Typhoid in Indonesia"
+    },
+    {
+      "type": "p",
+      "text": "Approximately 100,000 people in Indonesia are affected by typhoid fever each year, making it an endemic disease and a significant public health concern.\n\nPoor sanitation and limited access to clean water are considered the primary factors contributing to the spread of typhoid. Children are particularly vulnerable because their immune systems are not yet fully developed.\n\nIf left untreated, typhoid fever can be life-threatening. It is estimated that one in five untreated patients may die from the disease. Typhoid can also lead to serious complications if not treated promptly.\n\nTreatment primarily involves antibiotic therapy. Depending on the severity of the infection, patients may be treated either at home or in the hospital."
+    },
+    {
+      "type": "h3",
+      "text": "Typhoid Vaccination"
+    },
+    {
+      "type": "p",
+      "text": "In Indonesia, typhoid vaccination is recommended by the government but is not included in the mandatory national immunization program.\n\nThe vaccine is recommended for children over two years of age and should be administered every three years.\n\nLike other vaccines, the typhoid vaccine does not provide 100% protection against infection. Vaccinated individuals may still develop typhoid fever; however, the illness is generally milder than in those who have not been vaccinated.\n\nTyphoid vaccination is also highly recommended for individuals planning to work or travel to areas where typhoid fever is common.\n\nIn addition to vaccination, preventive measures include practicing good food and water hygiene, such as avoiding food sold in open environments where it may be easily contaminated."
+    },
+    {
+      "type": "h3",
+      "text": "Symptoms of Typhoid Fever"
+    },
+    {
+      "type": "p",
+      "text": "Common symptoms of typhoid fever include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Fever that gradually increases each day and may reach 39–40°C, often becoming higher at night",
+        "Muscle aches",
+        "Headache",
+        "General malaise",
+        "Enlargement of the liver and spleen",
+        "Fatigue and weakness",
+        "Excessive sweating",
+        "Dry cough",
+        "Weight loss",
+        "Abdominal pain",
+        "Loss of appetite",
+        "Diarrhea in children, while adults are more likely to experience constipation",
+        "Small pink-colored spots on the skin (rose spots)",
+        "Confusion or disorientation"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Typhoid fever typically progresses through several stages."
+    },
+    {
+      "type": "richOl",
+      "items": [
+        {
+          "title": "Week 1",
+          "body": "Early symptoms commonly include:",
+          "items": [
+            "Fever that gradually rises to 39–40°C",
+            "Headache",
+            "Fatigue and general discomfort",
+            "Dry cough"
+          ]
+        },
+        {
+          "title": "Week 2",
+          "body": "Without proper treatment, symptoms may worsen and include:",
+          "items": [
+            "Persistent high fever, especially at night, accompanied by a slow heart rate",
+            "Rose-colored spots on the chest and abdomen",
+            "Delirium",
+            "Abdominal pain",
+            "Severe diarrhea or constipation",
+            "Greenish-colored stools",
+            "Abdominal bloating caused by enlargement of the liver and gallbladder"
+          ]
+        },
+        {
+          "title": "Week 3",
+          "body": "By the end of the third week, the fever may begin to decrease. However, if left untreated, serious complications may occur, including:",
+          "items": [
+            "Intestinal bleeding",
+            "Intestinal perforation"
+          ]
+        },
+        {
+          "title": "Week 4",
+          "body": "The fever gradually subsides, but prompt medical treatment remains essential to prevent life-threatening complications.\n\nIn some cases, symptoms may recur approximately two weeks after the fever has resolved.\n\nConsult your doctor immediately if you experience a persistent high fever accompanied by any of the symptoms listed above.\n\nPlease note that even individuals who have received the typhoid vaccine may still develop typhoid fever, although the illness is usually less severe. Medical evaluation is particularly recommended if symptoms develop after traveling to an area where typhoid fever is endemic."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/img/disease/tifoid02.png",
+      "caption": "Illustration of typhoid fever in children"
+    },
+    {
+      "type": "h3",
+      "text": "Causes of Typhoid Fever"
+    },
+    {
+      "type": "p",
+      "text": "Typhoid fever is caused by the bacterium Salmonella Typhi, which enters the body through contaminated food or water and multiplies within the digestive tract.\n\nAs the bacteria multiply, symptoms such as fever, abdominal pain, constipation, or diarrhea begin to develop.\n\nRisk factors include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Poor sanitation and inadequate access to clean water.",
+        "Drinking water contaminated with human waste containing Salmonella Typhi.",
+        "Consuming food handled by infected individuals who do not practice proper hand hygiene.",
+        "Eating vegetables fertilized with contaminated human waste.",
+        "Consuming contaminated dairy products.",
+        "Using toilet facilities contaminated with Salmonella Typhi.",
+        "Engaging in oral sexual contact with a carrier of Salmonella Typhi."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "If left untreated, the bacteria may enter the bloodstream and spread throughout the body. Once the infection extends beyond the digestive system, it can damage organs and tissues, potentially leading to serious complications such as internal bleeding or intestinal perforation."
+    },
+    {
+      "type": "h3",
+      "text": "Treatment for Typhoid Fever"
+    },
+    {
+      "type": "p",
+      "text": "Antibiotic therapy is the most effective treatment for typhoid fever and should be started as early as possible. Commonly prescribed antibiotics include azithromycin, ciprofloxacin, and ceftriaxone.\n\nTreatment may be provided either in the hospital or at home, depending on the severity of the infection and the patient's overall condition."
+    },
+    {
+      "type": "h3",
+      "text": "Hospital Treatment"
+    },
+    {
+      "type": "p",
+      "text": "In hospitalized patients, antibiotics are typically administered by injection. If necessary, fluids and nutrients are provided intravenously to prevent dehydration and maintain adequate nutrition.\n\nPatients usually continue antibiotic treatment until laboratory tests confirm that the Salmonella Typhi bacteria have been eliminated.\n\nIntravenous (IV) fluids may be required for patients experiencing persistent vomiting or severe diarrhea to replace lost fluids and prevent dehydration.\n\nChildren with typhoid fever may also be admitted to the hospital as a precautionary measure.\n\nAlthough uncommon, surgery may be necessary if life-threatening complications occur, such as gastrointestinal bleeding or intestinal perforation.\n\nMost patients begin to improve within 3 to 5 days after receiving appropriate treatment. However, complete recovery may take several weeks following the initial infection."
+    },
+    {
+      "type": "h3",
+      "text": "Home Treatment"
+    },
+    {
+      "type": "p",
+      "text": "Patients diagnosed during the early stages of typhoid fever are generally treated at home with oral antibiotics for 1 to 2 weeks.\n\nAlthough symptoms often improve within 2 to 3 days after starting antibiotics, it is important to complete the full course of treatment to ensure the bacteria are completely eliminated.\n\nIn recent years, antibiotic resistance has become an increasing concern, particularly in Southeast Asia. Certain strains of Salmonella Typhi have developed resistance to antibiotics such as chloramphenicol, ampicillin, and trimethoprim-sulfamethoxazole.\n\nIf your condition worsens while receiving treatment at home, seek medical attention immediately.\n\nIn a small number of cases, typhoid fever may recur after treatment."
+    },
+    {
+      "type": "h3",
+      "text": "Supporting Recovery at Home"
+    },
+    {
+      "type": "p",
+      "text": "To promote recovery and reduce the risk of relapse, patients are advised to:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Get plenty of rest.",
+        "Eat regular meals in small, frequent portions.",
+        "Drink plenty of fluids to stay hydrated.",
+        "Wash hands thoroughly with soap and water to help prevent the spread of infection."
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Chronic Carriers of Salmonella Typhi"
+    },
+    {
+      "type": "p",
+      "text": "Some individuals who have recovered from typhoid fever may continue to carry Salmonella Typhi bacteria in their intestines for many years without experiencing any symptoms.\n\nApproximately 5% of patients who do not receive adequate treatment may become chronic carriers, meaning they can unknowingly spread the bacteria to others through their feces.\n\nThis is particularly important for individuals working in professions where transmission poses a higher public health risk.\n\nOccupations requiring special attention include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Food preparation and food service workers",
+        "Nurses and other healthcare professionals caring for vulnerable patients",
+        "Childcare providers and caregivers for older adults"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Individuals working in these professions are advised to ensure they are free from Salmonella Typhi before returning to work."
+    },
+    {
+      "type": "h3",
+      "text": "Additional Treatment for Recurrent Typhoid"
+    },
+    {
+      "type": "p",
+      "text": "Some patients may experience a recurrence of symptoms approximately one week after completing antibiotic treatment.\n\nIf this occurs, a doctor may prescribe another course of antibiotics, although the recurrent illness is often milder than the initial infection.\n\nIf follow-up stool testing still detects Salmonella Typhi, patients may be advised to continue antibiotic treatment for 28 days to eliminate the bacteria completely and reduce the risk of becoming a chronic carrier.\n\nWhile infection is still present, patients should avoid handling, preparing, or serving food for themselves or others.\n\nFrequent handwashing after using the toilet is also essential to prevent transmission."
+    },
+    {
+      "type": "h3",
+      "text": "Prevention of Typhoid Fever"
+    },
+    {
+      "type": "p",
+      "text": "Typhoid vaccination is included in Indonesia's recommended childhood immunization schedule.\n\nThe vaccine is recommended for children from two years of age and should be repeated every three years.\n\nFor travelers visiting areas where typhoid fever is endemic, vaccination is ideally administered at least one month before departure.\n\nCommon side effects following typhoid vaccination may include pain, redness, or swelling at the injection site, nausea, dizziness, abdominal discomfort, or diarrhea.\n\nAlthough the vaccine significantly reduces the risk of infection, it does not provide complete protection. Vaccinated individuals may still develop typhoid fever, but symptoms are generally less severe than in unvaccinated individuals."
+    },
+    {
+      "type": "h3",
+      "text": "Preventing Typhoid Beyond Vaccination"
+    },
+    {
+      "type": "p",
+      "text": "In many developing countries, increasing antibiotic resistance has made typhoid fever more difficult to treat. As a result, preventive measures remain essential.\n\nVaccination should be accompanied by improved sanitation, access to safe drinking water, and healthy hygiene practices.\n\nTo reduce your risk of typhoid fever:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Wash your hands thoroughly before preparing food, before eating, after using the toilet, and after cleaning children's diapers or handling waste.",
+        "Drink only boiled or properly treated water, especially when traveling to areas where typhoid fever is common.",
+        "Choose bottled drinking water whenever safe water is unavailable.",
+        "Avoid purchasing food from unhygienic street vendors.",
+        "Avoid consuming ice unless you are certain it was made from safe drinking water.",
+        "Wash and peel raw fruits and vegetables before eating them.",
+        "Limit consumption of raw or undercooked seafood.",
+        "Use clean or boiled water for brushing your teeth and rinsing your mouth when traveling.",
+        "Keep bathrooms clean and avoid sharing personal items such as towels, bed linens, and toiletries.",
+        "Avoid consuming unpasteurized milk or dairy products.",
+        "Take antibiotics only as prescribed by your doctor and always complete the full course of treatment to help prevent antibiotic resistance."
+      ]
+    }
+  ]
+}

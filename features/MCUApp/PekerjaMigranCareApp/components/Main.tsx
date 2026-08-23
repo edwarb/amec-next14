@@ -1,7 +1,10 @@
 import { InformationCircleIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import { useTranslation } from "next-i18next/pages";
 
 export default function PekerjaMigranCare() {
+  const { t } = useTranslation("mcuMigran");
+
   return (
     <div className="relative bg-white px-6 lg:px-8">
       <div
@@ -21,7 +24,7 @@ export default function PekerjaMigranCare() {
           <Image
             width={0}
             height={0}
-            className="aspect-video w-full h-[300px] rounded-xl bg-gray-50 object-cover object-top"
+            className="aspect-video h-[300px] w-full rounded-xl bg-gray-50 object-cover object-top"
             src="/img/facility/migran-worker.jpg"
             alt=""
           />
@@ -30,80 +33,74 @@ export default function PekerjaMigranCare() {
               className="mt-0.5 h-5 w-5 flex-none text-gray-300"
               aria-hidden="true"
             />
-            Ilustrasi Pekerja Migran
+            {t("fig")}
           </figcaption>
         </figure>
         <p className="mt-6 text-base font-semibold leading-7 text-green-600">
-          #MedicalCheckUp #Pekerja #Migran
+          {t("tags")}
         </p>
         <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Pemeriksaan MCU untuk Calon Pekerja Migran
+          {t("title")}
         </h1>
         <div className="mt-10 max-w-2xl">
-          <p>
-            Calon Pekerja Migran Indonesia (PMI) adalah setiap warga negara Indonesia yang memenuhi syarat sebagai
-            pencari kerja untuk bekerja di Luar Negeri dan terdaftar di Instansi Pemerintah Kabupaten/Kota yang
-            bertanggung jawab di bidang ketenagakerjaan, sesuai proses dan prosedur yang telah ditetapkan.
-            Salah satu lapangan pekerjaan yang banyak diminati oleh pekerja Indonesia adalah menjadi Pekerja Migran,
-            Namun Pekerja Migran asal Indonesia atau disingkat PMI ini sering kali menjadi PMI Non Prosedural karena
-            tidak melalui mekanisme dan persyaratan PMI yang benar.<br />
-            Ada 5 (lima) mekanisme penempatan bekerja ke luar negeri, yaitu:
+          {t("intro")
+            .split("\n\n")
+            .map((part) => (
+              <p key={part.slice(0, 24)} className="mt-2 first:mt-0">
+                {part}
+              </p>
+            ))}
+          <p className="mt-4">{t("schemes_intro")}</p>
+          <ul
+            role="list"
+            className="mt-2 max-w-xl list-disc space-y-2 pl-6 text-gray-600"
+          >
+            <li>{t("scheme_1")}</li>
+            <li>{t("scheme_2")}</li>
+            <li>{t("scheme_3")}</li>
+            <li>{t("scheme_4")}</li>
+            <li>{t("scheme_5")}</li>
+          </ul>
+          <p className="mt-4">
+            {t("jobs_intro")}{" "}
+            <a
+              className="text-green-600 hover:text-red-600"
+              href="http://jobsinfo.bp2mi.go.id/"
+            >
+              http://jobsinfo.bp2mi.go.id/
+            </a>{" "}
+            <a
+              className="text-green-600 hover:text-red-600"
+              href="http://siskop2mi.bp2mi.go.id"
+            >
+              http://siskop2mi.bp2mi.go.id
+            </a>
           </p>
-          <ul role="list"
-            className="max-w-xl list-disc space-y-2 pl-6 text-gray-600">
-            <li>
-              Private to Private (P to P)
-            </li>
-            <li>
-              Government to Government (G to G)
-            </li>
-            <li>
-              Government to Private (G to P)
-            </li>
-            <li>
-              Intern Corporate Trasfership (ICT)
-            </li>
-            <li>
-              Pekerja Migran Perseorangan (Mandiri)
-            </li>
-          </ul><br />
-          <p>
-            Untuk peluang kerja, masyarakat dapat mengakses <a className="text-green-600 hover:text-red-600" href="http://jobsinfo.bp2mi.go.id/">http://jobsinfo.bp2mi.go.id/ </a>
-            serta <a className="text-green-600 hover:text-red-600" href="http://siskop2mi.bp2mi.go.id">http://siskop2mi.bp2mi.go.id</a>
-          </p>
-          <h3 className="mt-6 text-xl leading-8">Apa syaratnya?</h3>
-          <p className="mt-2">
-            Adapun persyaratan bagi calon Pekerja Migran Indonesia yang akan bekerja ke luar negeri harus memenuhi persyaratan
-            berusia minimal 18 (delapan belas) tahun, memiliki kompetensi, sehat jasmani dan rohani, terdaftar dan memiliki
-            nomor kepesertaan Jaminan Sosial dan memiliki dokumen lengkap yang dipersyaratkan.<br />
-            Amalia Medical Center membuka medical check up ke luar negeri untuk tujuan Negara Asean serta Taiwan, Jepang,
-            Korea, serta China. Semua paket bisa disesuaikan dengan kebutuhan si calon pasien MCU serta jenis pemeriksaan yang diambil.<br />
-            Persyaratan untuk melakukan MCU adalah:
-          </p>
-          <ul role="list"
-            className="max-w-xl list-decimal space-y-2 pl-6 text-gray-600">
-            <li>
-              Membawa fotokopi passport serta KTP
-            </li>
-            <li>
-              Membawa pasfoto 3x4 atau 4x6 dengan background merah atau biru
-            </li>
-            <li>
-              Membawa surat-surat pelengkap berkas
-            </li>
-            <li>
-              Istirahat yang cukup, minum air putih serta menghindari minum kopi serta alcohol sebelum medical.
-            </li>
-            <li>
-              Pastikan MCU-nya di Amalia Medical Center ya kakak – kakak.
-            </li>
-          </ul><br />
-          <p>
-            Untuk pemeriksaanya terdiri dari 3 unsur pemeriksaan, pengambilan sample darah dan urin, pengambilan foto
-            thorax, pemeriksaan fisik di ruang dokter. Untuk harga MCU disesuaikan dengan Negara tujuannya,
-            dengan tarif dasarnya berkisar dari <strong>250rb!</strong>.<br />
-            Pasti dapat harga terbaik MCU di Amalia Medical Center!
-          </p>
+          <h3 className="mt-6 text-xl leading-8">{t("req_title")}</h3>
+          <div className="mt-2 space-y-2">
+            {t("req_body")
+              .split("\n\n")
+              .map((part) => (
+                <p key={part.slice(0, 24)}>{part}</p>
+              ))}
+          </div>
+          <ul
+            role="list"
+            className="mt-4 max-w-xl list-decimal space-y-2 pl-6 text-gray-600"
+          >
+            <li>{t("doc_1")}</li>
+            <li>{t("doc_2")}</li>
+            <li>{t("doc_3")}</li>
+            <li>{t("doc_4")}</li>
+            <li>{t("doc_5")}</li>
+          </ul>
+          <div className="mt-4 space-y-2">
+            {t("exam_body")
+              .split("\n\n")
+              .map((part) => (
+                <p key={part.slice(0, 24)}>{part}</p>
+              ))}
+          </div>
         </div>
       </div>
     </div>

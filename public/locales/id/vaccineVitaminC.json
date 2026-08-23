@@ -1,0 +1,50 @@
+{
+  "fig": "Ilustrasi Injeksi Vitamin C",
+  "tags": "#Injeksi #VitaminC",
+  "title": "Injeksi Vitamin C",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Kebutuhan harian asupan vitamin C bagi orang dewasa adalah 2.000 mg. Kita bisa mencukupi kebutuhan vitamin C harian ini dengan mengonsumsi sayuran dan buah-buahan.\n\nSayangnya, vitamin C dalam sayuran atau buah-buahan rentan rusak juga mudah larut dalam air. Hal ini terjadi saat penyimpanan dan pengolahan sehingga cara ini dinilai kurang efektif.\n\nKarena itu, suntik menjadi solusi terkini untuk memenuhi kebutuhan vitamin C. Cara ini dinilai paling efektif karena lebih mudah diserap tubuh ketimbang melalui oral.\n\nBeberapa sumber menyebutkan bahwa tubuh menyerap 100% vitamin C yang disuntikkan dan hasilnya juga terlihat langsung ketimbang mengonsumsi suplemen tiap hari."
+    },
+    { "type": "h3", "text": "Apa saja manfaat suntik Vitamin C?" },
+    {
+      "type": "p",
+      "text": "Menyuntikkan vitamin C sebenarnya adalah salah satu cara untuk memenuhi asupan vitamin C selain dari makanan ataupun suplemen. Vitamin C disuntikkan langsung melalui pembuluh darah, otot, atau jaringan bawah kulit.\n\nProsedur ini biasanya dilakukan oleh orang yang mengalami defisiensi vitamin C atau sedang sakit karena penyakit infeksi. Vitamin C bisa meningkatkan kekuatan sistem imun. Selain itu, suntik vitamin C juga digunakan untuk perawatan kulit.\n\nBerikut 5 manfaatnya untuk kulit dan kesehatan tubuh:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Mencerahkan kulit",
+        "Mencegah penuaan dini",
+        "Melindungi kulit dari paparan sinar UV",
+        "Melembapkan kulit",
+        "Menjaga sistem imun"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Berapa biaya suntik Vitamin C di Amalia Medical Center?"
+    },
+    {
+      "type": "p",
+      "text": "Kami memberikan harga yang terjangkau, dengan harga Rp375.000 sudah termasuk biaya administrasi dan konsultasi dokter"
+    },
+    {
+      "type": "h3",
+      "text": "Adakah efek samping vaksin melakukan injeksi Vitamin C?"
+    },
+    {
+      "type": "p",
+      "text": "Suntik vitamin C mungkin bisa memberikan efek, untuk itu perlu melakukan konsultasi dengan dokter terlebih dahulu.\n\nBerikut efek yang mungkin terjadi:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Nyeri, kemerahan atau gatal di tempat bekas suntikan",
+        "Diare ringan",
+        "Mual dan pusing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "fig_child": "Illustration of a children's Medical Check-Up",
+  "fig_parent": "Illustration of a parental Medical Check-Up",
+  "tags": "#MedicalCheckUp #FamilyCare",
+  "title": "Family Care Medical Check-Up",
+  "intro": "It is not always possible to know whether our bodies are healthy just by how we feel. While we may notice certain symptoms, they do not always reveal our overall health condition. That is why regular Medical Check-Ups (MCU) are important. Medical check-ups are not only recommended for adults but also for children. Routine health examinations from an early age help monitor their growth and development.",
+  "packages_intro": "We offer the following Family Care Medical Check-Up packages:",
+  "early_title": "Early Medical Check-Up (Ages 3–5 Years)",
+  "early_panel_label": "Examination Panel",
+  "early_panel": "Complete Blood Count (CBC) with ESR, Anti-HBs, Routine Urinalysis, Physical Examination",
+  "children_title": "Children's Medical Check-Up (Ages 6–12 Years)",
+  "children_panel": "Complete Blood Count (CBC) with ESR, Anti-HBs, Routine Urinalysis, Physical Examination",
+  "teen_title": "Teenager Medical Check-Up (Ages 13–17 Years)",
+  "teen_panel": "Complete Blood Count (CBC) with ESR, Anti-HBs, Routine Urinalysis, Radiology Examination, Complete Lipid Profile, Triglycerides, SGPT (ALT), Chest X-ray, Physical Examination",
+  "parents_title": "Parents",
+  "mom_title": "Medical Check-Up for Mothers",
+  "mom_panel": "Complete Blood Count (CBC), Fasting Blood Glucose (2 measurements), LDL Cholesterol, SGPT (ALT), Uric Acid, Urinalysis, Electrocardiogram (ECG), Radiology Examination, Physical Examination",
+  "dad_title": "Medical Check-Up for Fathers",
+  "dad_panel": "Complete Blood Count (CBC), Fasting Blood Glucose (2 measurements), LDL Cholesterol, SGPT (ALT), Uric Acid, Urinalysis, Electrocardiogram (ECG), Radiology Examination, Physical Examination",
+  "closing": "Additional examinations may be included based on individual needs, personal preferences, or a doctor's recommendation. Families enrolling in the Family Care Medical Check-Up package (Father, Mother, and Child) are eligible for a special package discount."
+}

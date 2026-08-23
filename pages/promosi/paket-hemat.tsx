@@ -1,4 +1,5 @@
 import PaketHematApp from "features/PaketApp/PaketHematApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function PaketHematPage() {
   return (
@@ -9,3 +10,6 @@ function PaketHematPage() {
 }
 
 export default PaketHematPage;
+
+
+export const getStaticProps = createGetStaticProps();

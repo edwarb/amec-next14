@@ -1,0 +1,48 @@
+{
+  "fig": "Illustration of Vitamin C Injection",
+  "tags": "#Injection #VitaminC",
+  "title": "Vitamin C Injection",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The recommended daily intake of vitamin C for adults is 2,000 mg. This requirement can be met by eating fruits and vegetables.\n\nHowever, Vitamin C in fruits and vegetables can be easily lost during storage and cooking because it is water-soluble. As a result, this method may not always provide the amount of vitamin C your body needs.\n\nFor this reason, Vitamin C injection has become an alternative way to increase vitamin C levels. This method is considered more effective because it is absorbed more easily than oral supplements. Some sources also state that the body absorbs 100% of injected vitamin C, and the results may be seen more quickly than taking daily vitamin C supplements."
+    },
+    { "type": "h3", "text": "What Are the Benefits of Vitamin C Injection?" },
+    {
+      "type": "p",
+      "text": "Vitamin C injection is one way to increase vitamin C levels in addition to food and oral supplements.\n\nIt is administered directly into a vein, muscle, or under the skin.\n\nThis procedure is commonly recommended for people with vitamin C deficiency or those recovering from certain infections, as vitamin C helps support the immune system. It is also widely used for skin care treatments.\n\nSome of the potential benefits include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Brightening the skin",
+        "Helping prevent premature skin aging",
+        "Helping protect the skin from UV exposure",
+        "Keeping the skin hydrated",
+        "Supporting the immune system"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Vitamin C Injection at Amalia Medical Center"
+    },
+    {
+      "type": "p",
+      "text": "Vitamin C Injection is available at Amalia Medical Center for IDR 375,000.\n\nThe price includes doctor consultation, administration fee, and Vitamin C injection."
+    },
+    { "type": "h3", "text": "Are There Any Side Effects?" },
+    {
+      "type": "p",
+      "text": "Vitamin C injections may cause side effects in some people. Therefore, it is recommended to consult a doctor before receiving the injection.\n\nPossible side effects include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Pain, redness, or itching at the injection site",
+        "Mild diarrhea",
+        "Nausea",
+        "Dizziness"
+      ]
+    }
+  ]
+}

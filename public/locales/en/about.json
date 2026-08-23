@@ -1,0 +1,48 @@
+{
+  "hero_title": "We are committed to delivering high-quality healthcare services at Amalia Medical Center.",
+  "hero_subtitle": "At Amalia Medical Center, we are dedicated to providing the highest standard of care for every patient. We continuously strive to enhance the quality of our healthcare services by adopting the latest medical technologies and implementing a patient-centered approach to ensure the best possible healthcare experience.",
+  "timeline": {
+    "2000": {
+      "title": "The Establishment of Amalia",
+      "description": "Amalia Medical Center operates under the legal entity Yayasan Solidaritas Kemanusiaan Amanah (Amanah Humanitarian Solidarity Foundation), located in the Cipinang Cempedak residential area, East Jakarta. The foundation was established by Inspector General of Police (Ret.) Prof. Dr. Farouk Muhammad and has made significant contributions to society by supporting orphans, widows, victims of natural disasters, and other underprivileged communities."
+    },
+    "2002": {
+      "title": "Entering the International Medical Workforce Sector",
+      "description": "We began strengthening our team by recruiting highly qualified healthcare professionals in their respective fields. At the same time, we entered the field of Overseas Medical Workforce Services, actively participating in seminars, conferences, and professional discussions related to healthcare services for overseas workers. These events were organized by various institutions, including the Ministry of Manpower, the Ministry of Health, professional associations, and the Indonesian Association of Medical Centers for Overseas Workers (HIPTEK)."
+    },
+    "2004": {
+      "title": "Pertamina Hospital's Representative for Maritime Workers",
+      "description": "Drawing upon extensive experience, continuous learning from experts at the Ministry of Health and the Ministry of Manpower, and our active role through HIPTEK (the Association of Hospitals and Medical Centers for Indonesian Overseas Workers), Amalia Medical Center achieved a significant milestone in 2004. Following a comprehensive audit conducted by a Joint Assessment Team from the Ministry of Health and the Ministry of Manpower, Amalia Medical Center received the highest national evaluation score. Between 2004 and 2005, we became the only medical clinic in Jakarta officially entrusted by Pertamina Hospital to conduct medical examinations for Taiwanese maritime and seafaring workers. During the same period, we also expanded our legal structure by establishing a private limited company (PT) while continuing to maintain our humanitarian foundation."
+    },
+    "2014": {
+      "title": "Indonesia's Modern Medical Center for Overseas Workers",
+      "description": "With the trust of reputable national and international institutions, supported by advanced medical technology, highly qualified healthcare professionals, and outstanding Pre-Employment Medical Examination (PME) performance, Amalia Medical Center initiated the development of a new purpose-built facility in 2014. The new building was carefully designed to anticipate increasingly stringent international healthcare standards while supporting our commitment to delivering higher-quality services. The facility comprises five floors with a total area of approximately 1,250 square meters, including a basement parking area. To support comprehensive medical services, the center is equipped with modern facilities, including a 500 mA Digital X-ray system with a high-resolution detector, Local Area Network (LAN) infrastructure, elevators, a 70 KVA backup generator, CCTV security systems, digital information displays, and various other advanced medical and operational technologies. Today, Amalia Medical Center is recognized as one of Indonesia's largest and most advanced medical centers specializing in healthcare services for overseas workers."
+    }
+  },
+  "mission_vision_title": "Mission - Vision",
+  "mission_1": "Provide comprehensive healthcare services for workers in accordance with applicable medical practices, scientific standards, and international guidelines.",
+  "mission_2": "Continuously develop through Quality Assurance Programs, strengthen human resources, and improve medical equipment as well as Information Technology (IT).",
+  "mission_3": "Serve as a dedicated \"Amanah\" contributor of the human solidarity foundation for social and humanitarian welfare.",
+  "culture_title": "Our Culture",
+  "culture_intro": "The corporate culture of Amalia Medical Center is derived from the word COMFORT and is instilled in every employee, becoming an integral part of our awareness, values, and workplace culture.",
+  "culture_body": "Comfort means experiencing a sense of ease that creates genuine comfort within ourselves. More importantly, we want every patient who visits Amalia Medical Center to experience that same feeling of comfort. Our satisfaction is a reflection of our patients' satisfaction. We hope that every satisfied patient will recommend Amalia Medical Center to their family members, relatives, and colleagues as their trusted healthcare provider for medical examinations.",
+  "comfort_heading": "We have embraced the true meaning of Comfort in the work we do every day.",
+  "comfort_subheading": "From carrying out our responsibilities and completing every task to serving our patients with sincerity, we strive to do everything with a sense of comfort and dedication.",
+  "comfort": {
+    "caring": "Caring reflects our attitude toward our patients. By demonstrating genuine care, we create a welcoming environment that makes it easier for patients to communicate and interact with our staff.",
+    "observant": "In addition to its literal meaning of paying close attention, Observant also represents our commitment to complying with all applicable regulations, including medical ethics and professional codes of conduct. We carefully observe our patients' needs and pay close attention to their satisfaction.",
+    "mindful": "We perform every task with great care and attention. Careful observation, thoughtful decision making, and accurate laboratory results are fundamental principles that guide our work.",
+    "friendly": "Our friendliness strengthens the relationship between our medical and non medical staff and our patients, creating a warm and welcoming healthcare experience.",
+    "obliging": "We are always ready to help those in need. As an organization established under a humanitarian foundation, helping others has become an inseparable part of who we are.",
+    "responsible": "For us, fulfilling our professional responsibilities is also an act of devotion. We are fully accountable for everything we do. This strong sense of responsibility encourages us to carry out every task with greater care, integrity, and professionalism.",
+    "tactful": "We strive to become wiser every day. Through Amalia Medical Center's long and challenging journey, we have continued to learn, grow, and become better individuals. We believe that excellence begins with each individual, and together, these individuals shape Amalia Medical Center into an outstanding healthcare institution."
+  },
+  "contact_title": "Get in Touch",
+  "contact_body": "If you have questions or need more information about our services, we are ready to help with your healthcare needs.",
+  "phone": "Phone",
+  "fax": "Fax",
+  "whatsapp": "WhatsApp",
+  "email": "Email",
+  "location_title": "Location",
+  "location_body": "Find our location easily using the map below."
+}

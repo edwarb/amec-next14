@@ -1,4 +1,5 @@
 import AboutApp from "features/AboutApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function AboutPage() {
   return (
@@ -9,3 +10,5 @@ function AboutPage() {
 }
 
 export default AboutPage;
+
+export const getStaticProps = createGetStaticProps(["about"]);

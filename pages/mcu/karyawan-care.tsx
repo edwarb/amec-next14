@@ -1,4 +1,5 @@
 import KaryawanApp from "features/MCUApp/KaryawanCareApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function KaryawanPage() {
   return (
@@ -9,3 +10,6 @@ function KaryawanPage() {
 }
 
 export default KaryawanPage;
+
+
+export const getStaticProps = createGetStaticProps(["mcuKaryawan"]);

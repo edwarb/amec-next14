@@ -1,4 +1,5 @@
 import BookingApp from "features/BookingApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function AboutPage() {
   return (
@@ -9,3 +10,6 @@ function AboutPage() {
 }
 
 export default AboutPage;
+
+
+export const getStaticProps = createGetStaticProps();

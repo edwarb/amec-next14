@@ -1,4 +1,5 @@
 import MmrApp from "features/VaccineImmuneApp/MmrApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function MMRPage() {
   return (
@@ -9,3 +10,6 @@ function MMRPage() {
 }
 
 export default MMRPage;
+
+
+export const getStaticProps = createGetStaticProps(["vaccineMmr"]);

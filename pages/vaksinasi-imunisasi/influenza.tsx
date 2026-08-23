@@ -1,4 +1,5 @@
 import InfluenzaApp from "features/VaccineImmuneApp/InfluenzaApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function InfluenzaPage() {
   return (
@@ -9,3 +10,6 @@ function InfluenzaPage() {
 }
 
 export default InfluenzaPage;
+
+
+export const getStaticProps = createGetStaticProps(["vaccineInfluenza"]);

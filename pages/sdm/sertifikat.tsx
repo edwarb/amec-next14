@@ -1,4 +1,5 @@
 import SertifikatApp from "features/SDMApp/SertifikatApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function GallerySertifikatPage() {
   return (
@@ -9,3 +10,6 @@ function GallerySertifikatPage() {
 }
 
 export default GallerySertifikatPage;
+
+
+export const getStaticProps = createGetStaticProps();

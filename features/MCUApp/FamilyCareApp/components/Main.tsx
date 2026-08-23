@@ -1,7 +1,22 @@
 import { InformationCircleIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import { useTranslation } from "next-i18next/pages";
+
+function Paragraphs({ text }: { text: string }) {
+  return (
+    <>
+      {text.split("\n\n").map((part) => (
+        <p key={part.slice(0, 24)} className="mt-4 first:mt-0">
+          {part}
+        </p>
+      ))}
+    </>
+  );
+}
 
 export default function FamilyCare() {
+  const { t } = useTranslation("mcuFamily");
+
   return (
     <div className="relative bg-white px-6 lg:px-8">
       <div
@@ -21,7 +36,7 @@ export default function FamilyCare() {
           <Image
             width={0}
             height={0}
-            className="aspect-video w-full h-[300px] rounded-xl bg-gray-50 object-cover object-bot"
+            className="aspect-video h-[300px] w-full rounded-xl bg-gray-50 object-cover object-bot"
             src="/img/facility/mcufamily01.png"
             alt=""
           />
@@ -30,50 +45,36 @@ export default function FamilyCare() {
               className="mt-0.5 h-5 w-5 flex-none text-gray-300"
               aria-hidden="true"
             />
-            Ilustrasi Medical Check Up pada anak
+            {t("fig_child")}
           </figcaption>
         </figure>
         <p className="mt-6 text-base font-semibold leading-7 text-green-600">
-          #MedicalCheckUp #FamilyCare
+          {t("tags")}
         </p>
         <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          MCU Family Care
+          {t("title")}
         </h1>
         <div className="mt-10 max-w-2xl">
-          <p>
-            Kita tidak dapat mengukur apakah kondisi tubuh kita sehat atau tidak
-            sehat. Kita hanya bisa merasakan keluhan namun tidak dapat
-            mengetahui dengan detail. Oleh karena itu, diperlukan adanya
-            pemeriksaan check up secara rutin. Medical check up bukan hanya
-            diperuntukkan untuk orang dewasa. Namun anak-anak juga penting
-            melakukan medical check up, disarankan sejak dini selalu dikontrol
-            tumbuh kembangnya.
-            <br />
-            Kami menyediakan pemeriksaan kesehatan berdasarkan urutan sebagai
-            berikut :
-          </p>
+          <Paragraphs text={t("intro")} />
+          <p className="mt-4">{t("packages_intro")}</p>
           <ul
             role="list"
             className="mt-8 max-w-xl list-disc space-y-2 pl-6 text-gray-600"
           >
             <li>
-              <strong>Early Medical Check UP (Usia 3-5 tahun)</strong>
+              <strong>{t("early_title")}</strong>
               <br />
-              Panel periksa : Darah lengkap/rutin (dengan LED), Anti HbsAg, urin
-              rutin, pemeriksaan fisik
+              {t("early_panel_label")}: {t("early_panel")}
             </li>
             <li>
-              <strong>Children Medical Check Up (6-12 tahun)</strong>
+              <strong>{t("children_title")}</strong>
               <br />
-              Panel periksa : Darah lengkap/rutin (dengan LED), Anti HbsAg, Urin
-              rutin, Pemeriksaan fisik
+              {t("early_panel_label")}: {t("children_panel")}
             </li>
             <li>
-              <strong>Teenager Medical Check Up (13-17 tahun)</strong>
+              <strong>{t("teen_title")}</strong>
               <br />
-              Panel periksa : Darah lengkap/rutin (dengan LED), Anti HbsAg, Urin
-              rutin, radiologi, Cholestrol lengkap, Trigliserid, SGPT, Foto
-              Thorax, Pemeriksaan fisik
+              {t("early_panel_label")}: {t("teen_panel")}
             </li>
           </ul>
 
@@ -90,33 +91,27 @@ export default function FamilyCare() {
                 className="mt-0.5 h-5 w-5 flex-none text-gray-300"
                 aria-hidden="true"
               />
-              Ilustrasi Medical Check Up Parental
+              {t("fig_parent")}
             </figcaption>
           </figure>
 
-          <h3 className="mt-6 text-xl leading-8">Parental</h3>
+          <h3 className="mt-6 text-xl leading-8">{t("parents_title")}</h3>
           <ul
             role="list"
             className="my-4 max-w-xl list-disc space-y-2 pl-6 text-gray-600"
           >
             <li>
-              <strong>Medical Check Up for Mommy</strong>
+              <strong>{t("mom_title")}</strong>
               <br />
-              Panel periksa : Darah lengkap, gula puasa 2x, LDL, SGPT, asam
-              urat, analisa urin, EKG, radiologi, Pemeriksaan fisik
+              {t("early_panel_label")}: {t("mom_panel")}
             </li>
             <li>
-              <strong>Medical Check Up for Daddy</strong>
+              <strong>{t("dad_title")}</strong>
               <br />
-              Panel periksa : Darah lengkap, gula puasa 2x, LDL, SGPT, asam
-              urat, analisa urin, EKG, radiologi, Pemeriksaan fisik
+              {t("early_panel_label")}: {t("dad_panel")}
             </li>
           </ul>
-          <p className="mt-2">
-            Pemeriksaan tersebut bisa ditambahkan sesuai kebutuhan dan keinginan
-            atau saran dokter sebelumnya. Harga pemeriksaan paket keluarga
-            (Ayah, Ibu, dan Anak) akan mendapatkan pengurangan harga.
-          </p>
+          <p className="mt-2">{t("closing")}</p>
         </div>
       </div>
     </div>

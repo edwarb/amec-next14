@@ -1,0 +1,163 @@
+{
+  "fig": "Illustration of Aedes Aegypti mosquito",
+  "tags": "#YellowFever",
+  "title": "Yellow Fever",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Yellow fever is a viral disease transmitted by infected mosquitoes. It is characterized by a high fever and yellowing of the skin and eyes (jaundice) caused by liver dysfunction.\n\nYellow fever is commonly found in parts of Africa, South America, Central America, and the Caribbean. The disease can affect both residents living in endemic areas and travelers visiting these regions."
+    },
+    {
+      "type": "h3",
+      "text": "Causes of Yellow Fever"
+    },
+    {
+      "type": "p",
+      "text": "Yellow fever is caused by the Yellow Fever virus, a member of the Flavivirus genus, and is primarily transmitted by the Aedes aegypti mosquito.\n\nThis mosquito commonly breeds in areas close to human habitation, particularly in clean, stagnant water. After biting an infected human or monkey, the mosquito carries the virus, which multiplies in its salivary glands. When the mosquito bites another person, the virus enters the bloodstream and spreads throughout the body.\n\nAedes aegypti mosquitoes are most active from dusk until dawn, making this the period when transmission is most likely to occur."
+    },
+    {
+      "type": "h3",
+      "text": "Symptoms of Yellow Fever"
+    },
+    {
+      "type": "p",
+      "text": "The course of yellow fever is divided into three phases:"
+    },
+    {
+      "type": "richOl",
+      "items": [
+        {
+          "title": "Incubation Phase",
+          "body": "During the incubation period, the virus is present in the body but does not cause any signs or symptoms. This phase usually lasts 1 to 3 days after infection."
+        },
+        {
+          "title": "Acute Phase",
+          "body": "The acute phase generally begins 3 to 4 days after infection and may last 3 to 4 days. Common symptoms include:",
+          "items": [
+            "Fever",
+            "Headache",
+            "Redness of the eyes, face, or tongue",
+            "Sensitivity to light",
+            "Loss of appetite",
+            "Muscle pain",
+            "Nausea and vomiting"
+          ]
+        },
+        {
+          "title": "Toxic Phase",
+          "body": "For most people, the symptoms resolve after the acute phase. However, some patients may progress to a more severe stage known as the toxic phase, usually after 24 hours without symptoms.\n\nDuring the toxic phase, symptoms return and become more severe. These may include:",
+          "items": [
+            "Yellowing of the skin and the whites of the eyes (jaundice)",
+            "Slow heart rate",
+            "Abdominal pain",
+            "Vomiting, sometimes with blood",
+            "Bleeding from the nose, gums, or eyes",
+            "Decreased urine output and kidney failure",
+            "Liver failure",
+            "Impaired brain function, including delirium, seizures, and coma"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "src": "/img/disease/demamkuning02.png",
+      "caption": "Illustration of yellow fever in children"
+    },
+    {
+      "type": "h3",
+      "text": "Diagnosis"
+    },
+    {
+      "type": "p",
+      "text": "Yellow fever can be difficult to diagnose because its symptoms often resemble those of other infectious diseases, such as malaria, typhoid fever, and dengue fever.\n\nTo establish a diagnosis, your doctor may:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Review your symptoms, travel history, and previous medical history",
+        "Perform a comprehensive physical examination, including measurement of your body temperature and blood pressure",
+        "Recommend blood tests to detect antibodies produced in response to the virus"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Seek medical attention immediately if you experience symptoms of yellow fever, especially after traveling to countries where the disease is endemic, including regions of Africa, Latin America, and the Caribbean."
+    },
+    {
+      "type": "h3",
+      "text": "Treatment"
+    },
+    {
+      "type": "p",
+      "text": "There is currently no specific antiviral treatment for yellow fever. In most cases, the body's immune system fights the infection naturally. Treatment focuses on relieving symptoms and supporting vital organ function.\n\nSupportive treatment may include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Oxygen therapy",
+        "Fever and pain relief medications, such as paracetamol (acetaminophen)",
+        "Intravenous (IV) fluids to maintain blood pressure",
+        "Blood transfusions for severe bleeding or anemia",
+        "Dialysis if kidney failure develops",
+        "Treatment of secondary infections, such as bacterial infections"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Complications"
+    },
+    {
+      "type": "p",
+      "text": "Possible complications during the toxic phase include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Bleeding",
+        "Myocarditis (inflammation of the heart muscle)",
+        "Pulmonary edema (fluid accumulation in the lungs)",
+        "Hepatorenal syndrome",
+        "Encephalitis (inflammation of the brain)",
+        "Secondary bacterial infections"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Prevention"
+    },
+    {
+      "type": "richOl",
+      "items": [
+        {
+          "title": "Yellow Fever Vaccination",
+          "body": "Vaccination is the most effective way to prevent yellow fever, particularly for individuals traveling to high-risk areas in Africa, Latin America, and the Caribbean.\n\nConsult your doctor about receiving the vaccine at least 3 to 4 weeks before departure. Some countries require travelers to present an International Certificate of Vaccination before entry.\n\nA single dose of the yellow fever vaccine provides protection for at least 10 years. Side effects are generally mild and may include headache, mild fever, muscle aches, fatigue, and pain at the injection site.\n\nThe vaccine is generally recommended for individuals 9 months to 60 years of age.\n\nSpecial consideration is required before vaccination for:",
+          "items": [
+            "Infants younger than 9 months",
+            "Individuals with a severe allergy to egg protein",
+            "People with severely weakened immune systems, including those with HIV/AIDS",
+            "Pregnant women",
+            "Adults over 60 years of age",
+            "Individuals who have previously had yellow fever"
+          ]
+        },
+        {
+          "title": "Protection Against Mosquito Bites",
+          "body": "In addition to vaccination, reducing exposure to mosquito bites can significantly lower the risk of yellow fever.\n\nWe recommend the following preventive measures:",
+          "items": [
+            "Wear long-sleeved shirts and long trousers.",
+            "Limit outdoor activities, especially from late afternoon until dawn.",
+            "Stay in accommodations equipped with window screens and air conditioning.",
+            "If air conditioning or screened windows are unavailable, sleep under a mosquito net.",
+            "Apply mosquito repellent according to the manufacturer's instructions. For infants and children, use products specifically formulated for their age group.",
+            "Natural repellents, such as eucalyptus oil, may also help reduce mosquito bites."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Please consult your doctor if you fall into any of the categories above and are planning to receive the yellow fever vaccine."
+    }
+  ]
+}

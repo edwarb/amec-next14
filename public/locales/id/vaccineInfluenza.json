@@ -1,0 +1,94 @@
+{
+  "fig": "Ilustrasi influenza pada orang dewasa",
+  "tags": "#Influenza",
+  "title": "Influenza",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Influenza atau flu adalah infeksi virus pada saluran pernapasan. Flu adalah kondisi yang datang secara tiba-tiba, biasanya berlangsung selama 7 sampai 10 hari. Flu bisa hilang begitu saja dan ada yang diobati menggunakan obat obatan alami atau obat resep. Kebanyakan kasus flu umumnya bisa sembuh sepenuhnya.\n\nNamun bagi orang tua, balita, dan orang yang daya tahan tubuhnya lemah, gejala flu bisa terasa lebih parah dan bahkan mengakibatkan kematian akibat komplikasinya. Tipe lain dari flu adalah flu babi (HIN1), flu burung (H5N1, H7N9), dan lain-lain. Setiap tahun terdapat 10% hingga 15% kasus influenza, memengaruhi 250.000 - 500.000 orang. Jenis baru dari influenza A/H1N1 menyebabkan wabah pada Juni 2009."
+    },
+    {
+      "type": "h3",
+      "text": "Penularan Influenza"
+    },
+    {
+      "type": "p",
+      "text": "Cara utama flu bisa menular adalah ketika seseorang yang batuk atau bersin. Droplet ataupartikel air kecil dengan kuman dapat mendarat di tempat-tempat seperti gagang pintu, telepon, dan keyboard komputer. Orang yang sakit bisa juga batuk atau bersin ke tangan mereka dan kemudian menyentuh benda-benda. Kemudian seseorang yang sehat menyentuh benda yang terkontaminasi. Selanjutnya, tanpa menyadarinya, Anda mungkin menyentuh hidung dan mulut. Dalam sekejap Anda bisa terinfeksi."
+    },
+    {
+      "type": "h3",
+      "text": "Gejala flu (influenza)"
+    },
+    {
+      "type": "p",
+      "text": "Gejala influenza umumnya datang secara tiba-tiba. Tanda dan gejalanya biasanya mulai dari 24 sampai 48 jam setelah terpapar virus flu. Gejala dan demam terburuk biasanya berlangsung selama 3 sampai 5 hari.\n\nTanda dan gejalanya seperti:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Demam tinggi (di atas 38ºC)",
+        "Panas dingin, nyeri otot",
+        "Merasa sangat lemah atau lelah",
+        "Sakit kepala",
+        "Mata terasa sakit",
+        "Batuk dan bersin",
+        "Sakit tenggorokan",
+        "Hidung meler",
+        "Sakit perut (terlebih pada anak-anak dibandingkan orang dewasa)",
+        "Batuk dan merasa sangat lemah dan lelah bisa bertahan hingga 6 minggu"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Mungkin ada beberapa tanda dan gejala yang tidak tercantum di atas. Jika Anda mempunyai kekhawatiran mengenai gejala influenza, silakan berkonsultasi dengan dokter Anda."
+    },
+    {
+      "type": "figure",
+      "src": "/img/disease/influenza02.png",
+      "caption": "Ilustrasi influenza pada anak"
+    },
+    {
+      "type": "h3",
+      "text": "Kapan saya harus ke dokter?"
+    },
+    {
+      "type": "p",
+      "text": "Kebanyakan orang yang terkena flu dapat mengobati dirinya sendiri di rumah dan biasanya tidak perlu ke dokter. Jika Anda menunjukkan gejala flu dan berisiko komplikasi, pergilah ke dokter segera. Mengonsumsi obat antivirus dalam 48 jam pertama setelah munculnya gejala utama dapat mengurangi lamanya Anda mengidap penyakit dan membantu mencegah masalah yang lebih serius."
+    },
+    {
+      "type": "h3",
+      "text": "Apa penyebab flu (influenza)?"
+    },
+    {
+      "type": "p",
+      "text": "Influenza atau flu adalah kondisi yang disebabkan oleh virus yang bisa dikaterogikan. Anda jenis flu dari jenis A, B atau C. Jenis A adalah yang paling umum. Orang yang terkena virus penyebab influenza akibat menghirup udara yang sudah tercemar virus dari orang lain yang terinfeksi (misalnya melalui batuk atau bersin), atau dari menyentuh sesuatu yang sudah disentuh orang yang terinfeksi. Influenza bisa menyebar melalui kontak dengan hewan yang terinfeksi atau jika Anda memakan daging hewan tersebut."
+    },
+    {
+      "type": "h3",
+      "text": "Apa yang meningkatkan risiko saya untuk flu (influenza)?"
+    },
+    {
+      "type": "p",
+      "text": "Ada beberapa faktor risiko untuk influenza, misalnya:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Usia. Influenza musiman cenderung menyerang balita dan orang tua",
+        "Kondisi tempat tinggal. Orang yang tinggal di fasilitas bersama dengan banyak penghuni, seperti panti jompo atau asrama tentara, lebih sering terkena influenza",
+        "Sistem kekebalan tubuh lemah. Pengobatan kanker, obat anti penolakan, kortikosteroid, dan HIV/AIDS bisa melemahkan sistem kekebalan tubuh Anda. Hal ini bisa membuat Anda lebih mudah tertular influenza dan bisa juga meningkatkan risiko Anda terkena komplikasi",
+        "Penyakit kronis. Kondisi kronis, seperti asma, diabetes, atau jantung, bisa meningkatkan risiko Anda terjangkit komplikasi akibat influenza",
+        "Hamil. Wanita hamil lebih mungkin untuk terjangkit komplikasi influenza, terutama dalam trimester kedua dan ketiga",
+        "Kegemukan. Orang dengan Indeks Massa Tubuh sebesar 40 atau lebih memiliki peningkatan risiko komplikasi dari flu"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Apa saja pilihan pengobatan saya untuk flu (influenza)?"
+    },
+    {
+      "type": "p",
+      "text": "Informasi yang diberikan bukanlah pengganti nasihat medis. SELALU konsultasikan pada dokter Anda. Untuk mengatasi gejala lainnya yang membuat tidak nyaman, Anda bisa minum obat pereda nyeri NSAID seperti paracetamol dan ibuprofen, hingga obat batuk pilek, atau dekongestan. Jangan memberikan aspirin kepada anak-anak berusia kurang dari 16 tahun karena akan sangat meningkatkan risiko terkena Reye’s Syndrome. Menghirup uap hangat dapat melegakan hidung yang tersumbat dan membantu mengencerkan sekret hidung (ingus). Tuangkan air panas ke dalam baskom lalu hirup uap hangat yang dihasilkan oleh air panas tersebut. Minyak esensial yang beraroma dapat ditambahkan. Anda dapat menggunakan selimut untuk membuat ruang tertutup bagi kepala Anda dan baskom agar uap air dapat terfokus ke hidung Anda. Tundukkan kepala Anda agar dapat mengarahkan uap air dengan lebih baik. Perbanyak minum air putih untuk mengencerkan ingus. Influenza tidak bisa disembuhkan dengan antibiotik."
+    }
+  ]
+}

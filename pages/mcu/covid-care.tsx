@@ -1,4 +1,5 @@
 import CovidCareApp from "features/MCUApp/CovidCareApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function CovidCarePage() {
   return (
@@ -9,3 +10,6 @@ function CovidCarePage() {
 }
 
 export default CovidCarePage;
+
+
+export const getStaticProps = createGetStaticProps();

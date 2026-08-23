@@ -1,0 +1,64 @@
+{
+  "fig": "Illustration of Measles and Rubella vaccine",
+  "tags": "#MR",
+  "title": "MR Vaccine",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "The MR vaccine is an immunization that provides protection against two infectious diseases: measles and rubella (German measles).\n\nThe MR vaccine is actually part of the MMR vaccine (Measles, Mumps, and Rubella). In Indonesia, however, the mumps component is administered separately because mumps has become relatively uncommon in the country.\n\nMeanwhile, both measles and rubella continue to occur frequently, particularly among children. Rubella also requires special attention during pregnancy, as infection in early pregnancy may lead to miscarriage, stillbirth, or congenital abnormalities in the baby.\n\nFor this reason, MR vaccination is recommended for children to protect them against both diseases and to help prevent transmission within the community."
+    },
+    {
+      "type": "h3",
+      "text": "Who Should Receive the MR Vaccine?"
+    },
+    {
+      "type": "p",
+      "text": "The MR vaccine is recommended for all children from 9 months up to under 15 years of age during the national MR immunization program.\n\nThe vaccine is administered by a healthcare professional through an injection into the upper arm or thigh.\n\nChildren who have previously received a measles vaccine should still receive the MR vaccine to provide additional protection against rubella.\n\nIn addition to children, the MR vaccine is also recommended for women who are planning a pregnancy."
+    },
+    {
+      "type": "h3",
+      "text": "Is the MR Vaccine Safe?"
+    },
+    {
+      "type": "p",
+      "text": "According to the Indonesian Ministry of Health, the MR vaccine used in Indonesia has been recommended by the World Health Organization (WHO) and approved by the Indonesian Food and Drug Authority (BPOM).\n\nThe vaccine has also been used safely in more than 141 countries worldwide."
+    },
+    {
+      "type": "h3",
+      "text": "Are There Any Side Effects?"
+    },
+    {
+      "type": "p",
+      "text": "Most people experience no significant side effects after receiving the MR vaccine.\n\nWhen side effects do occur, they are generally mild and temporary, such as mild fever, skin rash, or pain, redness, or swelling at the injection site.\n\nThese reactions are normal and usually resolve within 2 to 3 days."
+    },
+    {
+      "type": "figure",
+      "src": "/img/disease/mr02.png",
+      "caption": "Illustration of MR vaccination in children"
+    },
+    {
+      "type": "h3",
+      "text": "Rare Allergic Reactions"
+    },
+    {
+      "type": "p",
+      "text": "In very rare cases, a child may experience an allergic reaction after receiving the MR vaccine.\n\nVaccination works by introducing weakened or inactivated components of disease-causing organisms, allowing the immune system to recognize them and develop protection against future infection.\n\nSome individuals who are particularly sensitive to vaccine components may experience a severe allergic reaction known as anaphylaxis. Although extremely rare, this condition requires immediate medical attention and is generally treatable when managed promptly.\n\nFor this reason, parents are encouraged to consult a doctor before vaccination, especially if their child has a history of severe allergies."
+    },
+    {
+      "type": "h3",
+      "text": "Does the MR Vaccine Cause Autism or Paralysis?"
+    },
+    {
+      "type": "p",
+      "text": "No.\n\nThere is no scientific evidence that the MR vaccine, or any other routine childhood vaccine, causes autism or paralysis.\n\nClaims linking vaccination to autism or paralysis have been thoroughly investigated and disproven by health experts and scientific studies worldwide.\n\nIn rare situations where autism or paralysis is diagnosed after vaccination, the timing is purely coincidental. Through appropriate medical evaluation and laboratory testing, healthcare providers are able to identify the actual underlying cause of the condition.\n\nVaccination is not considered a cause of autism or paralysis."
+    },
+    {
+      "type": "h3",
+      "text": "Who Should Not Receive the MR Vaccine?"
+    },
+    {
+      "type": "p",
+      "text": "Although the MR vaccine is safe for most individuals, not everyone is eligible to receive it. Individuals with certain medical conditions or specific contraindications should consult a healthcare professional before vaccination to determine whether the vaccine is appropriate for them."
+    }
+  ]
+}

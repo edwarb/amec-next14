@@ -1,0 +1,94 @@
+{
+  "fig": "Illustration of influenza in adults",
+  "tags": "#Influenza",
+  "title": "Influenza",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Influenza, commonly known as the flu, is a viral infection of the respiratory tract. It usually develops suddenly and lasts for approximately 7 to 10 days. Most cases resolve on their own, while others may require treatment with over-the-counter medications, natural remedies, or prescription medicines.\n\nMost people recover completely from influenza. However, older adults, young children, and individuals with weakened immune systems may experience more severe symptoms and are at greater risk of developing serious complications, which can occasionally be fatal.\n\nOther types of influenza include Swine Flu (H1N1) and Avian Influenza (H5N1 and H7N9).\n\nEach year, seasonal influenza affects approximately 10% to 15% of the population, resulting in an estimated 250,000 to 500,000 cases. In June 2009, a new strain of Influenza A (H1N1) caused a global influenza pandemic."
+    },
+    {
+      "type": "h3",
+      "text": "Transmission"
+    },
+    {
+      "type": "p",
+      "text": "Influenza is primarily spread through respiratory droplets released when an infected person coughs or sneezes.\n\nThese droplets may settle on frequently touched surfaces such as doorknobs, telephones, and computer keyboards. An infected person may also cough or sneeze into their hands before touching objects, contaminating those surfaces. If a healthy person touches a contaminated object and then unknowingly touches their eyes, nose, or mouth, the virus can enter the body and cause infection."
+    },
+    {
+      "type": "h3",
+      "text": "Signs and Symptoms"
+    },
+    {
+      "type": "p",
+      "text": "Influenza symptoms usually develop suddenly and begin 24 to 48 hours after exposure to the virus. The most severe symptoms and fever generally last 3 to 5 days.\n\nCommon signs and symptoms include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "High fever (above 38°C)",
+        "Chills and muscle aches",
+        "Extreme weakness or fatigue",
+        "Headache",
+        "Eye pain",
+        "Cough and sneezing",
+        "Sore throat",
+        "Runny nose",
+        "Abdominal pain, particularly in children",
+        "Cough and fatigue that may persist for up to 6 weeks"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "There may be other signs and symptoms not listed above. If you have any concerns about influenza symptoms, please consult your doctor."
+    },
+    {
+      "type": "figure",
+      "src": "/img/disease/influenza02.png",
+      "caption": "Illustration of influenza in children"
+    },
+    {
+      "type": "h3",
+      "text": "When Should I See a Doctor?"
+    },
+    {
+      "type": "p",
+      "text": "Most people with influenza can recover at home and do not require medical attention.\n\nHowever, if you develop influenza symptoms and are at risk of complications, you should seek medical care promptly. Taking antiviral medication within the first 48 hours after symptoms begin may shorten the duration of illness and help prevent more serious complications."
+    },
+    {
+      "type": "h3",
+      "text": "Causes"
+    },
+    {
+      "type": "p",
+      "text": "Influenza is caused by the influenza virus, which is classified into Types A, B, and C. Type A is the most common.\n\nThe virus spreads when a person inhales respiratory droplets from an infected individual, such as those produced during coughing or sneezing, or by touching contaminated surfaces and then touching the eyes, nose, or mouth.\n\nCertain strains of influenza may also be transmitted through contact with infected animals or by consuming contaminated animal products."
+    },
+    {
+      "type": "h3",
+      "text": "Risk Factors"
+    },
+    {
+      "type": "p",
+      "text": "Several factors may increase the risk of developing influenza, including:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Age – Seasonal influenza is more common in young children and older adults.",
+        "Living environment – People living in shared facilities, such as nursing homes or military barracks, have a higher risk of infection.",
+        "Weakened immune system – Cancer treatment, anti-rejection medications, corticosteroids, HIV/AIDS, and other conditions that suppress the immune system can increase the risk of influenza and its complications.",
+        "Chronic medical conditions – Diseases such as asthma, diabetes, and heart disease increase the likelihood of influenza-related complications.",
+        "Pregnancy – Pregnant women, particularly during the second and third trimesters, are at greater risk of complications.",
+        "Obesity – Individuals with a Body Mass Index (BMI) of 40 or higher have an increased risk of severe influenza complications."
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Treatment"
+    },
+    {
+      "type": "p",
+      "text": "The information provided is not a substitute for professional medical advice. Always consult your doctor.\n\nTreatment is aimed at relieving symptoms and supporting recovery. Your doctor may recommend pain relievers and fever-reducing medications such as paracetamol (acetaminophen) or ibuprofen, cough, cold, or decongestant medications to relieve symptoms.\n\nAspirin should not be given to children under 16 years of age, as it significantly increases the risk of Reye's syndrome.\n\nInhaling warm steam may help relieve nasal congestion and loosen mucus. You may also increase your fluid intake by drinking plenty of water to help thin nasal secretions and prevent dehydration.\n\nAntibiotics are not effective against influenza, as influenza is caused by a virus rather than bacteria."
+    }
+  ]
+}

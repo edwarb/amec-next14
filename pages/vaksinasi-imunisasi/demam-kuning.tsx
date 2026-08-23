@@ -1,4 +1,5 @@
 import DemamKuningApp from "features/VaccineImmuneApp/DemamKuningApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function DemamPage() {
   return (
@@ -9,3 +10,6 @@ function DemamPage() {
 }
 
 export default DemamPage;
+
+
+export const getStaticProps = createGetStaticProps(["vaccineYellowFever"]);

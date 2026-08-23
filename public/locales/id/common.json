@@ -1,0 +1,200 @@
+{
+  "intro_heading": "Tetap sehat, tetap percaya diri",
+  "intro_subtitle": "Amalia Medical Center berkomitmen untuk menyediakan layanan kesehatan terbaik dengan penuh kasih sayang dan profesionalisme. Kesehatan Anda dan keluarga adalah prioritas utama kami.",
+  "home_partner_tagline": "Amalia Medical Center telah memberikan pelayanan medical check-up & vaksinasi international sejak tahun 2000",
+  "home_features": {
+    "eyebrow": "Pelayanan lengkap",
+    "title": "Semua yang anda butuhkan untuk kesehatan keluarga",
+    "subtitle": "Kami menyediakan berbagai layanan medis yang komprehensif, mulai dari konsultasi umum hingga spesialis, vaksinasi, dan pemeriksaan kesehatan menyeluruh. Dengan dukungan tenaga medis profesional dan fasilitas modern, kami berkomitmen untuk menjaga kesehatan Anda dan keluarga.",
+    "items": [
+      {
+        "name": "Pelayanan Ramah",
+        "description": "Kami memberikan perhatian penuh terhadap keamanan dan kenyamanan pasien"
+      },
+      {
+        "name": "Bertaraf International",
+        "description": "Amalia Medical Center sudah sejak lama dikenal dan dipercaya oleh kedutaaan berbagai negara dan juga perusahaan multinasional"
+      },
+      {
+        "name": "Biaya Terjangkau",
+        "description": "Kini Anda tidak perlu lagi khawatir tabungan akan habis, pastikan keluarga anda tetap sehat"
+      },
+      {
+        "name": "Bersertifikasi",
+        "description": "ISO sistem manajemen mutu pelayanan kesehatan. ISO sistem manajemen lingkungan / limbah. ISO sistem managemen peralatan kesehatan"
+      },
+      {
+        "name": "Tenaga Profesional",
+        "description": "Tenaga ahli kami sangat bertanggung jawab dan siap membantu setiap saat"
+      },
+      {
+        "name": "Melayani Vaksinasi ICV",
+        "description": "Buku kuning resmi KKP tersedia bagi anda yang ingin vaksinasi/imunisasi untuk kebutuhan perjalanan internasional"
+      }
+    ]
+  },
+  "home_testimonials": [
+    {
+      "name": "Sevi",
+      "job": "Karyawan Swasta",
+      "text": "Nyobain program test check kesehatan untuk pra nikah.. biar sama-sama tau kesehatan pasangan. Medikal Amalia recommend untuk check up. Terimakasih untuk pelayanan yang memuaskan."
+    },
+    {
+      "name": "Ali",
+      "job": "Aktivis Kepemerintahan",
+      "text": "Saya coba check up karena ada keluhan. Ternyata memeriksakan kesehatan diri secara rutin itu sangat diperlukan. Sekarang saya berlangganan check up di Amalia Medical Center. Kualitas tinggi, pelayanan bagus, harga terjangkau."
+    },
+    {
+      "name": "Anisa",
+      "job": "Mahasiswa",
+      "text": "Tau Amalia Medical Center dari rujukan kedutaan Taiwan sebelum saya berangkat beasiswa kesana. Pelayanannya recommended dan hasilnya akurat. Gak heran rame pengunjung. Sukses selalu!"
+    },
+    {
+      "name": "Fau",
+      "job": "Ibu Rumah Tangga",
+      "text": "Penasaran Program kesehatan di klinik lain, saya sekeluarga check up di Amalia Medical Center. Harganya murah, tapi hasilnya sebanding sama klinik terkenal. Sekarang lagi mengalokasikan anggaran rumah tangga biar bias check up terus buat antisipasi kesehatan keluarga. Terimakasih Medikal Amalia"
+    },
+    {
+      "name": "Habib",
+      "job": "Praktisi Bahasa",
+      "text": "Awalnya saya kurang yakin kalau bukan klinik ternama. Berkat direkomendasikan dokter spesialis saya waktu itu, saya senang hasilnya akurat persis seperti di RS saya check up sebelumnya. Harus banyak promosi biar banyak yang tau kalau Amalia Medical Center itu bagus dan murah"
+    },
+    {
+      "name": "Jaya",
+      "job": "Enterpreneur Bidang Audio Visual",
+      "text": "Awalnya saya kurang yakin kalau bukan klinik ternama. Berkat direkomendasikan dokter spesialis saya waktu itu, saya senang hasilnya akurat persis seperti di RS saya check up sebelumnya. Harus banyak promosi biar banyak yang tau kalau Amalia Medical Center itu bagus dan murah"
+    },
+    {
+      "name": "Muhammad",
+      "job": "Wiraswasta",
+      "text": "Semua karyawan dikantor puas dengan pelayanan Amalia Medical Center. Baru tau kalo kita harusnya rutin check up.. Sekarang jadi bisa antisipasi dan mengetahui penyakit dari awal. Karena permintaan karyawan, kini kantor selalu ada budget untuk check up disini"
+    },
+    {
+      "name": "Nia",
+      "job": "Pengusaha Butik",
+      "text": "Keputusan sekolah anakku buat cek kesahatan di Amalia Medical Center tepat sekali. Harganya murah, hasilnya bagus, dapet referral fee juga kalo rekomendasiin..hehe. Sekarang mau mengubah pola pikir, cek kesehatan sebelum sakit. Good job Amalia Medical center"
+    }
+  ],
+  "home_facility": {
+    "eyebrow": "Pelayanan Klinik",
+    "title": "Layanan Medis Terbaik untuk Semua Kebutuhan Kesehatan Anda",
+    "subtitle": "Tim profesional kami siap membantu Anda dengan berbagai layanan medis yang komprehensif. Pastikan Anda dan keluarga mendapatkan perawatan optimal yang Anda butuhkan di Amalia Medical Center.",
+    "view_service": "Lihat Layanan",
+    "items": [
+      {
+        "title": "Covid Care",
+        "content": "Amalia Medical Center menyediakan fasilitas Rapid Test dan PCR Test. Perluasan tes COVID-19 secara masif ...",
+        "href": "/covidcare"
+      },
+      {
+        "title": "Hematologi",
+        "content": "Penilaian komponen sel darah secara lebih lengkap, untuk mengetahui adanya kelainan darah seperti anemia ...",
+        "href": "/hematologi"
+      },
+      {
+        "title": "Imunologi",
+        "content": "Imunologi merupakan pemeriksaan darah yang bertujuan untuk mendeteksi awal adanya infeksi virus,  ...",
+        "href": "/imunologi"
+      },
+      {
+        "title": "Kimia Klinik",
+        "content": "Kimia klinik merupakan pemeriksaan laboratorium yang berdasarkan pada reaksi kimia dapat digunakan darah ...",
+        "href": "/kimiaklinik"
+      },
+      {
+        "title": "Analisa Faeces",
+        "content": "Faeces atau biasa disebut tinja atau hasil dari buang air besar adalah sisa makanan yang telah dicerna ...",
+        "href": "/analisafeses"
+      },
+      {
+        "title": "Serologi",
+        "content": "Pemeriksaan serologi mempunyai hasil yang sangat bervariasi tergantung pada respon imun saat pemeriksaan ...",
+        "href": "/serologi"
+      },
+      {
+        "title": "Urinalisa",
+        "content": "Pemeriksaan urin atau biasa disebut analisa urin (urinalisa) merupakan pemeriksaan penyaring yang dipakai untuk ...",
+        "href": "/urinalisa"
+      },
+      {
+        "title": "Audiometri",
+        "content": "Audiometri adalah pemeriksaan yang bertujuan untuk mengetahui tingkat/ambang batas pendengaran seseorang ...",
+        "href": "/audiometri"
+      },
+      {
+        "title": "Elektrokardiografi",
+        "content": "Elektrokardiografi adalah pencatatan grafik variasi-variasi potensial listrik yang disebabkan oleh aktivitas listrik ...",
+        "href": "/elektrokardiografi"
+      },
+      {
+        "title": "Spirometri",
+        "content": "Spirometri adalah pemeriksaan yang dilakukan untuk mengukur secara obyektif kapasitas/fungsi paru ...",
+        "href": "/spirometri"
+      },
+      {
+        "title": "Rontgen",
+        "content": "Foto thorax atau sering disebut chest x-ray (CXR) adalah suatu proyeksi radiografi dari thorax untuk ...",
+        "href": "/rontgen"
+      }
+    ]
+  },
+  "home_booking": {
+    "title_line1": "Mudahkan Pendaftaran Anda.",
+    "title_line2": "Daftar Secara Online Sekarang.",
+    "subtitle": "Nikmati kemudahan mendaftar layanan kami secara online. Tanpa antrian, cepat, dan praktis. Tim kami siap membantu Anda dengan proses pendaftaran yang mudah dan efisien.",
+    "cta": "Daftar"
+  },
+  "home_social": {
+    "eyebrow": "Media Sosial",
+    "title": "Terhubung dengan Amalia Medical Center, di manapun Anda berada",
+    "subtitle": "Tetap terupdate dengan berita terbaru, penawaran, dan layanan kesehatan dari Amalia Medical Center. Ikuti kami di platform media sosial kami dan jadilah bagian dari komunitas kami."
+  },
+  "nav": {
+    "booking": "Booking",
+    "about": "Tentang Kami",
+    "article": "Artikel",
+    "vaccination": "Vaksinasi & Imunisasi",
+    "mcu": "MCU",
+    "promo": "Promosi",
+    "sdm": "SDM",
+    "login": "Log in",
+    "open_menu": "Buka menu utama",
+    "close_menu": "Tutup menu"
+  },
+  "nav_vaccination": {
+    "covid": "Vaksinasi Covid",
+    "campak": "Imunisasi Campak",
+    "demam_kuning": "Vaksinasi Demam Kuning",
+    "influenza": "Vaksinasi Influenza",
+    "meningitis": "Vaksinasi Meningitis",
+    "mmr": "Vaksinasi MMR",
+    "tifoid": "Vaksinasi Tifoid",
+    "mr": "Vaksinasi MR",
+    "vitamin_c": "Injeksi Vitamin C"
+  },
+  "nav_mcu": {
+    "covid": "MCU Covid Care",
+    "family": "MCU Family Care",
+    "haji": "MCU Haji",
+    "on_site": "MCU On Site",
+    "tenaga_kerja": "MCU Tenaga Kerja",
+    "pelajar_taiwan": "MCU Pelajar ke Taiwan",
+    "pekerja_migran": "MCU Calon Pekerja Migran",
+    "karyawan": "MCU Karyawan"
+  },
+  "nav_sdm": {
+    "analisis_lab": "Analisis Lab",
+    "csr": "CSR",
+    "fasilitas": "Fasilitas",
+    "sertifikat": "Sertifikat"
+  },
+  "footer": {
+    "address": "Alamat",
+    "contact": "Hubungi",
+    "phone": "Telepon",
+    "fax": "Fax",
+    "wa": "WA",
+    "crafted_with": "Dibuat dengan",
+    "by": "oleh"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "fig": "Illustration of measles in adults",
+  "tags": "#Measles #Rubeola",
+  "title": "Measles Immunization (Rubeola)",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Rubeola, commonly known as measles, is a highly contagious viral infection. Before measles immunization became widely available, measles was one of the leading endemic diseases responsible for a high number of deaths each year.\n\nMeasles is caused by a virus belonging to the Paramyxovirus family. It is usually transmitted through direct contact with an infected person or through airborne respiratory droplets. The virus initially infects the respiratory tract before spreading throughout the body."
+    },
+    {
+      "type": "h3",
+      "text": "How common is measles?"
+    },
+    {
+      "type": "p",
+      "text": "Measles most commonly affects children. However, adults can also become infected, particularly if they did not have measles or were not vaccinated during childhood.\n\nYou can reduce your risk of infection by minimizing known risk factors. Please consult your doctor for further information."
+    },
+    {
+      "type": "h3",
+      "text": "Signs and Symptoms"
+    },
+    {
+      "type": "p",
+      "text": "The symptoms of measles usually appear one to two weeks after infection.\n\nThe earliest symptoms typically include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "High fever, which may reach 40°C",
+        "Red and watery eyes",
+        "Runny nose",
+        "Snezing",
+        "Dry cough",
+        "Sensitivity to light",
+        "Fatigue",
+        "Loss of appetite"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Two to three days after these initial symptoms appear, small grayish-white spots (Koplik spots) may develop inside the mouth and throat.\n\nThis is followed by a reddish-brown skin rash, which usually begins around the ears, then spreads to the face, neck, and eventually the rest of the body."
+    },
+    {
+      "type": "p",
+      "text": "The rash generally appears about four days after the onset of the initial symptoms and may last for five to six days. The high fever usually begins to subside by the third day after the rash appears.\n\nThere may be other signs and symptoms not listed above. If you have any concerns or suspect symptoms of measles, please consult your doctor promptly."
+    },
+    {
+      "type": "figure",
+      "src": "/img/disease/campak02.png",
+      "caption": "Illustration of measles in children"
+    }
+  ]
+}

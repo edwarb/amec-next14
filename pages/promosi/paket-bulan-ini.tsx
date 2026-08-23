@@ -1,4 +1,5 @@
 import PaketBulanIniApp from "features/PaketApp/PaketBulanIniApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function PaketBulanIniPage() {
   return (
@@ -9,3 +10,6 @@ function PaketBulanIniPage() {
 }
 
 export default PaketBulanIniPage;
+
+
+export const getStaticProps = createGetStaticProps();

@@ -1,0 +1,141 @@
+{
+  "fig": "Illustration of MMR vaccine",
+  "tags": "#MMR",
+  "title": "MMR Vaccination",
+  "blocks": [
+    {
+      "type": "p",
+      "text": "MMR is a combination vaccine that protects against three highly contagious viral diseases: Measles, Mumps, and Rubella. These infections most commonly affect children during their early years of life, as their immune systems are not yet fully developed. However, adults with weakened immune systems are also at risk of contracting one or more of these diseases, particularly if they were not vaccinated during childhood."
+    },
+    {
+      "type": "h3",
+      "text": "Measles"
+    },
+    {
+      "type": "p",
+      "text": "Measles is a highly contagious viral infection that affects the respiratory system. The virus spreads easily through respiratory droplets released when an infected person coughs or sneezes. It can also be transmitted through direct contact with bodily fluids or by sharing personal items such as eating utensils or drinking glasses.\n\nCommon symptoms of measles include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Red skin rash",
+        "Cough",
+        "Runny nose",
+        "Fever",
+        "White spots inside the mouth (Koplik spots)"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Severe measles infection can lead to complications such as pneumonia, ear infections, and brain damage. Another serious complication is encephalitis (inflammation of the brain), which may cause seizures, especially in children."
+    },
+    {
+      "type": "h3",
+      "text": "Mumps"
+    },
+    {
+      "type": "p",
+      "text": "Mumps, also known as parotitis, is a contagious viral infection that affects the salivary glands. Although anyone can become infected, the disease most commonly occurs in children between 2 and 12 years of age.\n\nThe virus spreads through saliva when an infected person coughs or sneezes. It can also be transmitted through direct contact or by sharing personal items with an infected individual.\n\nThe most recognizable symptom of mumps is swelling of the salivary glands, causing the cheeks and jaw area to appear enlarged.\n\nCommon symptoms include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Fever",
+        "Headache",
+        "Swollen salivary glands",
+        "Muscle pain",
+        "Pain while chewing or swallowing",
+        "Pain in the face or cheeks",
+        "Sore throat"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "In some cases, the mumps virus may also cause inflammation of the testicles, ovaries, pancreas, or the meninges, the membranes surrounding the brain and spinal cord. Other possible complications include hearing loss and meningitis."
+    },
+    {
+      "type": "h3",
+      "text": "Rubella (German Measles)"
+    },
+    {
+      "type": "p",
+      "text": "Rubella, commonly known as German measles, is a viral infection caused by the rubella virus. It is characterized by a red or pink skin rash and swelling of the lymph nodes behind the ears and in the neck.\n\nThe signs and symptoms of rubella are often mild, especially in children, making the disease difficult to recognize. Symptoms usually develop 2 to 3 weeks after exposure to the virus.\n\nCommon symptoms include:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Fever",
+        "Headache",
+        "Nasal congestion or runny nose",
+        "Red, inflamed eyes",
+        "A fine pink rash that begins on the face and quickly spreads to the body, arms, and legs before fading in the same order",
+        "Joint pain, particularly in women"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Anyone can contract rubella. In most children and adults, the disease is mild, self-limiting, and rarely causes serious complications.\n\nHowever, rubella infection during pregnancy, especially during the first four months, can be extremely dangerous. It may cause congenital birth defects, miscarriage, or stillbirth."
+    },
+    {
+      "type": "figure",
+      "src": "/img/disease/mmr02.png",
+      "caption": "Illustration of MMR vaccination in children"
+    },
+    {
+      "type": "h3",
+      "text": "Who Should Receive the MMR Vaccine?"
+    },
+    {
+      "type": "p",
+      "text": "Everyone should receive the MMR vaccine at least once in their lifetime.\n\nIn Indonesia, the Measles and Rubella (MR) vaccine is administered separately from the mumps vaccine because mumps has become less common. However, this should not be considered a reason to forgo protection against all three diseases."
+    },
+    {
+      "type": "h3",
+      "text": "Children and Infants"
+    },
+    {
+      "type": "p",
+      "text": "According to the Indonesian Ministry of Health, the MMR immunization is recommended for children beginning at 9 months of age and up to before 15 years of age.\n\nThe vaccine is also included in the routine immunization schedule, with additional doses administered at 18 months of age and again in Grade 1 of elementary school (approximately 6–7 years of age) or upon school entry, free of charge.\n\nChildren aged 6–11 months who plan to travel internationally should receive at least one dose of the MMR vaccine before departure. They should then receive the recommended subsequent dose according to the national immunization schedule."
+    },
+    {
+      "type": "h3",
+      "text": "Adults"
+    },
+    {
+      "type": "p",
+      "text": "According to the Centers for Disease Control and Prevention (CDC), adults aged 18 years or older, or those born after 1956, who have never received the MMR vaccine should receive two doses.\n\nAdults who can provide evidence of previous MMR vaccination or laboratory-confirmed immunity generally require only one catch-up dose, if indicated.\n\nIndividuals aged 12 months or older who have received at least one dose of the MMR vaccine but are considered at increased risk during a mumps outbreak should receive an additional dose. Each dose should be administered at least 28 days after the previous dose."
+    },
+    {
+      "type": "h3",
+      "text": "Who Should Not Receive the MMR Vaccine?"
+    },
+    {
+      "type": "p",
+      "text": "According to the Centers for Disease Control and Prevention (CDC), certain individuals should not receive the MMR vaccine. Although they may not be vaccinated themselves, they can still be protected through herd immunity when people around them are fully immunized.\n\nThe MMR vaccine is generally not recommended for individuals who:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Have experienced a severe or life-threatening allergic reaction to neomycin or any component of the vaccine.",
+        "Have had a serious allergic reaction after a previous dose of the MMR or MMRV (Measles, Mumps, Rubella, and Varicella) vaccine.",
+        "Are undergoing cancer treatment or receiving medications that significantly weaken the immune system.",
+        "Have HIV/AIDS or other disorders affecting the immune system.",
+        "Are taking medications that suppress the immune system, such as corticosteroids.",
+        "Have active tuberculosis (TB)."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Vaccination may also need to be postponed if you:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Have a moderate or severe illness.",
+        "Are pregnant or planning to become pregnant.",
+        "Have recently received a blood transfusion or have a medical condition that increases the risk of bleeding or bruising.",
+        "Have received another vaccine within the previous four weeks."
+      ]
+    }
+  ]
+}

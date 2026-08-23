@@ -1,4 +1,5 @@
 import HomepageApp from "features/HomepageApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function Home() {
   return (
@@ -9,3 +10,5 @@ function Home() {
 }
 
 export default Home;
+
+export const getStaticProps = createGetStaticProps();

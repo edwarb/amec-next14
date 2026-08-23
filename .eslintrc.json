@@ -1,6 +1,12 @@
 {
   "overrides": [
     {
+      "files": ["next-i18next.config.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    },
+    {
       "extends": [
         "plugin:@typescript-eslint/recommended-requiring-type-checking"
       ],

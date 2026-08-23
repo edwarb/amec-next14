@@ -1,4 +1,5 @@
 import ArticleApp from "features/ArticleApp";
+import { createGetStaticProps } from "lib/i18n";
 
 function ArticlePage() {
   return (
@@ -9,3 +10,6 @@ function ArticlePage() {
 }
 
 export default ArticlePage;
+
+
+export const getStaticProps = createGetStaticProps();
