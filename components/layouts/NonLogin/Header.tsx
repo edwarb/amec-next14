@@ -12,6 +12,7 @@ import LanguageSwitcher from "components/LanguageSwitcher";
 
 const NAV_ITEMS = [
   { key: "booking", href: "/booking" },
+  { key: "jpets", href: "/pendaftaran-jpets" },
   { key: "about", href: "/about" },
   { key: "article", href: "/article" },
   { key: "vaccination", href: "#" },
@@ -175,7 +176,7 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-8 xl:gap-x-10 2xl:gap-x-12">
           {NAV_ITEMS.map((item) =>
             item.key === "vaccination" ? (
               <Menu
