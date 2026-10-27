@@ -68,7 +68,7 @@ export default function Main() {
                 Dokumen Wajib
               </h3>
               <p className="mt-1 text-xs text-gray-600 leading-relaxed">
-                Siapkan paspor asli yang masih berlaku, pas foto terbaru, dan dokumen COE jika ada.
+                Siapkan paspor asli yang masih berlaku, pas foto terbaru.<br/>Dokumen COE akan bisa di proses jika sertifikat JPETS telah terbit dari kami.
               </p>
             </div>
           </div>
